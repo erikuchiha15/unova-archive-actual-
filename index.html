@@ -1140,7 +1140,7 @@ main {
   <button id="more" style="display:none">Show more Pokémon</button>
 </div>
 </main>
-<footer>Unova Archive • Fan-made ROM documentation • Version 2.1</footer>
+<footer>Unova Archive • Fan-made ROM documentation • Version 2.2</footer>
 
 <div id="moveModal" class="move-modal" hidden>
   <div class="move-modal-backdrop"></div>
@@ -1364,19 +1364,54 @@ function artworkUrl(id) {
 let evolutionData = {};
 let currentPokemonId = null;
 
+// UNOVA_EVOLUTION_DETAILS_V22
+// Decode Gen 5 ROM evolution methods using the stored method and condition.
+// Keep unknown conditions explicit rather than inventing requirements.
 function evolutionRequirement(e) {
   const method = Number(e.method_id);
   const condition = Number(e.condition);
+  const itemNames = {
+    80: 'Sun Stone', 81: 'Moon Stone', 82: 'Fire Stone',
+    83: 'Thunder Stone', 84: 'Water Stone', 85: 'Leaf Stone',
+    107: 'Shiny Stone', 108: 'Dusk Stone', 109: 'Dawn Stone'
+  };
+  const item = id => itemNames[id]
+    || (typeof trainerItemNames !== 'undefined'
+      && trainerItemNames[String(id)])
+    || `item #${id}`;
+  const move = id => (typeof moveNames !== 'undefined'
+      && moveNames[String(id)]) || `move #${id}`;
 
-  if (method === 4) {
-    return "Level " + condition;
+  switch (method) {
+    case 1: return 'Level up with high friendship';
+    case 2: return 'Level up with high friendship during daytime';
+    case 3: return 'Level up with high friendship at night';
+    case 4: return `Reach level ${condition}`;
+    case 5: return 'Trade';
+    case 6: return `Trade while holding ${item(condition)}`;
+    case 7: return `Trade with required Pokémon #${condition}`;
+    case 8: return `Use ${item(condition)}`;
+    case 9: return `Reach level ${condition} with Attack higher than Defense`;
+    case 10: return `Reach level ${condition} with Attack equal to Defense`;
+    case 11: return `Reach level ${condition} with Attack lower than Defense`;
+    case 12: return `Reach level ${condition} (personality-dependent evolution)`;
+    case 13: return `Reach level ${condition} (personality-dependent evolution)`;
+    case 14: return `Reach level ${condition} to evolve into Ninjask`;
+    case 15: return `Reach level ${condition} with an empty party slot and a spare Poké Ball`;
+    case 16: return `Level up with sufficient Beauty (value ${condition})`;
+    case 17: return `Use ${item(condition)} on a male Pokémon`;
+    case 18: return `Use ${item(condition)} on a female Pokémon`;
+    case 19:
+    case 20: return `Trade while holding ${item(condition)}`;
+    case 21: return `Level up while knowing ${move(condition)}`;
+    case 22: return `Trade with Pokémon #${condition} as the trade partner`;
+    case 23: return `Reach level ${condition} (female)`;
+    case 24: return `Reach level ${condition} (male)`;
+    case 25: return 'Level up in a special magnetic field';
+    case 26: return 'Level up near Moss Rock';
+    case 27: return 'Level up near Ice Rock';
+    default: return `Unverified method ${method} (condition ${condition})`;
   }
-
-  if (method === 8 && condition === 82) {
-    return "Fire Stone";
-  }
-
-  return "Method " + method + " / Condition " + condition;
 }
 
 
