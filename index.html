@@ -890,6 +890,92 @@ main {
 .rom-mod-status { color:#a8c9ff; font-weight:600; }
 .rom-mod-note { border-left:3px solid #708dbb; padding-left:12px; margin-top:16px; line-height:1.55; }
 
+
+/* UNOVA_PUBLIC_CLEANUP_V24 */
+#databaseLoader,
+#pokedex input[type="file"],
+#encounters .encounter-loaders,
+#trainers > label,
+#items > details {
+  display: none !important;
+}
+
+#pokedex > p:not(#status) {
+  display: none !important;
+}
+
+#publicDatabaseIndicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  border: 1px solid #395579;
+  border-radius: 9px;
+  background: #17243b;
+  color: #a8c9ff;
+  font-size: 13px;
+}
+
+#publicDatabaseIndicator[data-state="ready"] {
+  color: #7fd7a1;
+}
+
+#publicDatabaseIndicator[data-state="error"] {
+  color: #ff9b9b;
+}
+
+
+/* UNOVA_TABS_V25 */
+
+#archiveTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 24px;
+  border-bottom: 1px solid #344b70;
+}
+
+#archiveTabs a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 17px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: #bcd3ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+#archiveTabs a:hover {
+  background: #253b59;
+  border-color: #395579;
+}
+
+#archiveTabs a.active {
+  background: #2861ad;
+  border-color: #74b0ff;
+  color: #ffffff;
+}
+
+.archive-tab-hidden {
+  display: none !important;
+}
+
+@media (max-width: 760px) {
+  #archiveTabs {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  #archiveTabs a {
+    flex: 1 1 auto;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -897,19 +983,19 @@ main {
   <h1>UNOVA ARCHIVE</h1>
   <p>Pokémon White 2 ROM Hack Documentation</p>
 </header>
-<nav>
-  <a href="#pokedex">Pokédex</a>
-  <a href="#encounters">Encounters</a>
-  <a href="#trainers">Trainers</a>
-  <a href="#rom-modifications">ROM Modifications</a>
-  <a href="#items">Items</a>
-  <a href="#about">About</a>
+<nav id="archiveTabs" aria-label="Main navigation">
+  <a href="#about" data-tab="about">Home</a>
+  <a href="#pokedex" data-tab="pokedex">Pokédex</a>
+  <a href="#encounters" data-tab="encounters">Encounters</a>
+  <a href="#trainers" data-tab="trainers">Trainers</a>
+  <a href="#items" data-tab="items">Items</a>
+  <a href="#rom-modifications" data-tab="rom-modifications">ROM Changes</a>
 </nav>
 <main>
 <section class="panel" id="about">
   <h2>Welcome to the Unova Archive</h2>
-  <p>Explore Pokémon stats and types extracted from this custom ROM hack.</p>
-  <p class="small">Working title • Documentation in development</p>
+  <p>Explore the Pokédex, evolutions, encounters, trainers, and items from this custom Pokémon White 2 adventure.</p>
+  <p id="publicDatabaseIndicator" role="status" aria-live="polite" data-state="loading">◌ Loading databases…</p>
 </section>
 
 
@@ -1140,7 +1226,7 @@ main {
   <button id="more" style="display:none">Show more Pokémon</button>
 </div>
 </main>
-<footer>Unova Archive • Fan-made ROM documentation • Version 2.3</footer>
+<footer>Unova Archive • Fan-made ROM documentation • Version 2.5</footer>
 
 <div id="moveModal" class="move-modal" hidden>
   <div class="move-modal-backdrop"></div>
@@ -3402,6 +3488,176 @@ document.getElementById("itemMore")
 
 autoLoadItemsV20();
 
+
+
+// UNOVA_PUBLIC_STATUS_V24
+(function () {
+  const indicator = document.getElementById(
+    "publicDatabaseIndicator"
+  );
+
+  if (!indicator) return;
+
+  const mainStatus = document.getElementById(
+    "autoDatabaseStatus"
+  );
+  const itemStatus = document.getElementById(
+    "itemStatus"
+  );
+
+  function refreshPublicStatus() {
+    const mainText = mainStatus?.textContent || "";
+    const itemText = itemStatus?.textContent || "";
+
+    const mainReady = mainText.includes(
+      "All 12 databases loaded automatically!"
+    );
+
+    const itemsReady = Object.keys(
+      itemDatabaseV20
+    ).length === 639;
+
+    const mainError =
+      mainText.includes("Check errors below") ||
+      mainText.includes("requires the local Python server");
+
+    const itemsError =
+      itemText.includes("failed") ||
+      itemText.includes("Use the local Python server");
+
+    if (mainReady && itemsReady) {
+      indicator.dataset.state = "ready";
+      indicator.textContent = "✓ All 15 databases loaded";
+    } else if (mainError || itemsError) {
+      indicator.dataset.state = "error";
+      indicator.textContent =
+        "⚠ Some databases could not be loaded";
+    } else {
+      indicator.dataset.state = "loading";
+      indicator.textContent = "◌ Loading databases…";
+    }
+  }
+
+  const observer = new MutationObserver(refreshPublicStatus);
+
+  observer.observe(mainStatus, {
+    childList: true,
+    characterData: true,
+    subtree: true
+  });
+
+  observer.observe(itemStatus, {
+    childList: true,
+    characterData: true,
+    subtree: true
+  });
+
+  refreshPublicStatus();
+})();
+
+
+// UNOVA_TABS_V25
+(function () {
+  const tabIds = [
+    "about",
+    "pokedex",
+    "encounters",
+    "trainers",
+    "items",
+    "rom-modifications"
+  ];
+
+  const nav = document.getElementById("archiveTabs");
+  const pokedex = document.getElementById("pokedex");
+
+  if (!nav || !pokedex) return;
+
+  // Keep Pokémon cards and details inside Pokédex.
+  // Existing event handlers remain attached.
+  const details = document.getElementById("details");
+  const results = document.getElementById("results");
+  const more = document.getElementById("more");
+
+  if (details) pokedex.appendChild(details);
+  if (results) pokedex.appendChild(results);
+  if (more && more.parentElement) {
+    pokedex.appendChild(more.parentElement);
+  }
+
+  // The old loader is hidden in V2.4, but must
+  // remain in the document for existing scripts.
+  const loader = document.getElementById("databaseLoader");
+  if (loader) loader.style.display = "none";
+
+  function activateTab(id, scroll = true) {
+    if (!tabIds.includes(id)) id = "about";
+
+    for (const tabId of tabIds) {
+      const section = document.getElementById(tabId);
+      if (!section) continue;
+
+      section.classList.toggle(
+        "archive-tab-hidden",
+        tabId !== id
+      );
+    }
+
+    for (const link of nav.querySelectorAll("[data-tab]")) {
+      const selected = link.dataset.tab === id;
+      link.classList.toggle("active", selected);
+
+      if (selected) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    }
+
+    if (scroll) {
+      window.scrollTo({top: 0, behavior: "smooth"});
+    }
+  }
+
+  nav.addEventListener("click", event => {
+    const link = event.target.closest("[data-tab]");
+    if (!link) return;
+
+    event.preventDefault();
+
+    const id = link.dataset.tab;
+    history.replaceState(null, "", "#" + id);
+    activateTab(id);
+  });
+
+  window.addEventListener("hashchange", () => {
+    activateTab(location.hash.slice(1));
+  });
+
+  // Existing trainer, encounter, and evolution
+  // links already call showDetails().
+  // Switch to Pokédex before showing those details.
+  const originalShowDetailsV25 = showDetails;
+
+  showDetails = function (id) {
+    activateTab("pokedex", false);
+    originalShowDetailsV25(id);
+  };
+
+  // When a Pokémon's encounter location is clicked,
+  // show the Encounters tab before scrolling there.
+  document.addEventListener("click", event => {
+    const locationButton = event.target.closest(
+      "[data-wild-record]"
+    );
+
+    if (locationButton) {
+      activateTab("encounters", false);
+    }
+  }, true);
+
+  const initialTab = location.hash.slice(1);
+  activateTab(initialTab || "about", false);
+})();
 
 </script>
 
