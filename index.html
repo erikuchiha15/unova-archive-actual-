@@ -1140,7 +1140,7 @@ main {
   <button id="more" style="display:none">Show more Pokémon</button>
 </div>
 </main>
-<footer>Unova Archive • Fan-made ROM documentation • Version 2.2</footer>
+<footer>Unova Archive • Fan-made ROM documentation • Version 2.3</footer>
 
 <div id="moveModal" class="move-modal" hidden>
   <div class="move-modal-backdrop"></div>
@@ -1401,8 +1401,9 @@ function evolutionRequirement(e) {
     case 16: return `Level up with sufficient Beauty (value ${condition})`;
     case 17: return `Use ${item(condition)} on a male Pokémon`;
     case 18: return `Use ${item(condition)} on a female Pokémon`;
-    case 19:
-    case 20: return `Trade while holding ${item(condition)}`;
+    // UNOVA_EVOLUTION_DETAILS_V23 — Frost Gen 5 method mapping
+    case 19: return `Level up during the day while holding ${item(condition)}`;
+    case 20: return `Level up during the night while holding ${item(condition)}`;
     case 21: return `Level up while knowing ${move(condition)}`;
     case 22: return `Trade with Pokémon #${condition} as the trade partner`;
     case 23: return `Reach level ${condition} (female)`;
