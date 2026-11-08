@@ -1,0 +1,4884 @@
+{
+  "0": {
+    "id": 0,
+    "name": "None",
+    "shops": []
+  },
+  "1": {
+    "id": 1,
+    "name": "Master Ball",
+    "shops": []
+  },
+  "2": {
+    "id": 2,
+    "name": "Ultra Ball",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "name": "Great Ball",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      }
+    ]
+  },
+  "4": {
+    "id": 4,
+    "name": "Poké Ball",
+    "shops": [
+      {
+        "shop_id": 0,
+        "frost_shop_number": 1,
+        "shop_name": "Stock No Badges"
+      },
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      }
+    ]
+  },
+  "5": {
+    "id": 5,
+    "name": "Safari Ball",
+    "shops": []
+  },
+  "6": {
+    "id": 6,
+    "name": "Net Ball",
+    "shops": [
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      }
+    ]
+  },
+  "7": {
+    "id": 7,
+    "name": "Dive Ball",
+    "shops": [
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      }
+    ]
+  },
+  "8": {
+    "id": 8,
+    "name": "Nest Ball",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "9": {
+    "id": 9,
+    "name": "Repeat Ball",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      }
+    ]
+  },
+  "10": {
+    "id": 10,
+    "name": "Timer Ball",
+    "shops": [
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      }
+    ]
+  },
+  "11": {
+    "id": 11,
+    "name": "Luxury Ball",
+    "shops": [
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      }
+    ]
+  },
+  "12": {
+    "id": 12,
+    "name": "Premier Ball",
+    "shops": []
+  },
+  "13": {
+    "id": 13,
+    "name": "Dusk Ball",
+    "shops": [
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "14": {
+    "id": 14,
+    "name": "Heal Ball",
+    "shops": [
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "15": {
+    "id": 15,
+    "name": "Quick Ball",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 15,
+        "frost_shop_number": 16,
+        "shop_name": "Victory Road Upper"
+      },
+      {
+        "shop_id": 16,
+        "frost_shop_number": 17,
+        "shop_name": "Victory Road Upper?"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      }
+    ]
+  },
+  "16": {
+    "id": 16,
+    "name": "Cherish Ball",
+    "shops": []
+  },
+  "17": {
+    "id": 17,
+    "name": "Potion",
+    "shops": [
+      {
+        "shop_id": 0,
+        "frost_shop_number": 1,
+        "shop_name": "Stock No Badges"
+      },
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "18": {
+    "id": 18,
+    "name": "Antidote",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "19": {
+    "id": 19,
+    "name": "Burn Heal",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "20": {
+    "id": 20,
+    "name": "Ice Heal",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "21": {
+    "id": 21,
+    "name": "Awakening",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "22": {
+    "id": 22,
+    "name": "Parlyz Heal",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "23": {
+    "id": 23,
+    "name": "Full Restore",
+    "shops": [
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      }
+    ]
+  },
+  "24": {
+    "id": 24,
+    "name": "Max Potion",
+    "shops": [
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "25": {
+    "id": 25,
+    "name": "Hyper Potion",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "26": {
+    "id": 26,
+    "name": "Super Potion",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "27": {
+    "id": 27,
+    "name": "Full Heal",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "28": {
+    "id": 28,
+    "name": "Revive",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "29": {
+    "id": 29,
+    "name": "Max Revive",
+    "shops": []
+  },
+  "30": {
+    "id": 30,
+    "name": "Fresh Water",
+    "shops": []
+  },
+  "31": {
+    "id": 31,
+    "name": "Soda Pop",
+    "shops": []
+  },
+  "32": {
+    "id": 32,
+    "name": "Lemonade",
+    "shops": []
+  },
+  "33": {
+    "id": 33,
+    "name": "Moomoo Milk",
+    "shops": []
+  },
+  "34": {
+    "id": 34,
+    "name": "EnergyPowder",
+    "shops": [
+      {
+        "shop_id": 21,
+        "frost_shop_number": 22,
+        "shop_name": "Driftveil City Herb Shop"
+      }
+    ]
+  },
+  "35": {
+    "id": 35,
+    "name": "Energy Root",
+    "shops": [
+      {
+        "shop_id": 21,
+        "frost_shop_number": 22,
+        "shop_name": "Driftveil City Herb Shop"
+      }
+    ]
+  },
+  "36": {
+    "id": 36,
+    "name": "Heal Powder",
+    "shops": [
+      {
+        "shop_id": 21,
+        "frost_shop_number": 22,
+        "shop_name": "Driftveil City Herb Shop"
+      }
+    ]
+  },
+  "37": {
+    "id": 37,
+    "name": "Revival Herb",
+    "shops": [
+      {
+        "shop_id": 21,
+        "frost_shop_number": 22,
+        "shop_name": "Driftveil City Herb Shop"
+      }
+    ]
+  },
+  "38": {
+    "id": 38,
+    "name": "Ether",
+    "shops": []
+  },
+  "39": {
+    "id": 39,
+    "name": "Max Ether",
+    "shops": []
+  },
+  "40": {
+    "id": 40,
+    "name": "Elixir",
+    "shops": []
+  },
+  "41": {
+    "id": 41,
+    "name": "Max Elixir",
+    "shops": []
+  },
+  "42": {
+    "id": 42,
+    "name": "Lava Cookie",
+    "shops": []
+  },
+  "43": {
+    "id": 43,
+    "name": "Berry Juice",
+    "shops": []
+  },
+  "44": {
+    "id": 44,
+    "name": "Sacred Ash",
+    "shops": []
+  },
+  "45": {
+    "id": 45,
+    "name": "HP Up",
+    "shops": [
+      {
+        "shop_id": 26,
+        "frost_shop_number": 27,
+        "shop_name": "SM9 Top Left Cashier"
+      }
+    ]
+  },
+  "46": {
+    "id": 46,
+    "name": "Protein",
+    "shops": [
+      {
+        "shop_id": 26,
+        "frost_shop_number": 27,
+        "shop_name": "SM9 Top Left Cashier"
+      }
+    ]
+  },
+  "47": {
+    "id": 47,
+    "name": "Iron",
+    "shops": [
+      {
+        "shop_id": 26,
+        "frost_shop_number": 27,
+        "shop_name": "SM9 Top Left Cashier"
+      }
+    ]
+  },
+  "48": {
+    "id": 48,
+    "name": "Carbos",
+    "shops": [
+      {
+        "shop_id": 26,
+        "frost_shop_number": 27,
+        "shop_name": "SM9 Top Left Cashier"
+      }
+    ]
+  },
+  "49": {
+    "id": 49,
+    "name": "Calcium",
+    "shops": [
+      {
+        "shop_id": 26,
+        "frost_shop_number": 27,
+        "shop_name": "SM9 Top Left Cashier"
+      }
+    ]
+  },
+  "50": {
+    "id": 50,
+    "name": "Rare Candy",
+    "shops": []
+  },
+  "51": {
+    "id": 51,
+    "name": "PP Up",
+    "shops": []
+  },
+  "52": {
+    "id": 52,
+    "name": "Zinc",
+    "shops": [
+      {
+        "shop_id": 26,
+        "frost_shop_number": 27,
+        "shop_name": "SM9 Top Left Cashier"
+      }
+    ]
+  },
+  "53": {
+    "id": 53,
+    "name": "PP Max",
+    "shops": []
+  },
+  "54": {
+    "id": 54,
+    "name": "Old Gateau",
+    "shops": []
+  },
+  "55": {
+    "id": 55,
+    "name": "Guard Spec.",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "56": {
+    "id": 56,
+    "name": "Dire Hit",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "57": {
+    "id": 57,
+    "name": "X Attack",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "58": {
+    "id": 58,
+    "name": "X Defend",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "59": {
+    "id": 59,
+    "name": "X Speed",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "60": {
+    "id": 60,
+    "name": "X Accuracy",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "61": {
+    "id": 61,
+    "name": "X Special",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "62": {
+    "id": 62,
+    "name": "X Sp. Def",
+    "shops": [
+      {
+        "shop_id": 20,
+        "frost_shop_number": 21,
+        "shop_name": "SM9 Top Right Cashier"
+      }
+    ]
+  },
+  "63": {
+    "id": 63,
+    "name": "Poké Doll",
+    "shops": []
+  },
+  "64": {
+    "id": 64,
+    "name": "Fluffy Tail",
+    "shops": []
+  },
+  "65": {
+    "id": 65,
+    "name": "Blue Flute",
+    "shops": []
+  },
+  "66": {
+    "id": 66,
+    "name": "Yellow Flute",
+    "shops": []
+  },
+  "67": {
+    "id": 67,
+    "name": "Red Flute",
+    "shops": []
+  },
+  "68": {
+    "id": 68,
+    "name": "Black Flute",
+    "shops": []
+  },
+  "69": {
+    "id": 69,
+    "name": "White Flute",
+    "shops": []
+  },
+  "70": {
+    "id": 70,
+    "name": "Shoal Salt",
+    "shops": []
+  },
+  "71": {
+    "id": 71,
+    "name": "Shoal Shell",
+    "shops": []
+  },
+  "72": {
+    "id": 72,
+    "name": "Red Shard",
+    "shops": []
+  },
+  "73": {
+    "id": 73,
+    "name": "Blue Shard",
+    "shops": []
+  },
+  "74": {
+    "id": 74,
+    "name": "Yellow Shard",
+    "shops": []
+  },
+  "75": {
+    "id": 75,
+    "name": "Green Shard",
+    "shops": []
+  },
+  "76": {
+    "id": 76,
+    "name": "Super Repel",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "77": {
+    "id": 77,
+    "name": "Max Repel",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "78": {
+    "id": 78,
+    "name": "Escape Rope",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "79": {
+    "id": 79,
+    "name": "Repel",
+    "shops": [
+      {
+        "shop_id": 1,
+        "frost_shop_number": 2,
+        "shop_name": "Stock 1+ Badges"
+      },
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      },
+      {
+        "shop_id": 4,
+        "frost_shop_number": 5,
+        "shop_name": "Stock 7+ Badges"
+      },
+      {
+        "shop_id": 5,
+        "frost_shop_number": 6,
+        "shop_name": "Stock 8+ Badges"
+      },
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "80": {
+    "id": 80,
+    "name": "Sun Stone",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "81": {
+    "id": 81,
+    "name": "Moon Stone",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "82": {
+    "id": 82,
+    "name": "Fire Stone",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "83": {
+    "id": 83,
+    "name": "Thunderstone",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "84": {
+    "id": 84,
+    "name": "Water Stone",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "85": {
+    "id": 85,
+    "name": "Leaf Stone",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      }
+    ]
+  },
+  "86": {
+    "id": 86,
+    "name": "TinyMushroom",
+    "shops": []
+  },
+  "87": {
+    "id": 87,
+    "name": "Big Mushroom",
+    "shops": []
+  },
+  "88": {
+    "id": 88,
+    "name": "Pearl",
+    "shops": []
+  },
+  "89": {
+    "id": 89,
+    "name": "Big Pearl",
+    "shops": []
+  },
+  "90": {
+    "id": 90,
+    "name": "Stardust",
+    "shops": []
+  },
+  "91": {
+    "id": 91,
+    "name": "Star Piece",
+    "shops": []
+  },
+  "92": {
+    "id": 92,
+    "name": "Nugget",
+    "shops": []
+  },
+  "93": {
+    "id": 93,
+    "name": "Heart Scale",
+    "shops": []
+  },
+  "94": {
+    "id": 94,
+    "name": "Honey",
+    "shops": []
+  },
+  "95": {
+    "id": 95,
+    "name": "Growth Mulch",
+    "shops": []
+  },
+  "96": {
+    "id": 96,
+    "name": "Damp Mulch",
+    "shops": []
+  },
+  "97": {
+    "id": 97,
+    "name": "Stable Mulch",
+    "shops": []
+  },
+  "98": {
+    "id": 98,
+    "name": "Gooey Mulch",
+    "shops": []
+  },
+  "99": {
+    "id": 99,
+    "name": "Root Fossil",
+    "shops": []
+  },
+  "100": {
+    "id": 100,
+    "name": "Claw Fossil",
+    "shops": []
+  },
+  "101": {
+    "id": 101,
+    "name": "Helix Fossil",
+    "shops": []
+  },
+  "102": {
+    "id": 102,
+    "name": "Dome Fossil",
+    "shops": []
+  },
+  "103": {
+    "id": 103,
+    "name": "Old Amber",
+    "shops": []
+  },
+  "104": {
+    "id": 104,
+    "name": "Armor Fossil",
+    "shops": []
+  },
+  "105": {
+    "id": 105,
+    "name": "Skull Fossil",
+    "shops": []
+  },
+  "106": {
+    "id": 106,
+    "name": "Rare Bone",
+    "shops": []
+  },
+  "107": {
+    "id": 107,
+    "name": "Shiny Stone",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "108": {
+    "id": 108,
+    "name": "Dusk Stone",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "109": {
+    "id": 109,
+    "name": "Dawn Stone",
+    "shops": [
+      {
+        "shop_id": 2,
+        "frost_shop_number": 3,
+        "shop_name": "Stock 3+ Badges"
+      },
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "110": {
+    "id": 110,
+    "name": "Oval Stone",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "111": {
+    "id": 111,
+    "name": "Odd Keystone",
+    "shops": []
+  },
+  "112": {
+    "id": 112,
+    "name": "Griseous Orb",
+    "shops": []
+  },
+  "113": {
+    "id": 113,
+    "name": "???",
+    "shops": []
+  },
+  "114": {
+    "id": 114,
+    "name": "???",
+    "shops": []
+  },
+  "115": {
+    "id": 115,
+    "name": "???",
+    "shops": []
+  },
+  "116": {
+    "id": 116,
+    "name": "Douse Drive",
+    "shops": []
+  },
+  "117": {
+    "id": 117,
+    "name": "Shock Drive",
+    "shops": []
+  },
+  "118": {
+    "id": 118,
+    "name": "Burn Drive",
+    "shops": []
+  },
+  "119": {
+    "id": 119,
+    "name": "Chill Drive",
+    "shops": []
+  },
+  "120": {
+    "id": 120,
+    "name": "???",
+    "shops": []
+  },
+  "121": {
+    "id": 121,
+    "name": "???",
+    "shops": []
+  },
+  "122": {
+    "id": 122,
+    "name": "???",
+    "shops": []
+  },
+  "123": {
+    "id": 123,
+    "name": "???",
+    "shops": []
+  },
+  "124": {
+    "id": 124,
+    "name": "???",
+    "shops": []
+  },
+  "125": {
+    "id": 125,
+    "name": "???",
+    "shops": []
+  },
+  "126": {
+    "id": 126,
+    "name": "???",
+    "shops": []
+  },
+  "127": {
+    "id": 127,
+    "name": "???",
+    "shops": []
+  },
+  "128": {
+    "id": 128,
+    "name": "???",
+    "shops": []
+  },
+  "129": {
+    "id": 129,
+    "name": "???",
+    "shops": []
+  },
+  "130": {
+    "id": 130,
+    "name": "???",
+    "shops": []
+  },
+  "131": {
+    "id": 131,
+    "name": "???",
+    "shops": []
+  },
+  "132": {
+    "id": 132,
+    "name": "???",
+    "shops": []
+  },
+  "133": {
+    "id": 133,
+    "name": "???",
+    "shops": []
+  },
+  "134": {
+    "id": 134,
+    "name": "Sweet Heart",
+    "shops": []
+  },
+  "135": {
+    "id": 135,
+    "name": "Adamant Orb",
+    "shops": []
+  },
+  "136": {
+    "id": 136,
+    "name": "Lustrous Orb",
+    "shops": []
+  },
+  "137": {
+    "id": 137,
+    "name": "Greet Mail",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 27,
+        "frost_shop_number": 28,
+        "shop_name": "Aspentia City?"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      },
+      {
+        "shop_id": 30,
+        "frost_shop_number": 31,
+        "shop_name": "Floccesy Town?"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "138": {
+    "id": 138,
+    "name": "Favored Mail",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 27,
+        "frost_shop_number": 28,
+        "shop_name": "Aspentia City?"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      },
+      {
+        "shop_id": 30,
+        "frost_shop_number": 31,
+        "shop_name": "Floccesy Town?"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "139": {
+    "id": 139,
+    "name": "RSVP Mail",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 27,
+        "frost_shop_number": 28,
+        "shop_name": "Aspentia City?"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      },
+      {
+        "shop_id": 30,
+        "frost_shop_number": 31,
+        "shop_name": "Floccesy Town?"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "140": {
+    "id": 140,
+    "name": "Thanks Mail",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 27,
+        "frost_shop_number": 28,
+        "shop_name": "Aspentia City?"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      },
+      {
+        "shop_id": 30,
+        "frost_shop_number": 31,
+        "shop_name": "Floccesy Town?"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "141": {
+    "id": 141,
+    "name": "Inquiry Mail",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 27,
+        "frost_shop_number": 28,
+        "shop_name": "Aspentia City?"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      },
+      {
+        "shop_id": 30,
+        "frost_shop_number": 31,
+        "shop_name": "Floccesy Town?"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "142": {
+    "id": 142,
+    "name": "Like Mail",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 27,
+        "frost_shop_number": 28,
+        "shop_name": "Aspentia City?"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      },
+      {
+        "shop_id": 30,
+        "frost_shop_number": 31,
+        "shop_name": "Floccesy Town?"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "143": {
+    "id": 143,
+    "name": "Reply Mail",
+    "shops": [
+      {
+        "shop_id": 6,
+        "frost_shop_number": 7,
+        "shop_name": "Accumula Town Upper Cashier"
+      },
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      },
+      {
+        "shop_id": 9,
+        "frost_shop_number": 10,
+        "shop_name": "Castelia City Upper Cashier"
+      },
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      },
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      },
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      },
+      {
+        "shop_id": 18,
+        "frost_shop_number": 19,
+        "shop_name": "Undella Town"
+      },
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      },
+      {
+        "shop_id": 25,
+        "frost_shop_number": 26,
+        "shop_name": "SM9 Middle Left Cashier"
+      },
+      {
+        "shop_id": 27,
+        "frost_shop_number": 28,
+        "shop_name": "Aspentia City?"
+      },
+      {
+        "shop_id": 28,
+        "frost_shop_number": 29,
+        "shop_name": "Virbank City Lower Cashier"
+      },
+      {
+        "shop_id": 29,
+        "frost_shop_number": 30,
+        "shop_name": "Seigaiha City Upper Cashier"
+      },
+      {
+        "shop_id": 30,
+        "frost_shop_number": 31,
+        "shop_name": "Floccesy Town?"
+      },
+      {
+        "shop_id": 31,
+        "frost_shop_number": 32,
+        "shop_name": "Yamaji Town Upper Cashier"
+      }
+    ]
+  },
+  "144": {
+    "id": 144,
+    "name": "BridgeMail S",
+    "shops": [
+      {
+        "shop_id": 8,
+        "frost_shop_number": 9,
+        "shop_name": "Nacrene City Upper Cashier"
+      }
+    ]
+  },
+  "145": {
+    "id": 145,
+    "name": "BridgeMail D",
+    "shops": [
+      {
+        "shop_id": 11,
+        "frost_shop_number": 12,
+        "shop_name": "Driftveil City Upper Cashier"
+      }
+    ]
+  },
+  "146": {
+    "id": 146,
+    "name": "BridgeMail T",
+    "shops": [
+      {
+        "shop_id": 13,
+        "frost_shop_number": 14,
+        "shop_name": "Icirrus City Upper Cashier"
+      }
+    ]
+  },
+  "147": {
+    "id": 147,
+    "name": "BridgeMail V",
+    "shops": [
+      {
+        "shop_id": 14,
+        "frost_shop_number": 15,
+        "shop_name": "Opelucid City Upper Cashier"
+      }
+    ]
+  },
+  "148": {
+    "id": 148,
+    "name": "BridgeMail M",
+    "shops": [
+      {
+        "shop_id": 19,
+        "frost_shop_number": 20,
+        "shop_name": "Black City"
+      }
+    ]
+  },
+  "149": {
+    "id": 149,
+    "name": "Cheri Berry",
+    "shops": []
+  },
+  "150": {
+    "id": 150,
+    "name": "Chesto Berry",
+    "shops": []
+  },
+  "151": {
+    "id": 151,
+    "name": "Pecha Berry",
+    "shops": []
+  },
+  "152": {
+    "id": 152,
+    "name": "Rawst Berry",
+    "shops": []
+  },
+  "153": {
+    "id": 153,
+    "name": "Aspear Berry",
+    "shops": []
+  },
+  "154": {
+    "id": 154,
+    "name": "Leppa Berry",
+    "shops": []
+  },
+  "155": {
+    "id": 155,
+    "name": "Oran Berry",
+    "shops": []
+  },
+  "156": {
+    "id": 156,
+    "name": "Persim Berry",
+    "shops": []
+  },
+  "157": {
+    "id": 157,
+    "name": "Lum Berry",
+    "shops": []
+  },
+  "158": {
+    "id": 158,
+    "name": "Sitrus Berry",
+    "shops": []
+  },
+  "159": {
+    "id": 159,
+    "name": "Figy Berry",
+    "shops": []
+  },
+  "160": {
+    "id": 160,
+    "name": "Wiki Berry",
+    "shops": []
+  },
+  "161": {
+    "id": 161,
+    "name": "Mago Berry",
+    "shops": []
+  },
+  "162": {
+    "id": 162,
+    "name": "Aguav Berry",
+    "shops": []
+  },
+  "163": {
+    "id": 163,
+    "name": "Iapapa Berry",
+    "shops": []
+  },
+  "164": {
+    "id": 164,
+    "name": "Razz Berry",
+    "shops": []
+  },
+  "165": {
+    "id": 165,
+    "name": "Bluk Berry",
+    "shops": []
+  },
+  "166": {
+    "id": 166,
+    "name": "Nanab Berry",
+    "shops": []
+  },
+  "167": {
+    "id": 167,
+    "name": "Wepear Berry",
+    "shops": []
+  },
+  "168": {
+    "id": 168,
+    "name": "Pinap Berry",
+    "shops": []
+  },
+  "169": {
+    "id": 169,
+    "name": "Pomeg Berry",
+    "shops": []
+  },
+  "170": {
+    "id": 170,
+    "name": "Kelpsy Berry",
+    "shops": []
+  },
+  "171": {
+    "id": 171,
+    "name": "Qualot Berry",
+    "shops": []
+  },
+  "172": {
+    "id": 172,
+    "name": "Hondew Berry",
+    "shops": []
+  },
+  "173": {
+    "id": 173,
+    "name": "Grepa Berry",
+    "shops": []
+  },
+  "174": {
+    "id": 174,
+    "name": "Tamato Berry",
+    "shops": []
+  },
+  "175": {
+    "id": 175,
+    "name": "Cornn Berry",
+    "shops": []
+  },
+  "176": {
+    "id": 176,
+    "name": "Magost Berry",
+    "shops": []
+  },
+  "177": {
+    "id": 177,
+    "name": "Rabuta Berry",
+    "shops": []
+  },
+  "178": {
+    "id": 178,
+    "name": "Nomel Berry",
+    "shops": []
+  },
+  "179": {
+    "id": 179,
+    "name": "Spelon Berry",
+    "shops": []
+  },
+  "180": {
+    "id": 180,
+    "name": "Pamtre Berry",
+    "shops": []
+  },
+  "181": {
+    "id": 181,
+    "name": "Watmel Berry",
+    "shops": []
+  },
+  "182": {
+    "id": 182,
+    "name": "Durin Berry",
+    "shops": []
+  },
+  "183": {
+    "id": 183,
+    "name": "Belue Berry",
+    "shops": []
+  },
+  "184": {
+    "id": 184,
+    "name": "Occa Berry",
+    "shops": []
+  },
+  "185": {
+    "id": 185,
+    "name": "Passho Berry",
+    "shops": []
+  },
+  "186": {
+    "id": 186,
+    "name": "Wacan Berry",
+    "shops": []
+  },
+  "187": {
+    "id": 187,
+    "name": "Rindo Berry",
+    "shops": []
+  },
+  "188": {
+    "id": 188,
+    "name": "Yache Berry",
+    "shops": []
+  },
+  "189": {
+    "id": 189,
+    "name": "Chople Berry",
+    "shops": []
+  },
+  "190": {
+    "id": 190,
+    "name": "Kebia Berry",
+    "shops": []
+  },
+  "191": {
+    "id": 191,
+    "name": "Shuca Berry",
+    "shops": []
+  },
+  "192": {
+    "id": 192,
+    "name": "Coba Berry",
+    "shops": []
+  },
+  "193": {
+    "id": 193,
+    "name": "Payapa Berry",
+    "shops": []
+  },
+  "194": {
+    "id": 194,
+    "name": "Tanga Berry",
+    "shops": []
+  },
+  "195": {
+    "id": 195,
+    "name": "Charti Berry",
+    "shops": []
+  },
+  "196": {
+    "id": 196,
+    "name": "Kasib Berry",
+    "shops": []
+  },
+  "197": {
+    "id": 197,
+    "name": "Haban Berry",
+    "shops": []
+  },
+  "198": {
+    "id": 198,
+    "name": "Colbur Berry",
+    "shops": []
+  },
+  "199": {
+    "id": 199,
+    "name": "Babiri Berry",
+    "shops": []
+  },
+  "200": {
+    "id": 200,
+    "name": "Chilan Berry",
+    "shops": []
+  },
+  "201": {
+    "id": 201,
+    "name": "Liechi Berry",
+    "shops": []
+  },
+  "202": {
+    "id": 202,
+    "name": "Ganlon Berry",
+    "shops": []
+  },
+  "203": {
+    "id": 203,
+    "name": "Salac Berry",
+    "shops": []
+  },
+  "204": {
+    "id": 204,
+    "name": "Petaya Berry",
+    "shops": []
+  },
+  "205": {
+    "id": 205,
+    "name": "Apicot Berry",
+    "shops": []
+  },
+  "206": {
+    "id": 206,
+    "name": "Lansat Berry",
+    "shops": []
+  },
+  "207": {
+    "id": 207,
+    "name": "Starf Berry",
+    "shops": []
+  },
+  "208": {
+    "id": 208,
+    "name": "Enigma Berry",
+    "shops": []
+  },
+  "209": {
+    "id": 209,
+    "name": "Micle Berry",
+    "shops": []
+  },
+  "210": {
+    "id": 210,
+    "name": "Custap Berry",
+    "shops": []
+  },
+  "211": {
+    "id": 211,
+    "name": "Jaboca Berry",
+    "shops": []
+  },
+  "212": {
+    "id": 212,
+    "name": "Rowap Berry",
+    "shops": []
+  },
+  "213": {
+    "id": 213,
+    "name": "BrightPowder",
+    "shops": []
+  },
+  "214": {
+    "id": 214,
+    "name": "White Herb",
+    "shops": []
+  },
+  "215": {
+    "id": 215,
+    "name": "Macho Brace",
+    "shops": []
+  },
+  "216": {
+    "id": 216,
+    "name": "Exp. Share",
+    "shops": []
+  },
+  "217": {
+    "id": 217,
+    "name": "Quick Claw",
+    "shops": []
+  },
+  "218": {
+    "id": 218,
+    "name": "Soothe Bell",
+    "shops": []
+  },
+  "219": {
+    "id": 219,
+    "name": "Mental Herb",
+    "shops": []
+  },
+  "220": {
+    "id": 220,
+    "name": "Choice Band",
+    "shops": []
+  },
+  "221": {
+    "id": 221,
+    "name": "King's Rock",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "222": {
+    "id": 222,
+    "name": "SilverPowder",
+    "shops": []
+  },
+  "223": {
+    "id": 223,
+    "name": "Amulet Coin",
+    "shops": []
+  },
+  "224": {
+    "id": 224,
+    "name": "Cleanse Tag",
+    "shops": []
+  },
+  "225": {
+    "id": 225,
+    "name": "Soul Dew",
+    "shops": []
+  },
+  "226": {
+    "id": 226,
+    "name": "DeepSeaTooth",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "227": {
+    "id": 227,
+    "name": "DeepSeaScale",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "228": {
+    "id": 228,
+    "name": "Smoke Ball",
+    "shops": []
+  },
+  "229": {
+    "id": 229,
+    "name": "Everstone",
+    "shops": []
+  },
+  "230": {
+    "id": 230,
+    "name": "Focus Band",
+    "shops": []
+  },
+  "231": {
+    "id": 231,
+    "name": "Lucky Egg",
+    "shops": []
+  },
+  "232": {
+    "id": 232,
+    "name": "Scope Lens",
+    "shops": []
+  },
+  "233": {
+    "id": 233,
+    "name": "Metal Coat",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "234": {
+    "id": 234,
+    "name": "Leftovers",
+    "shops": []
+  },
+  "235": {
+    "id": 235,
+    "name": "Dragon Scale",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "236": {
+    "id": 236,
+    "name": "Light Ball",
+    "shops": []
+  },
+  "237": {
+    "id": 237,
+    "name": "Soft Sand",
+    "shops": []
+  },
+  "238": {
+    "id": 238,
+    "name": "Hard Stone",
+    "shops": []
+  },
+  "239": {
+    "id": 239,
+    "name": "Miracle Seed",
+    "shops": []
+  },
+  "240": {
+    "id": 240,
+    "name": "BlackGlasses",
+    "shops": []
+  },
+  "241": {
+    "id": 241,
+    "name": "Black Belt",
+    "shops": []
+  },
+  "242": {
+    "id": 242,
+    "name": "Magnet",
+    "shops": []
+  },
+  "243": {
+    "id": 243,
+    "name": "Mystic Water",
+    "shops": []
+  },
+  "244": {
+    "id": 244,
+    "name": "Sharp Beak",
+    "shops": []
+  },
+  "245": {
+    "id": 245,
+    "name": "Poison Barb",
+    "shops": []
+  },
+  "246": {
+    "id": 246,
+    "name": "NeverMeltIce",
+    "shops": []
+  },
+  "247": {
+    "id": 247,
+    "name": "Spell Tag",
+    "shops": []
+  },
+  "248": {
+    "id": 248,
+    "name": "TwistedSpoon",
+    "shops": []
+  },
+  "249": {
+    "id": 249,
+    "name": "Charcoal",
+    "shops": []
+  },
+  "250": {
+    "id": 250,
+    "name": "Dragon Fang",
+    "shops": []
+  },
+  "251": {
+    "id": 251,
+    "name": "Silk Scarf",
+    "shops": []
+  },
+  "252": {
+    "id": 252,
+    "name": "Up-Grade",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "253": {
+    "id": 253,
+    "name": "Shell Bell",
+    "shops": []
+  },
+  "254": {
+    "id": 254,
+    "name": "Sea Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "255": {
+    "id": 255,
+    "name": "Lax Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "256": {
+    "id": 256,
+    "name": "Lucky Punch",
+    "shops": []
+  },
+  "257": {
+    "id": 257,
+    "name": "Metal Powder",
+    "shops": []
+  },
+  "258": {
+    "id": 258,
+    "name": "Thick Club",
+    "shops": []
+  },
+  "259": {
+    "id": 259,
+    "name": "Stick",
+    "shops": []
+  },
+  "260": {
+    "id": 260,
+    "name": "Red Scarf",
+    "shops": []
+  },
+  "261": {
+    "id": 261,
+    "name": "Blue Scarf",
+    "shops": []
+  },
+  "262": {
+    "id": 262,
+    "name": "Pink Scarf",
+    "shops": []
+  },
+  "263": {
+    "id": 263,
+    "name": "Green Scarf",
+    "shops": []
+  },
+  "264": {
+    "id": 264,
+    "name": "Yellow Scarf",
+    "shops": []
+  },
+  "265": {
+    "id": 265,
+    "name": "Wide Lens",
+    "shops": []
+  },
+  "266": {
+    "id": 266,
+    "name": "Muscle Band",
+    "shops": []
+  },
+  "267": {
+    "id": 267,
+    "name": "Wise Glasses",
+    "shops": []
+  },
+  "268": {
+    "id": 268,
+    "name": "Expert Belt",
+    "shops": []
+  },
+  "269": {
+    "id": 269,
+    "name": "Light Clay",
+    "shops": []
+  },
+  "270": {
+    "id": 270,
+    "name": "Life Orb",
+    "shops": []
+  },
+  "271": {
+    "id": 271,
+    "name": "Power Herb",
+    "shops": []
+  },
+  "272": {
+    "id": 272,
+    "name": "Toxic Orb",
+    "shops": []
+  },
+  "273": {
+    "id": 273,
+    "name": "Flame Orb",
+    "shops": []
+  },
+  "274": {
+    "id": 274,
+    "name": "Quick Powder",
+    "shops": []
+  },
+  "275": {
+    "id": 275,
+    "name": "Focus Sash",
+    "shops": []
+  },
+  "276": {
+    "id": 276,
+    "name": "Zoom Lens",
+    "shops": []
+  },
+  "277": {
+    "id": 277,
+    "name": "Metronome",
+    "shops": []
+  },
+  "278": {
+    "id": 278,
+    "name": "Iron Ball",
+    "shops": []
+  },
+  "279": {
+    "id": 279,
+    "name": "Lagging Tail",
+    "shops": []
+  },
+  "280": {
+    "id": 280,
+    "name": "Destiny Knot",
+    "shops": []
+  },
+  "281": {
+    "id": 281,
+    "name": "Black Sludge",
+    "shops": []
+  },
+  "282": {
+    "id": 282,
+    "name": "Icy Rock",
+    "shops": []
+  },
+  "283": {
+    "id": 283,
+    "name": "Smooth Rock",
+    "shops": []
+  },
+  "284": {
+    "id": 284,
+    "name": "Heat Rock",
+    "shops": []
+  },
+  "285": {
+    "id": 285,
+    "name": "Damp Rock",
+    "shops": []
+  },
+  "286": {
+    "id": 286,
+    "name": "Grip Claw",
+    "shops": []
+  },
+  "287": {
+    "id": 287,
+    "name": "Choice Scarf",
+    "shops": []
+  },
+  "288": {
+    "id": 288,
+    "name": "Sticky Barb",
+    "shops": []
+  },
+  "289": {
+    "id": 289,
+    "name": "Power Bracer",
+    "shops": []
+  },
+  "290": {
+    "id": 290,
+    "name": "Power Belt",
+    "shops": []
+  },
+  "291": {
+    "id": 291,
+    "name": "Power Lens",
+    "shops": []
+  },
+  "292": {
+    "id": 292,
+    "name": "Power Band",
+    "shops": []
+  },
+  "293": {
+    "id": 293,
+    "name": "Power Anklet",
+    "shops": []
+  },
+  "294": {
+    "id": 294,
+    "name": "Power Weight",
+    "shops": []
+  },
+  "295": {
+    "id": 295,
+    "name": "Shed Shell",
+    "shops": []
+  },
+  "296": {
+    "id": 296,
+    "name": "Big Root",
+    "shops": []
+  },
+  "297": {
+    "id": 297,
+    "name": "Choice Specs",
+    "shops": []
+  },
+  "298": {
+    "id": 298,
+    "name": "Flame Plate",
+    "shops": []
+  },
+  "299": {
+    "id": 299,
+    "name": "Splash Plate",
+    "shops": []
+  },
+  "300": {
+    "id": 300,
+    "name": "Zap Plate",
+    "shops": []
+  },
+  "301": {
+    "id": 301,
+    "name": "Meadow Plate",
+    "shops": []
+  },
+  "302": {
+    "id": 302,
+    "name": "Icicle Plate",
+    "shops": []
+  },
+  "303": {
+    "id": 303,
+    "name": "Fist Plate",
+    "shops": []
+  },
+  "304": {
+    "id": 304,
+    "name": "Toxic Plate",
+    "shops": []
+  },
+  "305": {
+    "id": 305,
+    "name": "Earth Plate",
+    "shops": []
+  },
+  "306": {
+    "id": 306,
+    "name": "Sky Plate",
+    "shops": []
+  },
+  "307": {
+    "id": 307,
+    "name": "Mind Plate",
+    "shops": []
+  },
+  "308": {
+    "id": 308,
+    "name": "Insect Plate",
+    "shops": []
+  },
+  "309": {
+    "id": 309,
+    "name": "Stone Plate",
+    "shops": []
+  },
+  "310": {
+    "id": 310,
+    "name": "Spooky Plate",
+    "shops": []
+  },
+  "311": {
+    "id": 311,
+    "name": "Draco Plate",
+    "shops": []
+  },
+  "312": {
+    "id": 312,
+    "name": "Dread Plate",
+    "shops": []
+  },
+  "313": {
+    "id": 313,
+    "name": "Iron Plate",
+    "shops": []
+  },
+  "314": {
+    "id": 314,
+    "name": "Odd Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "315": {
+    "id": 315,
+    "name": "Rock Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "316": {
+    "id": 316,
+    "name": "Full Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "317": {
+    "id": 317,
+    "name": "Wave Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "318": {
+    "id": 318,
+    "name": "Rose Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "319": {
+    "id": 319,
+    "name": "Luck Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "320": {
+    "id": 320,
+    "name": "Pure Incense",
+    "shops": [
+      {
+        "shop_id": 22,
+        "frost_shop_number": 23,
+        "shop_name": "Driftveil City Incense Shop"
+      }
+    ]
+  },
+  "321": {
+    "id": 321,
+    "name": "Protector",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "322": {
+    "id": 322,
+    "name": "Electirizer",
+    "shops": []
+  },
+  "323": {
+    "id": 323,
+    "name": "Magmarizer",
+    "shops": []
+  },
+  "324": {
+    "id": 324,
+    "name": "Dubious Disc",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "325": {
+    "id": 325,
+    "name": "Reaper Cloth",
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
+  },
+  "326": {
+    "id": 326,
+    "name": "Razor Claw",
+    "shops": []
+  },
+  "327": {
+    "id": 327,
+    "name": "Razor Fang",
+    "shops": []
+  },
+  "328": {
+    "id": 328,
+    "name": "TM01",
+    "shops": []
+  },
+  "329": {
+    "id": 329,
+    "name": "TM02",
+    "shops": []
+  },
+  "330": {
+    "id": 330,
+    "name": "TM03",
+    "shops": []
+  },
+  "331": {
+    "id": 331,
+    "name": "TM04",
+    "shops": [
+      {
+        "shop_id": 7,
+        "frost_shop_number": 8,
+        "shop_name": "Striaton City Upper Cashier"
+      }
+    ]
+  },
+  "332": {
+    "id": 332,
+    "name": "TM05",
+    "shops": []
+  },
+  "333": {
+    "id": 333,
+    "name": "TM06",
+    "shops": []
+  },
+  "334": {
+    "id": 334,
+    "name": "TM07",
+    "shops": [
+      {
+        "shop_id": 12,
+        "frost_shop_number": 13,
+        "shop_name": "Mistralton City TM Dept."
+      }
+    ]
+  },
+  "335": {
+    "id": 335,
+    "name": "TM08",
+    "shops": [
+      {
+        "shop_id": 7,
+        "frost_shop_number": 8,
+        "shop_name": "Striaton City Upper Cashier"
+      }
+    ]
+  },
+  "336": {
+    "id": 336,
+    "name": "TM09",
+    "shops": []
+  },
+  "337": {
+    "id": 337,
+    "name": "TM10",
+    "shops": []
+  },
+  "338": {
+    "id": 338,
+    "name": "TM11",
+    "shops": [
+      {
+        "shop_id": 12,
+        "frost_shop_number": 13,
+        "shop_name": "Mistralton City TM Dept."
+      }
+    ]
+  },
+  "339": {
+    "id": 339,
+    "name": "TM12",
+    "shops": []
+  },
+  "340": {
+    "id": 340,
+    "name": "TM13",
+    "shops": []
+  },
+  "341": {
+    "id": 341,
+    "name": "TM14",
+    "shops": [
+      {
+        "shop_id": 17,
+        "frost_shop_number": 18,
+        "shop_name": "Lacunosa Town"
+      }
+    ]
+  },
+  "342": {
+    "id": 342,
+    "name": "TM15",
+    "shops": [
+      {
+        "shop_id": 24,
+        "frost_shop_number": 25,
+        "shop_name": "SM9 Middle Left Cashier"
+      }
+    ]
+  },
+  "343": {
+    "id": 343,
+    "name": "TM16",
+    "shops": [
+      {
+        "shop_id": 10,
+        "frost_shop_number": 11,
+        "shop_name": "Nimbasa TM Department"
+      }
+    ]
+  },
+  "344": {
+    "id": 344,
+    "name": "TM17",
+    "shops": []
+  },
+  "345": {
+    "id": 345,
+    "name": "TM18",
+    "shops": [
+      {
+        "shop_id": 12,
+        "frost_shop_number": 13,
+        "shop_name": "Mistralton City TM Dept."
+      }
+    ]
+  },
+  "346": {
+    "id": 346,
+    "name": "TM19",
+    "shops": []
+  },
+  "347": {
+    "id": 347,
+    "name": "TM20",
+    "shops": []
+  },
+  "348": {
+    "id": 348,
+    "name": "TM21",
+    "shops": []
+  },
+  "349": {
+    "id": 349,
+    "name": "TM22",
+    "shops": []
+  },
+  "350": {
+    "id": 350,
+    "name": "TM23",
+    "shops": []
+  },
+  "351": {
+    "id": 351,
+    "name": "TM24",
+    "shops": []
+  },
+  "352": {
+    "id": 352,
+    "name": "TM25",
+    "shops": [
+      {
+        "shop_id": 17,
+        "frost_shop_number": 18,
+        "shop_name": "Lacunosa Town"
+      }
+    ]
+  },
+  "353": {
+    "id": 353,
+    "name": "TM26",
+    "shops": []
+  },
+  "354": {
+    "id": 354,
+    "name": "TM27",
+    "shops": []
+  },
+  "355": {
+    "id": 355,
+    "name": "TM28",
+    "shops": []
+  },
+  "356": {
+    "id": 356,
+    "name": "TM29",
+    "shops": []
+  },
+  "357": {
+    "id": 357,
+    "name": "TM30",
+    "shops": []
+  },
+  "358": {
+    "id": 358,
+    "name": "TM31",
+    "shops": []
+  },
+  "359": {
+    "id": 359,
+    "name": "TM32",
+    "shops": []
+  },
+  "360": {
+    "id": 360,
+    "name": "TM33",
+    "shops": [
+      {
+        "shop_id": 10,
+        "frost_shop_number": 11,
+        "shop_name": "Nimbasa TM Department"
+      }
+    ]
+  },
+  "361": {
+    "id": 361,
+    "name": "TM34",
+    "shops": []
+  },
+  "362": {
+    "id": 362,
+    "name": "TM35",
+    "shops": []
+  },
+  "363": {
+    "id": 363,
+    "name": "TM36",
+    "shops": []
+  },
+  "364": {
+    "id": 364,
+    "name": "TM37",
+    "shops": [
+      {
+        "shop_id": 12,
+        "frost_shop_number": 13,
+        "shop_name": "Mistralton City TM Dept."
+      }
+    ]
+  },
+  "365": {
+    "id": 365,
+    "name": "TM38",
+    "shops": [
+      {
+        "shop_id": 17,
+        "frost_shop_number": 18,
+        "shop_name": "Lacunosa Town"
+      }
+    ]
+  },
+  "366": {
+    "id": 366,
+    "name": "TM39",
+    "shops": []
+  },
+  "367": {
+    "id": 367,
+    "name": "TM40",
+    "shops": []
+  },
+  "368": {
+    "id": 368,
+    "name": "TM41",
+    "shops": []
+  },
+  "369": {
+    "id": 369,
+    "name": "TM42",
+    "shops": []
+  },
+  "370": {
+    "id": 370,
+    "name": "TM43",
+    "shops": []
+  },
+  "371": {
+    "id": 371,
+    "name": "TM44",
+    "shops": []
+  },
+  "372": {
+    "id": 372,
+    "name": "TM45",
+    "shops": []
+  },
+  "373": {
+    "id": 373,
+    "name": "TM46",
+    "shops": []
+  },
+  "374": {
+    "id": 374,
+    "name": "TM47",
+    "shops": []
+  },
+  "375": {
+    "id": 375,
+    "name": "TM48",
+    "shops": []
+  },
+  "376": {
+    "id": 376,
+    "name": "TM49",
+    "shops": []
+  },
+  "377": {
+    "id": 377,
+    "name": "TM50",
+    "shops": []
+  },
+  "378": {
+    "id": 378,
+    "name": "TM51",
+    "shops": []
+  },
+  "379": {
+    "id": 379,
+    "name": "TM52",
+    "shops": []
+  },
+  "380": {
+    "id": 380,
+    "name": "TM53",
+    "shops": []
+  },
+  "381": {
+    "id": 381,
+    "name": "TM54",
+    "shops": []
+  },
+  "382": {
+    "id": 382,
+    "name": "TM55",
+    "shops": []
+  },
+  "383": {
+    "id": 383,
+    "name": "TM56",
+    "shops": []
+  },
+  "384": {
+    "id": 384,
+    "name": "TM57",
+    "shops": []
+  },
+  "385": {
+    "id": 385,
+    "name": "TM58",
+    "shops": []
+  },
+  "386": {
+    "id": 386,
+    "name": "TM59",
+    "shops": []
+  },
+  "387": {
+    "id": 387,
+    "name": "TM60",
+    "shops": []
+  },
+  "388": {
+    "id": 388,
+    "name": "TM61",
+    "shops": []
+  },
+  "389": {
+    "id": 389,
+    "name": "TM62",
+    "shops": []
+  },
+  "390": {
+    "id": 390,
+    "name": "TM63",
+    "shops": []
+  },
+  "391": {
+    "id": 391,
+    "name": "TM64",
+    "shops": []
+  },
+  "392": {
+    "id": 392,
+    "name": "TM65",
+    "shops": []
+  },
+  "393": {
+    "id": 393,
+    "name": "TM66",
+    "shops": []
+  },
+  "394": {
+    "id": 394,
+    "name": "TM67",
+    "shops": []
+  },
+  "395": {
+    "id": 395,
+    "name": "TM68",
+    "shops": [
+      {
+        "shop_id": 24,
+        "frost_shop_number": 25,
+        "shop_name": "SM9 Middle Left Cashier"
+      }
+    ]
+  },
+  "396": {
+    "id": 396,
+    "name": "TM69",
+    "shops": []
+  },
+  "397": {
+    "id": 397,
+    "name": "TM70",
+    "shops": []
+  },
+  "398": {
+    "id": 398,
+    "name": "TM71",
+    "shops": []
+  },
+  "399": {
+    "id": 399,
+    "name": "TM72",
+    "shops": []
+  },
+  "400": {
+    "id": 400,
+    "name": "TM73",
+    "shops": [
+      {
+        "shop_id": 10,
+        "frost_shop_number": 11,
+        "shop_name": "Nimbasa TM Department"
+      }
+    ]
+  },
+  "401": {
+    "id": 401,
+    "name": "TM74",
+    "shops": [
+      {
+        "shop_id": 10,
+        "frost_shop_number": 11,
+        "shop_name": "Nimbasa TM Department"
+      }
+    ]
+  },
+  "402": {
+    "id": 402,
+    "name": "TM75",
+    "shops": []
+  },
+  "403": {
+    "id": 403,
+    "name": "TM76",
+    "shops": []
+  },
+  "404": {
+    "id": 404,
+    "name": "TM77",
+    "shops": []
+  },
+  "405": {
+    "id": 405,
+    "name": "TM78",
+    "shops": []
+  },
+  "406": {
+    "id": 406,
+    "name": "TM79",
+    "shops": []
+  },
+  "407": {
+    "id": 407,
+    "name": "TM80",
+    "shops": []
+  },
+  "408": {
+    "id": 408,
+    "name": "TM81",
+    "shops": []
+  },
+  "409": {
+    "id": 409,
+    "name": "TM82",
+    "shops": []
+  },
+  "410": {
+    "id": 410,
+    "name": "TM83",
+    "shops": []
+  },
+  "411": {
+    "id": 411,
+    "name": "TM84",
+    "shops": []
+  },
+  "412": {
+    "id": 412,
+    "name": "TM85",
+    "shops": []
+  },
+  "413": {
+    "id": 413,
+    "name": "TM86",
+    "shops": []
+  },
+  "414": {
+    "id": 414,
+    "name": "TM87",
+    "shops": []
+  },
+  "415": {
+    "id": 415,
+    "name": "TM88",
+    "shops": []
+  },
+  "416": {
+    "id": 416,
+    "name": "TM89",
+    "shops": []
+  },
+  "417": {
+    "id": 417,
+    "name": "TM90",
+    "shops": []
+  },
+  "418": {
+    "id": 418,
+    "name": "TM91",
+    "shops": []
+  },
+  "419": {
+    "id": 419,
+    "name": "TM92",
+    "shops": []
+  },
+  "420": {
+    "id": 420,
+    "name": "HM01",
+    "shops": []
+  },
+  "421": {
+    "id": 421,
+    "name": "HM02",
+    "shops": []
+  },
+  "422": {
+    "id": 422,
+    "name": "HM03",
+    "shops": []
+  },
+  "423": {
+    "id": 423,
+    "name": "HM04",
+    "shops": []
+  },
+  "424": {
+    "id": 424,
+    "name": "HM05",
+    "shops": []
+  },
+  "425": {
+    "id": 425,
+    "name": "HM06",
+    "shops": []
+  },
+  "426": {
+    "id": 426,
+    "name": "???",
+    "shops": []
+  },
+  "427": {
+    "id": 427,
+    "name": "???",
+    "shops": []
+  },
+  "428": {
+    "id": 428,
+    "name": "Explorer Kit",
+    "shops": []
+  },
+  "429": {
+    "id": 429,
+    "name": "Loot Sack",
+    "shops": []
+  },
+  "430": {
+    "id": 430,
+    "name": "Rule Book",
+    "shops": []
+  },
+  "431": {
+    "id": 431,
+    "name": "Poké Radar",
+    "shops": []
+  },
+  "432": {
+    "id": 432,
+    "name": "Point Card",
+    "shops": []
+  },
+  "433": {
+    "id": 433,
+    "name": "Journal",
+    "shops": []
+  },
+  "434": {
+    "id": 434,
+    "name": "Seal Case",
+    "shops": []
+  },
+  "435": {
+    "id": 435,
+    "name": "Fashion Case",
+    "shops": []
+  },
+  "436": {
+    "id": 436,
+    "name": "Seal Bag",
+    "shops": []
+  },
+  "437": {
+    "id": 437,
+    "name": "Pal Pad",
+    "shops": []
+  },
+  "438": {
+    "id": 438,
+    "name": "Works Key",
+    "shops": []
+  },
+  "439": {
+    "id": 439,
+    "name": "Old Charm",
+    "shops": []
+  },
+  "440": {
+    "id": 440,
+    "name": "Galactic Key",
+    "shops": []
+  },
+  "441": {
+    "id": 441,
+    "name": "Red Chain",
+    "shops": []
+  },
+  "442": {
+    "id": 442,
+    "name": "Town Map",
+    "shops": []
+  },
+  "443": {
+    "id": 443,
+    "name": "Vs. Seeker",
+    "shops": []
+  },
+  "444": {
+    "id": 444,
+    "name": "Coin Case",
+    "shops": []
+  },
+  "445": {
+    "id": 445,
+    "name": "Old Rod",
+    "shops": []
+  },
+  "446": {
+    "id": 446,
+    "name": "Good Rod",
+    "shops": []
+  },
+  "447": {
+    "id": 447,
+    "name": "Super Rod",
+    "shops": []
+  },
+  "448": {
+    "id": 448,
+    "name": "Sprayduck",
+    "shops": []
+  },
+  "449": {
+    "id": 449,
+    "name": "Poffin Case",
+    "shops": []
+  },
+  "450": {
+    "id": 450,
+    "name": "Bicycle",
+    "shops": []
+  },
+  "451": {
+    "id": 451,
+    "name": "Suite Key",
+    "shops": []
+  },
+  "452": {
+    "id": 452,
+    "name": "Oak's Letter",
+    "shops": []
+  },
+  "453": {
+    "id": 453,
+    "name": "Lunar Wing",
+    "shops": []
+  },
+  "454": {
+    "id": 454,
+    "name": "Member Card",
+    "shops": []
+  },
+  "455": {
+    "id": 455,
+    "name": "Azure Flute",
+    "shops": []
+  },
+  "456": {
+    "id": 456,
+    "name": "S.S. Ticket",
+    "shops": []
+  },
+  "457": {
+    "id": 457,
+    "name": "Contest Pass",
+    "shops": []
+  },
+  "458": {
+    "id": 458,
+    "name": "Magma Stone",
+    "shops": []
+  },
+  "459": {
+    "id": 459,
+    "name": "Parcel",
+    "shops": []
+  },
+  "460": {
+    "id": 460,
+    "name": "Coupon 1",
+    "shops": []
+  },
+  "461": {
+    "id": 461,
+    "name": "Coupon 2",
+    "shops": []
+  },
+  "462": {
+    "id": 462,
+    "name": "Coupon 3",
+    "shops": []
+  },
+  "463": {
+    "id": 463,
+    "name": "Storage Key",
+    "shops": []
+  },
+  "464": {
+    "id": 464,
+    "name": "SecretPotion",
+    "shops": []
+  },
+  "465": {
+    "id": 465,
+    "name": "Vs. Recorder",
+    "shops": []
+  },
+  "466": {
+    "id": 466,
+    "name": "Gracidea",
+    "shops": []
+  },
+  "467": {
+    "id": 467,
+    "name": "Secret Key",
+    "shops": []
+  },
+  "468": {
+    "id": 468,
+    "name": "Apricorn Box",
+    "shops": []
+  },
+  "469": {
+    "id": 469,
+    "name": "Unown Report",
+    "shops": []
+  },
+  "470": {
+    "id": 470,
+    "name": "Berry Pots",
+    "shops": []
+  },
+  "471": {
+    "id": 471,
+    "name": "Dowsing MCHN",
+    "shops": []
+  },
+  "472": {
+    "id": 472,
+    "name": "Blue Card",
+    "shops": []
+  },
+  "473": {
+    "id": 473,
+    "name": "SlowpokeTail",
+    "shops": []
+  },
+  "474": {
+    "id": 474,
+    "name": "Clear Bell",
+    "shops": []
+  },
+  "475": {
+    "id": 475,
+    "name": "Card Key",
+    "shops": []
+  },
+  "476": {
+    "id": 476,
+    "name": "Basement Key",
+    "shops": []
+  },
+  "477": {
+    "id": 477,
+    "name": "SquirtBottle",
+    "shops": []
+  },
+  "478": {
+    "id": 478,
+    "name": "Red Scale",
+    "shops": []
+  },
+  "479": {
+    "id": 479,
+    "name": "Lost Item",
+    "shops": []
+  },
+  "480": {
+    "id": 480,
+    "name": "Pass",
+    "shops": []
+  },
+  "481": {
+    "id": 481,
+    "name": "Machine Part",
+    "shops": []
+  },
+  "482": {
+    "id": 482,
+    "name": "Silver Wing",
+    "shops": []
+  },
+  "483": {
+    "id": 483,
+    "name": "Rainbow Wing",
+    "shops": []
+  },
+  "484": {
+    "id": 484,
+    "name": "Mystery Egg",
+    "shops": []
+  },
+  "485": {
+    "id": 485,
+    "name": "Red Apricorn",
+    "shops": []
+  },
+  "486": {
+    "id": 486,
+    "name": "Blu Apricorn",
+    "shops": []
+  },
+  "487": {
+    "id": 487,
+    "name": "Ylw Apricorn",
+    "shops": []
+  },
+  "488": {
+    "id": 488,
+    "name": "Grn Apricorn",
+    "shops": []
+  },
+  "489": {
+    "id": 489,
+    "name": "Pnk Apricorn",
+    "shops": []
+  },
+  "490": {
+    "id": 490,
+    "name": "Wht Apricorn",
+    "shops": []
+  },
+  "491": {
+    "id": 491,
+    "name": "Blk Apricorn",
+    "shops": []
+  },
+  "492": {
+    "id": 492,
+    "name": "Fast Ball",
+    "shops": []
+  },
+  "493": {
+    "id": 493,
+    "name": "Level Ball",
+    "shops": []
+  },
+  "494": {
+    "id": 494,
+    "name": "Lure Ball",
+    "shops": []
+  },
+  "495": {
+    "id": 495,
+    "name": "Heavy Ball",
+    "shops": []
+  },
+  "496": {
+    "id": 496,
+    "name": "Love Ball",
+    "shops": []
+  },
+  "497": {
+    "id": 497,
+    "name": "Friend Ball",
+    "shops": []
+  },
+  "498": {
+    "id": 498,
+    "name": "Moon Ball",
+    "shops": []
+  },
+  "499": {
+    "id": 499,
+    "name": "Sport Ball",
+    "shops": []
+  },
+  "500": {
+    "id": 500,
+    "name": "Park Ball",
+    "shops": []
+  },
+  "501": {
+    "id": 501,
+    "name": "Photo Album",
+    "shops": []
+  },
+  "502": {
+    "id": 502,
+    "name": "GB Sounds",
+    "shops": []
+  },
+  "503": {
+    "id": 503,
+    "name": "Tidal Bell",
+    "shops": []
+  },
+  "504": {
+    "id": 504,
+    "name": "RageCandyBar",
+    "shops": []
+  },
+  "505": {
+    "id": 505,
+    "name": "Data Card 01",
+    "shops": []
+  },
+  "506": {
+    "id": 506,
+    "name": "Data Card 02",
+    "shops": []
+  },
+  "507": {
+    "id": 507,
+    "name": "Data Card 03",
+    "shops": []
+  },
+  "508": {
+    "id": 508,
+    "name": "Data Card 04",
+    "shops": []
+  },
+  "509": {
+    "id": 509,
+    "name": "Data Card 05",
+    "shops": []
+  },
+  "510": {
+    "id": 510,
+    "name": "Data Card 06",
+    "shops": []
+  },
+  "511": {
+    "id": 511,
+    "name": "Data Card 07",
+    "shops": []
+  },
+  "512": {
+    "id": 512,
+    "name": "Data Card 08",
+    "shops": []
+  },
+  "513": {
+    "id": 513,
+    "name": "Data Card 09",
+    "shops": []
+  },
+  "514": {
+    "id": 514,
+    "name": "Data Card 10",
+    "shops": []
+  },
+  "515": {
+    "id": 515,
+    "name": "Data Card 11",
+    "shops": []
+  },
+  "516": {
+    "id": 516,
+    "name": "Data Card 12",
+    "shops": []
+  },
+  "517": {
+    "id": 517,
+    "name": "Data Card 13",
+    "shops": []
+  },
+  "518": {
+    "id": 518,
+    "name": "Data Card 14",
+    "shops": []
+  },
+  "519": {
+    "id": 519,
+    "name": "Data Card 15",
+    "shops": []
+  },
+  "520": {
+    "id": 520,
+    "name": "Data Card 16",
+    "shops": []
+  },
+  "521": {
+    "id": 521,
+    "name": "Data Card 17",
+    "shops": []
+  },
+  "522": {
+    "id": 522,
+    "name": "Data Card 18",
+    "shops": []
+  },
+  "523": {
+    "id": 523,
+    "name": "Data Card 19",
+    "shops": []
+  },
+  "524": {
+    "id": 524,
+    "name": "Data Card 20",
+    "shops": []
+  },
+  "525": {
+    "id": 525,
+    "name": "Data Card 21",
+    "shops": []
+  },
+  "526": {
+    "id": 526,
+    "name": "Data Card 22",
+    "shops": []
+  },
+  "527": {
+    "id": 527,
+    "name": "Data Card 23",
+    "shops": []
+  },
+  "528": {
+    "id": 528,
+    "name": "Data Card 24",
+    "shops": []
+  },
+  "529": {
+    "id": 529,
+    "name": "Data Card 25",
+    "shops": []
+  },
+  "530": {
+    "id": 530,
+    "name": "Data Card 26",
+    "shops": []
+  },
+  "531": {
+    "id": 531,
+    "name": "Data Card 27",
+    "shops": []
+  },
+  "532": {
+    "id": 532,
+    "name": "Jade Orb",
+    "shops": []
+  },
+  "533": {
+    "id": 533,
+    "name": "Lock Capsule",
+    "shops": []
+  },
+  "534": {
+    "id": 534,
+    "name": "Red Orb",
+    "shops": []
+  },
+  "535": {
+    "id": 535,
+    "name": "Blue Orb",
+    "shops": []
+  },
+  "536": {
+    "id": 536,
+    "name": "Enigma Stone",
+    "shops": []
+  },
+  "537": {
+    "id": 537,
+    "name": "Prism Scale",
+    "shops": []
+  },
+  "538": {
+    "id": 538,
+    "name": "Eviolite",
+    "shops": []
+  },
+  "539": {
+    "id": 539,
+    "name": "Float Stone",
+    "shops": []
+  },
+  "540": {
+    "id": 540,
+    "name": "Rocky Helmet",
+    "shops": []
+  },
+  "541": {
+    "id": 541,
+    "name": "Air Balloon",
+    "shops": []
+  },
+  "542": {
+    "id": 542,
+    "name": "Red Card",
+    "shops": []
+  },
+  "543": {
+    "id": 543,
+    "name": "Ring Target",
+    "shops": []
+  },
+  "544": {
+    "id": 544,
+    "name": "Binding Band",
+    "shops": []
+  },
+  "545": {
+    "id": 545,
+    "name": "Absorb Bulb",
+    "shops": []
+  },
+  "546": {
+    "id": 546,
+    "name": "Cell Battery",
+    "shops": []
+  },
+  "547": {
+    "id": 547,
+    "name": "Eject Button",
+    "shops": []
+  },
+  "548": {
+    "id": 548,
+    "name": "Fire Gem",
+    "shops": []
+  },
+  "549": {
+    "id": 549,
+    "name": "Water Gem",
+    "shops": []
+  },
+  "550": {
+    "id": 550,
+    "name": "Electric Gem",
+    "shops": []
+  },
+  "551": {
+    "id": 551,
+    "name": "Grass Gem",
+    "shops": []
+  },
+  "552": {
+    "id": 552,
+    "name": "Ice Gem",
+    "shops": []
+  },
+  "553": {
+    "id": 553,
+    "name": "Fighting Gem",
+    "shops": []
+  },
+  "554": {
+    "id": 554,
+    "name": "Poison Gem",
+    "shops": []
+  },
+  "555": {
+    "id": 555,
+    "name": "Ground Gem",
+    "shops": []
+  },
+  "556": {
+    "id": 556,
+    "name": "Flying Gem",
+    "shops": []
+  },
+  "557": {
+    "id": 557,
+    "name": "Psychic Gem",
+    "shops": []
+  },
+  "558": {
+    "id": 558,
+    "name": "Bug Gem",
+    "shops": []
+  },
+  "559": {
+    "id": 559,
+    "name": "Rock Gem",
+    "shops": []
+  },
+  "560": {
+    "id": 560,
+    "name": "Ghost Gem",
+    "shops": []
+  },
+  "561": {
+    "id": 561,
+    "name": "Dragon Gem",
+    "shops": []
+  },
+  "562": {
+    "id": 562,
+    "name": "Dark Gem",
+    "shops": []
+  },
+  "563": {
+    "id": 563,
+    "name": "Steel Gem",
+    "shops": []
+  },
+  "564": {
+    "id": 564,
+    "name": "Normal Gem",
+    "shops": []
+  },
+  "565": {
+    "id": 565,
+    "name": "Health Wing",
+    "shops": []
+  },
+  "566": {
+    "id": 566,
+    "name": "Muscle Wing",
+    "shops": []
+  },
+  "567": {
+    "id": 567,
+    "name": "Resist Wing",
+    "shops": []
+  },
+  "568": {
+    "id": 568,
+    "name": "Genius Wing",
+    "shops": []
+  },
+  "569": {
+    "id": 569,
+    "name": "Clever Wing",
+    "shops": []
+  },
+  "570": {
+    "id": 570,
+    "name": "Swift Wing",
+    "shops": []
+  },
+  "571": {
+    "id": 571,
+    "name": "Pretty Wing",
+    "shops": []
+  },
+  "572": {
+    "id": 572,
+    "name": "Cover Fossil",
+    "shops": []
+  },
+  "573": {
+    "id": 573,
+    "name": "Plume Fossil",
+    "shops": []
+  },
+  "574": {
+    "id": 574,
+    "name": "Liberty Pass",
+    "shops": []
+  },
+  "575": {
+    "id": 575,
+    "name": "Pass Orb",
+    "shops": []
+  },
+  "576": {
+    "id": 576,
+    "name": "Dream Ball",
+    "shops": []
+  },
+  "577": {
+    "id": 577,
+    "name": "Poké Toy",
+    "shops": [
+      {
+        "shop_id": 23,
+        "frost_shop_number": 24,
+        "shop_name": "SM9 Bottom Section"
+      }
+    ]
+  },
+  "578": {
+    "id": 578,
+    "name": "Prop Case",
+    "shops": []
+  },
+  "579": {
+    "id": 579,
+    "name": "Dragon Skull",
+    "shops": []
+  },
+  "580": {
+    "id": 580,
+    "name": "BalmMushroom",
+    "shops": []
+  },
+  "581": {
+    "id": 581,
+    "name": "Big Nugget",
+    "shops": []
+  },
+  "582": {
+    "id": 582,
+    "name": "Pearl String",
+    "shops": []
+  },
+  "583": {
+    "id": 583,
+    "name": "Comet Shard",
+    "shops": []
+  },
+  "584": {
+    "id": 584,
+    "name": "Relic Copper",
+    "shops": []
+  },
+  "585": {
+    "id": 585,
+    "name": "Relic Silver",
+    "shops": []
+  },
+  "586": {
+    "id": 586,
+    "name": "Relic Gold",
+    "shops": []
+  },
+  "587": {
+    "id": 587,
+    "name": "Relic Vase",
+    "shops": []
+  },
+  "588": {
+    "id": 588,
+    "name": "Relic Band",
+    "shops": []
+  },
+  "589": {
+    "id": 589,
+    "name": "Relic Statue",
+    "shops": []
+  },
+  "590": {
+    "id": 590,
+    "name": "Relic Crown",
+    "shops": []
+  },
+  "591": {
+    "id": 591,
+    "name": "Casteliacone",
+    "shops": []
+  },
+  "592": {
+    "id": 592,
+    "name": "Dire Hit 2",
+    "shops": []
+  },
+  "593": {
+    "id": 593,
+    "name": "X Speed 2",
+    "shops": []
+  },
+  "594": {
+    "id": 594,
+    "name": "X Special 2",
+    "shops": []
+  },
+  "595": {
+    "id": 595,
+    "name": "X Sp. Def 2",
+    "shops": []
+  },
+  "596": {
+    "id": 596,
+    "name": "X Defend 2",
+    "shops": []
+  },
+  "597": {
+    "id": 597,
+    "name": "X Attack 2",
+    "shops": []
+  },
+  "598": {
+    "id": 598,
+    "name": "X Accuracy 2",
+    "shops": []
+  },
+  "599": {
+    "id": 599,
+    "name": "X Speed 3",
+    "shops": []
+  },
+  "600": {
+    "id": 600,
+    "name": "X Special 3",
+    "shops": []
+  },
+  "601": {
+    "id": 601,
+    "name": "X Sp. Def 3",
+    "shops": []
+  },
+  "602": {
+    "id": 602,
+    "name": "X Defend 3",
+    "shops": []
+  },
+  "603": {
+    "id": 603,
+    "name": "X Attack 3",
+    "shops": []
+  },
+  "604": {
+    "id": 604,
+    "name": "X Accuracy 3",
+    "shops": []
+  },
+  "605": {
+    "id": 605,
+    "name": "X Speed 6",
+    "shops": []
+  },
+  "606": {
+    "id": 606,
+    "name": "X Special 6",
+    "shops": []
+  },
+  "607": {
+    "id": 607,
+    "name": "X Sp. Def 6",
+    "shops": []
+  },
+  "608": {
+    "id": 608,
+    "name": "X Defend 6",
+    "shops": []
+  },
+  "609": {
+    "id": 609,
+    "name": "X Attack 6",
+    "shops": []
+  },
+  "610": {
+    "id": 610,
+    "name": "X Accuracy 6",
+    "shops": []
+  },
+  "611": {
+    "id": 611,
+    "name": "Ability Urge",
+    "shops": []
+  },
+  "612": {
+    "id": 612,
+    "name": "Item Drop",
+    "shops": []
+  },
+  "613": {
+    "id": 613,
+    "name": "Item Urge",
+    "shops": []
+  },
+  "614": {
+    "id": 614,
+    "name": "Reset Urge",
+    "shops": []
+  },
+  "615": {
+    "id": 615,
+    "name": "Dire Hit 3",
+    "shops": []
+  },
+  "616": {
+    "id": 616,
+    "name": "Light Stone",
+    "shops": []
+  },
+  "617": {
+    "id": 617,
+    "name": "Dark Stone",
+    "shops": []
+  },
+  "618": {
+    "id": 618,
+    "name": "TM93",
+    "shops": []
+  },
+  "619": {
+    "id": 619,
+    "name": "TM94",
+    "shops": []
+  },
+  "620": {
+    "id": 620,
+    "name": "TM95",
+    "shops": []
+  },
+  "621": {
+    "id": 621,
+    "name": "Xtransceiver",
+    "shops": []
+  },
+  "622": {
+    "id": 622,
+    "name": "???",
+    "shops": []
+  },
+  "623": {
+    "id": 623,
+    "name": "Gram 1",
+    "shops": []
+  },
+  "624": {
+    "id": 624,
+    "name": "Gram 2",
+    "shops": []
+  },
+  "625": {
+    "id": 625,
+    "name": "Gram 3",
+    "shops": []
+  },
+  "626": {
+    "id": 626,
+    "name": "Xtransceiver",
+    "shops": []
+  },
+  "627": {
+    "id": 627,
+    "name": "Medal Box",
+    "shops": []
+  },
+  "628": {
+    "id": 628,
+    "name": "DNA Splicers",
+    "shops": []
+  },
+  "629": {
+    "id": 629,
+    "name": "DNA Splicers",
+    "shops": []
+  },
+  "630": {
+    "id": 630,
+    "name": "Permit",
+    "shops": []
+  },
+  "631": {
+    "id": 631,
+    "name": "Oval Charm",
+    "shops": []
+  },
+  "632": {
+    "id": 632,
+    "name": "Shiny Charm",
+    "shops": []
+  },
+  "633": {
+    "id": 633,
+    "name": "Plasma Card",
+    "shops": []
+  },
+  "634": {
+    "id": 634,
+    "name": "Grubby Hanky",
+    "shops": []
+  },
+  "635": {
+    "id": 635,
+    "name": "Colress MCHN",
+    "shops": []
+  },
+  "636": {
+    "id": 636,
+    "name": "Dropped Item",
+    "shops": []
+  },
+  "637": {
+    "id": 637,
+    "name": "Dropped Item",
+    "shops": []
+  },
+  "638": {
+    "id": 638,
+    "name": "Reveal Glass",
+    "shops": []
+  }
+}

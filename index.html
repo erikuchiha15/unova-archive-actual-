@@ -1,0 +1,3373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unova Archive | ROM Documentation</title>
+<style>
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0b1020;
+  color: #edf2ff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+header {
+  padding: 24px;
+  background: linear-gradient(120deg,#162b51,#10182b);
+  border-bottom: 2px solid #4b91ff;
+}
+header h1 { margin: 0; letter-spacing: 2px; }
+header p { color: #aabbd8; }
+nav {
+  display: flex;
+  gap: 12px;
+  padding: 15px 24px;
+  background: #111a2e;
+}
+nav a { color: #bcd3ff; text-decoration: none; }
+main { max-width: 1200px; margin: auto; padding: 24px; }
+.panel {
+  background: #151e32;
+  border: 1px solid #2d4264;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.controls { display: flex; gap: 10px; flex-wrap: wrap; }
+input, select, button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #45618c;
+  background: #0e1729;
+  color: white;
+}
+input[type="search"] { flex: 1; min-width: 180px; }
+button { cursor: pointer; background: #2861ad; }
+button:hover { background: #397bd6; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(190px,1fr));
+  gap: 14px;
+}
+.pokemon {
+  background: #1b2942;
+  border: 1px solid #344b70;
+  padding: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.pokemon:hover { border-color: #74b0ff; }
+.pokemon h3 { margin: 8px 0; }
+.small { color: #9eb1d0; font-size: 13px; }
+.type {
+  display: inline-block;
+  padding: 4px 9px;
+  margin: 3px 3px 3px 0;
+  border-radius: 6px;
+  background: #36547b;
+  font-size: 12px;
+}
+.stat { margin: 12px 0; }
+.stat-label { display: flex; justify-content: space-between; }
+.bar { height: 9px; background: #283852; border-radius: 8px; }
+.fill { height: 100%; background: #61a8ff; border-radius: 8px; }
+#details { display: none; }
+footer { padding: 25px; text-align: center; color: #899bb8; }
+
+/* UNOVA_SPRITES_V04 */
+.pokemon-sprite {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  display: block;
+  margin: 8px auto;
+}
+.pokemon-artwork {
+  width: 220px;
+  max-width: 100%;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 12px auto;
+}
+
+
+/* UNOVA_VISUAL_V05 */
+
+/* Wider website */
+main {
+  max-width: 1800px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.grid {
+  grid-template-columns:
+    repeat(auto-fill, minmax(205px, 1fr));
+  gap: 16px;
+}
+
+/* Colorful Gen 5 type badges */
+.type {
+  background: #50617b;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 7px;
+}
+
+.type[data-type="Normal"]   {background:#9299A1}
+.type[data-type="Fire"]     {background:#E66C36}
+.type[data-type="Water"]    {background:#387EC7}
+.type[data-type="Electric"] {background:#D4AA26;color:#111}
+.type[data-type="Grass"]    {background:#579A43}
+.type[data-type="Ice"]      {background:#5CAFB9;color:#111}
+.type[data-type="Fighting"] {background:#BC4540}
+.type[data-type="Poison"]   {background:#9453A8}
+.type[data-type="Ground"]   {background:#BD8C47}
+.type[data-type="Flying"]   {background:#778CC8}
+.type[data-type="Psychic"]  {background:#D75B87}
+.type[data-type="Bug"]      {background:#839B32}
+.type[data-type="Rock"]     {background:#9D8B5C}
+.type[data-type="Ghost"]    {background:#665D99}
+.type[data-type="Dragon"]   {background:#6556BD}
+.type[data-type="Dark"]     {background:#61585A}
+.type[data-type="Steel"]    {background:#668B9B}
+
+/* Two-column Pokémon details */
+.detail-layout {
+  padding: 28px;
+}
+
+.detail-heading {
+  margin-bottom: 18px;
+}
+
+.detail-columns {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr)
+                         minmax(320px, 1.3fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.detail-left,
+.detail-right {
+  background: #1b2942;
+  border: 1px solid #344b70;
+  border-radius: 14px;
+  padding: 24px;
+  min-width: 0;
+}
+
+.detail-left {
+  text-align: center;
+}
+
+.detail-left .pokemon-artwork {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+
+.ability-section {
+  text-align: left;
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px solid #344b70;
+}
+
+.detail-right h3 {
+  margin-top: 0;
+}
+
+.detail-right .stat {
+  margin: 18px 0;
+}
+
+@media (max-width: 760px) {
+  .detail-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-layout {
+    padding: 16px;
+  }
+
+  main {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+
+/* UNOVA_EVOLUTIONS_V06 */
+
+.evolution-panel {
+  margin-top: 24px;
+  padding: 24px;
+  background: #1b2942;
+  border: 1px solid #344b70;
+  border-radius: 14px;
+}
+
+.evolution-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.evolution-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15px;
+  background: #121d31;
+  border: 1px solid #395579;
+  border-radius: 12px;
+  color: #edf2ff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.evolution-card:hover {
+  border-color: #79b5ff;
+  background: #203554;
+}
+
+.evolution-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.evolution-method {
+  color: #a8c9ff;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+@media (max-width: 760px) {
+  .evolution-card {
+    width: 100%;
+  }
+}
+
+
+/* Version 1.1 evolution family styling */
+.evolution-family-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.evolution-family-card {
+  min-width: 230px;
+  max-width: 100%;
+}
+
+.evolution-family-card .evolution-method {
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .evolution-family-card {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
+
+
+/* UNOVA_MOVESETS_V08 */
+
+.moveset-panel {
+  margin-top: 24px;
+  padding: 24px;
+  background: #1b2942;
+  border: 1px solid #344b70;
+  border-radius: 14px;
+}
+
+.moveset-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.moveset-table th,
+.moveset-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #344b70;
+  text-align: left;
+}
+
+.moveset-table th {
+  color: #a8c9ff;
+  background: #15223a;
+}
+
+.moveset-table tr:hover td {
+  background: #253855;
+}
+
+.moveset-table td:first-child {
+  width: 100px;
+  font-weight: bold;
+  color: #8ebcff;
+}
+
+.moveset-count {
+  color: #a8c9ff;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .moveset-panel {
+    padding: 14px;
+  }
+  .moveset-table th,
+  .moveset-table td {
+    padding: 10px;
+  }
+}
+
+
+/* Version 0.9 move table styling */
+
+.moveset-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.moveset-table {
+  min-width: 650px;
+}
+
+.moveset-table th:nth-child(n+3),
+.moveset-table td:nth-child(n+3) {
+  text-align: center;
+}
+
+.moveset-table td:nth-child(2) {
+  font-weight: 600;
+}
+
+.moveset-table td:nth-child(3) {
+  color: #a8c9ff;
+}
+
+
+/* UNOVA_MOVE_TYPES_V10 */
+
+.moveset-table {
+  min-width: 780px;
+}
+
+.moveset-table td:nth-child(3) {
+  text-align: center;
+}
+
+.moveset-table td:nth-child(3) .type {
+  display: inline-block;
+  min-width: 75px;
+  text-align: center;
+}
+
+.moveset-table td:nth-child(4) {
+  color: #a8c9ff;
+}
+
+
+/* UNOVA_MOVE_MODAL_V11 */
+
+.move-link {
+  background: transparent;
+  border: none;
+  color: #b5d5ff;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.move-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.move-modal[hidden] {
+  display: none;
+}
+
+.move-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.move-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.move-modal-content {
+  position: relative;
+  width: min(650px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #17243b;
+  border: 1px solid #4b76aa;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 25px 80px rgba(0,0,0,.5);
+}
+
+.move-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.move-modal-stat {
+  background: #223552;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.move-modal-stat small {
+  display: block;
+  color: #9db8da;
+  margin-bottom: 7px;
+}
+
+.move-description {
+  border-top: 1px solid #3a5276;
+  padding-top: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 550px) {
+  .move-modal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* UNOVA_MODAL_VISIBILITY_FIX */
+
+#moveModal[hidden] {
+  display: none !important;
+}
+
+#moveModal[style*="display: none"] {
+  display: none !important;
+}
+
+#moveModal:not([hidden]):not([style*="display: none"]) {
+  display: flex;
+}
+
+
+/* UNOVA_MOVE_DESCRIPTIONS_V12 */
+
+.move-description p {
+  white-space: pre-line;
+}
+
+
+/* UNOVA_WILD_ENCOUNTERS_V13 */
+
+.encounter-loaders,
+.encounter-controls {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.encounter-loaders label,
+.encounter-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #a8c9ff;
+  flex: 1;
+  min-width: 180px;
+}
+
+.encounter-controls select {
+  width: 100%;
+}
+
+.encounter-table-wrap {
+  overflow-x: auto;
+  margin-top: 18px;
+}
+
+.encounter-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 540px;
+}
+
+.encounter-table th,
+.encounter-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #344b70;
+}
+
+.encounter-table th {
+  color: #a8c9ff;
+  background: #15223a;
+}
+
+.encounter-pokemon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  color: #b5d5ff;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.encounter-pokemon:hover {
+  color: white;
+  text-decoration: underline;
+  background: transparent;
+}
+
+.encounter-pokemon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.encounter-location-panel {
+  margin-top: 24px;
+  padding: 24px;
+  background: #1b2942;
+  border: 1px solid #344b70;
+  border-radius: 14px;
+}
+
+.encounter-location-button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  text-align: left;
+  background: #223552;
+}
+
+.encounter-location-button:hover {
+  background: #34557c;
+}
+
+
+/* UNOVA_DATABASE_LOADER_V14 */
+
+.database-folder-button {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #2861ad;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.database-folder-button:hover {
+  background: #397bd6;
+}
+
+.database-folder-button input {
+  display: none;
+}
+
+.database-loader-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 12px;
+  border-bottom: 1px solid #344b70;
+}
+
+.database-loader-success {
+  color: #7fd7a1;
+}
+
+.database-loader-error {
+  color: #ff9b9b;
+}
+
+
+/* UNOVA_ENCOUNTER_GROUPS_V15 */
+
+.encounter-group {
+  margin: 12px 0;
+  background: #17243b;
+  border: 1px solid #395579;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.encounter-group summary {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: 600;
+  color: #d8e7ff;
+  list-style-position: inside;
+}
+
+.encounter-group summary:hover {
+  background: #253b59;
+}
+
+.encounter-group[open] summary {
+  border-bottom: 1px solid #395579;
+}
+
+.encounter-group-content {
+  padding: 14px;
+}
+
+.encounter-group-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px;
+  border-bottom: 1px solid #344b70;
+}
+
+.encounter-group-row:last-child {
+  border-bottom: none;
+}
+
+.encounter-group-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.encounter-group-info small {
+  color: #9eb1d0;
+}
+
+.encounter-group-button {
+  flex-shrink: 0;
+  padding: 9px 14px;
+}
+
+@media (max-width: 650px) {
+  .encounter-group-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .encounter-group-button {
+    width: 100%;
+  }
+}
+
+
+/* UNOVA_TRAINERS_V16 */
+
+.trainer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.trainer-controls input {
+  flex: 2;
+  min-width: 220px;
+}
+
+.trainer-controls select {
+  flex: 1;
+  min-width: 180px;
+}
+
+.trainer-card {
+  margin: 12px 0;
+  border: 1px solid #395579;
+  border-radius: 12px;
+  background: #17243b;
+  overflow: hidden;
+}
+
+.trainer-card summary {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: 600;
+}
+
+.trainer-card summary:hover {
+  background: #253b59;
+}
+
+.trainer-card[open] summary {
+  border-bottom: 1px solid #395579;
+}
+
+.trainer-team {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+  padding: 16px;
+}
+
+.trainer-pokemon {
+  background: #1b2942;
+  border: 1px solid #344b70;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+
+.trainer-pokemon img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  margin: auto;
+}
+
+.trainer-pokemon-name {
+  border: none;
+  background: transparent;
+  color: #b5d5ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.trainer-pokemon-name:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+
+.trainer-moves {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trainer-moves button {
+  background: #223552;
+  text-align: left;
+  padding: 8px;
+}
+
+.trainer-moves button:hover {
+  background: #34557c;
+}
+
+.trainer-pagination {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* UNOVA_TRAINERS_V17 */
+
+.trainer-battle-panel {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  padding: 18px;
+  background: #111d31;
+  border-bottom: 1px solid #395579;
+}
+
+.trainer-battle-panel > div {
+  background: #223552;
+  padding: 12px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.trainer-extra-fields {
+  margin: 12px 0;
+  padding: 12px;
+  background: #121d31;
+  border: 1px solid #344b70;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.trainer-extra-fields b {
+  color: #a8c9ff;
+}
+
+
+/* UNOVA_ABILITY_NAMES_V18 */
+
+.trainer-extra-fields .trainer-ability-setting {
+  color: #9eb1d0;
+  font-size: 12px;
+}
+
+.trainer-extra-fields .trainer-ability-setting b {
+  color: #9eb1d0;
+}
+
+
+/* UNOVA_AUTO_DATABASES_V19 */
+.auto-database-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 12px;
+  border-bottom: 1px solid #344b70;
+  font-size: 13px;
+}
+.auto-database-ok { color: #7fd7a1; }
+.auto-database-error { color: #ff9b9b; }
+
+
+/* UNOVA_ITEMS_V20 */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill, minmax(270px, 1fr)
+  );
+  gap: 14px;
+  margin-top: 18px;
+}
+.item-card {
+  background: #1b2942;
+  border: 1px solid #344b70;
+  border-radius: 12px;
+  padding: 18px;
+}
+.item-card h3 { margin: 6px 0 12px; }
+.item-card p { line-height: 1.55; }
+.item-shops {
+  margin-top: 15px;
+  border-top: 1px solid #344b70;
+  padding-top: 12px;
+}
+.item-shops li { margin: 7px 0; }
+.item-price { color: #a8c9ff; }
+#itemMore { margin-top: 18px; }
+
+
+/* UNOVA_ROM_MODS_V21 */
+.rom-mod-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:14px; margin:16px 0; }
+.rom-mod-card { background:#1b2942; border:1px solid #344b70; border-radius:12px; padding:18px; }
+.rom-mod-card h3 { margin:0 0 10px; }
+.rom-mod-card p { line-height:1.55; }
+.rom-mod-status { color:#a8c9ff; font-weight:600; }
+.rom-mod-note { border-left:3px solid #708dbb; padding-left:12px; margin-top:16px; line-height:1.55; }
+
+</style>
+</head>
+<body>
+<header>
+  <h1>UNOVA ARCHIVE</h1>
+  <p>Pokémon White 2 ROM Hack Documentation</p>
+</header>
+<nav>
+  <a href="#pokedex">Pokédex</a>
+  <a href="#encounters">Encounters</a>
+  <a href="#trainers">Trainers</a>
+  <a href="#rom-modifications">ROM Modifications</a>
+  <a href="#items">Items</a>
+  <a href="#about">About</a>
+</nav>
+<main>
+<section class="panel" id="about">
+  <h2>Welcome to the Unova Archive</h2>
+  <p>Explore Pokémon stats and types extracted from this custom ROM hack.</p>
+  <p class="small">Working title • Documentation in development</p>
+</section>
+
+
+<section class="panel" id="databaseLoader">
+  <h2>Database Loader</h2>
+  <p class="small">
+    Select your databases folder to load all
+    Pokémon, moves, evolutions, and encounters.
+  </p>
+
+  <label class="database-folder-button">
+    <span>Load All Databases</span>
+    <input type="file"
+           id="allDatabasesFolder"
+           webkitdirectory
+           multiple>
+  </label>
+
+  <p id="databaseLoaderStatus" class="small">
+    Waiting for database folder...
+  </p>
+
+  <div id="databaseLoaderResults"></div>
+
+<!-- UNOVA_AUTO_DATABASES_V19 -->
+<p id="autoDatabaseStatus" class="small"
+   role="status" aria-live="polite">
+  Automatic loading will start when served locally.
+</p>
+<div id="autoDatabaseResults"></div>
+
+</section>
+
+<section class="panel" id="pokedex">
+  <h2>Pokédex</h2>
+  <p>Load your extracted Pokémon JSON to browse the database.</p>
+  <input type="file" id="file" accept=".json">
+<p class="small">Pokémon evolutions database:</p>
+<input type="file" id="evolutionsFile" accept=".json">
+<p class="small">Level-up learnsets database:</p>
+<input type="file" id="learnsetsFile" accept=".json">
+
+<p class="small">Move names database:</p>
+<input type="file" id="movesFile" accept=".json">
+
+<p class="small">ROM move descriptions database:</p>
+<input type="file"
+       id="moveDescriptionsFile"
+       accept=".json">
+
+<p class="small">Move properties database:</p>
+<input type="file" id="moveDataFile" accept=".json">
+
+
+<p class="small">Pokémon names database:</p>
+<input type="file" id="namesFile" accept=".json">
+<p class="small">Pokémon abilities database:</p>
+<input type="file" id="abilitiesFile" accept=".json">
+  <p id="status" class="small">Waiting for Pokémon data...</p>
+  <div class="controls">
+    <input type="search" id="search" placeholder="Search by Pokémon name or number...">
+    <select id="typeFilter"><option value="">All types</option></select>
+    <select id="sort">
+      <option value="id">Pokédex number</option>
+      <option value="bst">Highest base stat total</option>
+      <option value="speed">Highest Speed</option>
+      <option value="attack">Highest Attack</option>
+      <option value="sp_attack">Highest Sp. Attack</option>
+    </select>
+  </div>
+</section>
+
+
+<section class="panel" id="encounters">
+  <h2>Locations & Encounters</h2>
+  <p class="small">
+    Browse wild Pokémon from your custom ROM.
+  </p>
+
+  <div class="encounter-loaders">
+    <label>Wild encounter database:
+      <input type="file" id="wildFile" accept=".json">
+    </label>
+    <label>Encounter location names:
+      <input type="file" id="locationFile" accept=".json">
+    </label>
+  </div>
+
+  <p id="wildStatus" class="small">
+    Load both encounter databases to begin.
+  </p>
+
+  <div class="encounter-controls">
+    <label>Location
+      <select id="wildLocation"></select>
+    </label>
+    <label>Season
+      <select id="wildSeason"></select>
+    </label>
+    <label>Encounter method
+      <select id="wildMethod"></select>
+    </label>
+  </div>
+
+  <div id="wildResults"></div>
+</section>
+
+
+<section class="panel" id="trainers">
+  <h2>Trainer Database</h2>
+  <p class="small">
+    Browse all 813 trainers extracted from the custom ROM.
+  </p>
+
+  <label>
+    Trainer database:
+    <input type="file"
+           id="trainersFile"
+           accept=".json">
+  </label>
+
+  
+  <!-- UNOVA_TRAINER_ITEMS_V16 -->
+  <label>
+    Held-item names:
+    <input type="file"
+           id="itemNamesFile"
+           accept=".json">
+  </label>
+
+  <p id="trainerStatus" class="small">
+    Load the trainer database to begin.
+  </p>
+
+  <div class="trainer-controls">
+    <input type="search"
+           id="trainerSearch"
+           placeholder="Search trainer, Pokémon, or ID...">
+
+    <select id="trainerClassFilter">
+      <option value="">All trainer classes</option>
+    </select>
+  </div>
+
+  <div id="trainerResults"></div>
+
+  <div class="trainer-pagination">
+    <button id="trainerPrevious" type="button">
+      Previous
+    </button>
+
+    <span id="trainerPageStatus"></span>
+
+    <button id="trainerNext" type="button">
+      Next
+    </button>
+  </div>
+</section>
+
+
+<!-- UNOVA_ITEMS_V20 -->
+<section class="panel" id="items">
+  <h2>Item Database</h2>
+  <p class="small">
+    Browse 639 items extracted from the custom ROM.
+    Prices are ROM-derived base values.
+    Shop listings do not guarantee availability.
+  </p>
+
+  <p id="itemStatus" class="small">
+    Waiting for item databases...
+  </p>
+
+  <div class="controls">
+    <input type="search" id="itemSearch"
+      placeholder="Search item name or ID...">
+
+    <select id="itemFilter">
+      <option value="all">All items</option>
+      <option value="shops">Listed in shops</option>
+      <option value="other">No known shop listing</option>
+    </select>
+  </div>
+
+  <details>
+    <summary>Manual item database loading</summary>
+    <p class="small">
+      Select the three Version 2.0 JSON files together.
+    </p>
+    <input type="file" id="itemFiles"
+      accept=".json" multiple>
+  </details>
+
+  <div id="itemResults" class="item-grid"></div>
+
+  <button id="itemMore" type="button" hidden>
+    Show More Items
+  </button>
+</section>
+
+
+<!-- UNOVA_ROM_MODS_V21 -->
+<section class="panel" id="rom-modifications">
+  <h2>ROM Modifications</h2>
+  <p class="small">Documented custom changes to this Pokémon White 2 ROM. Completed encounters use a temporary disappearance on escape or defeat and a permanent disappearance after capture.</p>
+  <h3>Custom Mythical Encounters</h3>
+  <div class="rom-mod-grid">
+    <article class="rom-mod-card"><h3>Victini · #494</h3><p><b>Level:</b> 15<br><b>Location:</b> Liberty Garden<br><b>Capture flag:</b> 3035</p><p class="rom-mod-status">Working encounter</p></article>
+    <article class="rom-mod-card"><h3>Celebi · #251</h3><p><b>Level:</b> 30<br><b>Location:</b> Lostlorn Forest<br><b>Capture flag:</b> 3040</p><p class="rom-mod-status">Working encounter</p></article>
+    <article class="rom-mod-card"><h3>Meloetta · #648</h3><p><b>Level:</b> 50<br><b>Location:</b> Village Bridge<br><b>Capture flag:</b> 3045</p><p class="rom-mod-status">Working encounter</p></article>
+    <article class="rom-mod-card"><h3>Jirachi · #385</h3><p><b>Level:</b> 45<br><b>Location:</b> Route 14<br><b>Capture flag:</b> 3050</p><p class="rom-mod-status">Working encounter</p></article>
+  </div>
+  <h3>Story and Postgame Changes</h3>
+  <div class="rom-mod-grid">
+    <article class="rom-mod-card"><h3>White Kyurem Story Battle</h3><p>Raised to <b>Level 66</b>. Restored the White Kyurem form parameter (<code>1</code>) and corresponding cry. Black Kyurem's form parameter (<code>2</code>) was also restored.</p><p class="rom-mod-status">Compiled script verified · Gameplay not yet retested</p></article>
+    <article class="rom-mod-card"><h3>Regirock Chamber Key Reward</h3><p>Capturing Regirock awards both the <b>Iron Key</b> and <b>Iceberg Key</b> in White 2, without a Black 2 key transfer. Defeat alone does not grant these keys through the modified reward.</p><p class="rom-mod-status">Both keys unlocked in-game · Chamber switching not yet tested</p></article>
+  </div>
+  <h3>Planned Encounters</h3>
+  <div class="rom-mod-grid">
+    <article class="rom-mod-card"><h3>Mew · #151</h3><p><b>Proposed level:</b> 50<br><b>Planned location:</b> Route 18<br><b>Status:</b> Postponed until Route 18 is accessible for placement testing.</p></article>
+  </div>
+  <p class="rom-mod-note small">Technical note: the Meloetta and Jirachi capture flags (3045 and 3050) were tested for their encounter behavior but have not been exhaustively checked against every original ROM event.</p>
+</section>
+
+<section id="details" class="panel detail-layout"></section>
+<div id="results" class="grid"></div>
+<div style="text-align:center;margin:25px">
+  <button id="more" style="display:none">Show more Pokémon</button>
+</div>
+</main>
+<footer>Unova Archive • Fan-made ROM documentation • Version 2.1</footer>
+
+<div id="moveModal" class="move-modal" hidden>
+  <div class="move-modal-backdrop"></div>
+  <section class="move-modal-content"
+           role="dialog"
+           aria-modal="true"
+           aria-labelledby="moveModalTitle">
+    <button id="closeMoveModal" type="button">
+      Close
+    </button>
+    <div id="moveModalBody"></div>
+  </section>
+</div>
+
+<script>
+const pokemonNames = {
+  1: "Bulbasaur",
+  2: "Ivysaur",
+  3: "Venusaur",
+  4: "Charmander",
+  5: "Charmeleon",
+  6: "Charizard",
+  7: "Squirtle",
+  8: "Wartortle",
+  9: "Blastoise",
+  10: "Caterpie",
+  11: "Metapod",
+  12: "Butterfree",
+  13: "Weedle",
+  14: "Kakuna",
+  15: "Beedrill"
+};
+
+function getPokemonName(id) {
+  return pokemonNames[id] || `Pokémon #${id}`;
+}
+document.getElementById("namesFile").addEventListener("change", async e => {
+  try {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const names = JSON.parse(await file.text());
+
+    for (const [id, name] of Object.entries(names)) {
+      const number = Number(id);
+
+      if (number >= 1 && number <= 649) {
+        pokemonNames[number] = name
+          .split("-")
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ");
+      }
+    }
+
+    render();
+    alert("Successfully loaded all 649 Pokémon names!");
+  } catch (error) {
+    alert("Could not load Pokémon names: " + error.message);
+  }
+});
+let pokemon = [];
+let visible = [];
+let limit = 60;
+
+const $ = id => document.getElementById(id);
+
+const stats = [
+  ["HP","hp"],["Attack","attack"],["Defense","defense"],
+  ["Sp. Attack","sp_attack"],["Sp. Defense","sp_defense"],
+  ["Speed","speed"]
+];
+
+function total(p) {
+  return stats.reduce((sum, s) => sum + Number(p[s[1]] || 0), 0);
+}
+
+function types(p) {
+  return [...new Set([p.type1,p.type2])]
+    .filter(Boolean)
+    .map(t => `<span class="type" data-type="${t}">${t}</span>`).join("");
+}
+
+function render() {
+  const search = $("search").value.toLowerCase().trim();
+  const type = $("typeFilter").value;
+  const sort = $("sort").value;
+
+  visible = pokemon.filter(p =>
+    (String(p.record_id).includes(search) ||
+ getPokemonName(p.record_id).toLowerCase().includes(search)) &&
+    (!type || p.type1 === type || p.type2 === type)
+  );
+
+  if (sort === "bst") visible.sort((a,b) => total(b)-total(a));
+  else if (sort !== "id")
+    visible.sort((a,b) => Number(b[sort])-Number(a[sort]));
+  else visible.sort((a,b) => a.record_id-b.record_id);
+
+  $("results").innerHTML = visible.slice(0,limit).map(p => `
+    <article class="pokemon" data-id="${p.record_id}">
+      <div class="small">Record #${String(p.record_id).padStart(3,"0")}</div>
+      <img class="pokemon-sprite" src="${spriteUrl(p.record_id)}" alt="" loading="lazy" onerror="this.style.display='none'">
+      <h3>${getPokemonName(p.record_id)}</h3>
+      ${types(p)}
+      <p>Base Stat Total: <b>${total(p)}</b></p>
+    </article>
+  `).join("");
+
+  $("more").style.display = visible.length > limit ? "inline-block" : "none";
+  $("status").textContent =
+    `${visible.length} matching records • ${pokemon.length} loaded`;
+}
+
+function showDetails(id) {
+  const p = pokemon.find(x => x.record_id === id);
+  if (!p) return;
+
+  $("details").style.display = "block";
+  $("details").innerHTML = `
+    <button id="closeDetails">Close</button>
+    <div class="detail-heading"><h2>#${String(p.record_id).padStart(3,"0")} ${getPokemonName(p.record_id)}</h2></div>
+    <div class="detail-columns">
+      <div class="detail-left">
+    <img class="pokemon-artwork" src="${artworkUrl(p.record_id)}" alt="" onerror="this.style.display='none'">
+    ${types(p)}
+    <div class="ability-section"><p><b>Ability 1:</b> ${abilityName(p.ability1_id)}</p>
+    <p><b>Ability 2:</b> ${abilityName(p.ability2_id)}</p>
+    <p><b>Hidden Ability:</b> ${abilityName(p.hidden_ability_id)}</p>
+    <p>Catch rate: ${p.catch_rate}</p></div>
+
+      </div>
+      <div class="detail-right">
+<h3>Base Stats — Total ${total(p)}</h3>
+    ${stats.map(([name,key]) => `
+      <div class="stat">
+        <div class="stat-label"><span>${name}</span><b>${p[key]}</b></div>
+        <div class="bar"><div class="fill"
+          style="width:${Math.min(100,p[key]/255*100)}%"></div></div>
+      </div>
+    `).join("")}
+      </div>
+    </div>  `;
+
+  $("closeDetails").onclick = () => $("details").style.display = "none";
+  $("details").scrollIntoView({behavior:"smooth"});
+}
+
+$("results").addEventListener("click", e => {
+  const card = e.target.closest("[data-id]");
+  if (card) showDetails(Number(card.dataset.id));
+});
+
+$("file").addEventListener("change", async e => {
+  try {
+    const file = e.target.files[0];
+    if (!file) return;
+    const data = JSON.parse(await file.text());
+    if (!Array.isArray(data)) throw Error("Expected a JSON array");
+    pokemon = data.filter(p =>
+      Number.isInteger(p.record_id) && p.record_id > 0
+    );
+    const allTypes = [...new Set(pokemon.flatMap(p =>
+      [p.type1,p.type2]))].filter(Boolean).sort();
+    $("typeFilter").innerHTML =
+      '<option value="">All types</option>' +
+      allTypes.map(t => `<option>${t}</option>`).join("");
+    limit = 60;
+    render();
+  } catch (error) {
+    $("status").textContent = "Could not load JSON: " + error.message;
+  }
+});
+
+["search","typeFilter","sort"].forEach(id =>
+  $(id).addEventListener("input", () => {
+    limit = 60;
+    render();
+  })
+);
+
+$("more").onclick = () => {
+  limit += 60;
+  render();
+};
+
+let abilityNames = {"0": "None"};
+
+function abilityName(id) {
+  return abilityNames[String(id)] || `Unknown (ID ${id})`;
+}
+
+document.getElementById("abilitiesFile").addEventListener(
+  "change", async e => {
+    try {
+      const file = e.target.files[0];
+      if (!file) return;
+      abilityNames = JSON.parse(await file.text());
+      abilityNames["0"] = "None";
+      alert("Ability names loaded successfully!");
+    } catch (error) {
+      alert("Could not load abilities: " + error.message);
+    }
+  }
+);
+
+
+// Gen 5 sprite and official artwork URLs
+function spriteUrl(id) {
+  if (id < 1 || id > 649) return "";
+  return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/" + id + ".png";
+}
+
+function artworkUrl(id) {
+  if (id < 1 || id > 649) return "";
+  return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + id + ".png";
+}
+
+
+// UNOVA_EVOLUTIONS_V06
+
+let evolutionData = {};
+let currentPokemonId = null;
+
+function evolutionRequirement(e) {
+  const method = Number(e.method_id);
+  const condition = Number(e.condition);
+
+  if (method === 4) {
+    return "Level " + condition;
+  }
+
+  if (method === 8 && condition === 82) {
+    return "Fire Stone";
+  }
+
+  return "Method " + method + " / Condition " + condition;
+}
+
+
+// UNOVA_CHAINS_V07
+
+function evolutionFamily(id) {
+  const links = [];
+
+  for (const [source, entries] of Object.entries(evolutionData)) {
+    if (!Array.isArray(entries)) continue;
+
+    for (const entry of entries) {
+      const from = Number(source);
+      const to = Number(entry.target_id);
+
+      if (from > 0 && to > 0) {
+        links.push({from, to, entry});
+      }
+    }
+  }
+
+  const visited = new Set([id]);
+  const queue = [id];
+
+  while (queue.length) {
+    const current = queue.shift();
+
+    for (const link of links) {
+      let next = null;
+
+      if (link.from === current) next = link.to;
+      if (link.to === current) next = link.from;
+
+      if (next !== null && !visited.has(next)) {
+        visited.add(next);
+        queue.push(next);
+      }
+    }
+  }
+
+  return {
+    members: [...visited],
+    links: links.filter(link =>
+      visited.has(link.from) && visited.has(link.to)
+    )
+  };
+}
+
+function evolutionPanel(id) {
+  if (!Object.keys(evolutionData).length) {
+    return `
+      <section class="evolution-panel">
+        <h3>Evolution Family</h3>
+        <p class="small">Load the evolution database first.</p>
+      </section>
+    `;
+  }
+
+  const family = evolutionFamily(id);
+
+  if (family.links.length === 0) {
+    return `
+      <section class="evolution-panel">
+        <h3>Evolution Family</h3>
+        <p class="small">No evolutions recorded for this Pokémon.</p>
+      </section>
+    `;
+  }
+
+  const incoming = new Map();
+  const outgoing = new Map();
+
+  for (const link of family.links) {
+    incoming.set(link.to, (incoming.get(link.to) || 0) + 1);
+
+    if (!outgoing.has(link.from)) {
+      outgoing.set(link.from, []);
+    }
+
+    outgoing.get(link.from).push(link);
+  }
+
+  const roots = family.members.filter(member =>
+    !incoming.has(member)
+  );
+
+  const ordered = [];
+  const seen = new Set();
+
+  function visit(member, depth) {
+    if (seen.has(member)) return;
+    seen.add(member);
+
+    ordered.push({id: member, depth});
+
+    for (const link of outgoing.get(member) || []) {
+      visit(link.to, depth + 1);
+    }
+  }
+
+  for (const root of roots) visit(root, 0);
+
+  for (const member of family.members) {
+    if (!seen.has(member)) visit(member, 0);
+  }
+
+  const cards = ordered.map(member => {
+    const name = getPokemonName(member.id);
+    const sprite = member.id <= 649
+      ? `<img src="${spriteUrl(member.id)}" alt="">`
+      : "";
+
+    const parents = family.links.filter(link =>
+      link.to === member.id
+    );
+
+    const requirements = parents.map(link =>
+      evolutionRequirement(link.entry)
+    ).join(" / ");
+
+    const label = requirements
+      ? `<span class="evolution-method">
+           Evolves via ${requirements}
+         </span>`
+      : `<span class="evolution-method">
+           Base form
+         </span>`;
+
+    return `
+      <button class="evolution-card evolution-family-card"
+        data-evolution="${member.id}"
+        style="margin-left:${Math.min(member.depth, 5) * 22}px">
+        ${sprite}
+        <span>
+          <strong>
+            #${String(member.id).padStart(3,"0")} ${name}
+          </strong>
+          ${label}
+        </span>
+      </button>
+    `;
+  }).join("");
+
+  return `
+    <section class="evolution-panel">
+      <h3>Evolution Family</h3>
+      <div class="evolution-family-list">
+        ${cards}
+      </div>
+    </section>
+  `;
+}
+
+// Extend the existing details without replacing the layout.
+const originalShowDetailsV06 = showDetails;
+
+showDetails = function(id) {
+  currentPokemonId = id;
+  originalShowDetailsV06(id);
+
+  const details = document.getElementById("details");
+  details.insertAdjacentHTML(
+    "beforeend",
+    evolutionPanel(id)
+  );
+};
+
+document.getElementById("details").addEventListener(
+  "click",
+  event => {
+    const card = event.target.closest("[data-evolution]");
+
+    if (card) {
+      showDetails(Number(card.dataset.evolution));
+    }
+  }
+);
+
+document.getElementById("evolutionsFile").addEventListener(
+  "change",
+  async event => {
+    try {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const data = JSON.parse(await file.text());
+
+      if (
+        typeof data !== "object"
+        || data === null
+        || Array.isArray(data)
+      ) {
+        throw Error("Expected an evolution data object");
+      }
+
+      evolutionData = data;
+
+      if (currentPokemonId !== null) {
+        showDetails(currentPokemonId);
+      }
+
+      alert("Evolution database loaded successfully!");
+    } catch (error) {
+      alert("Could not load evolutions: " + error.message);
+    }
+  }
+);
+
+
+// UNOVA_MOVESETS_V08
+
+let learnsetData = {};
+let moveNames = {};
+
+function safeMoveText(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  }[char]));
+}
+
+
+// UNOVA_MOVE_DETAILS_V09
+
+let moveDetails = {};
+
+function movesetPanel(id) {
+  const entries = learnsetData[String(id)];
+
+  if (!Array.isArray(entries)) {
+    return `
+      <section class="moveset-panel">
+        <h3>Level-Up Moves</h3>
+        <p class="small">
+          Load the learnset database to view moves.
+        </p>
+      </section>
+    `;
+  }
+
+  if (entries.length === 0) {
+    return `
+      <section class="moveset-panel">
+        <h3>Level-Up Moves</h3>
+        <p class="small">No level-up moves recorded.</p>
+      </section>
+    `;
+  }
+
+  const rows = entries.map(entry => {
+    const moveId = Number(entry.move_id);
+    const level = Number(entry.level);
+
+    const name = moveNames[String(moveId)]
+      || `Move ID ${moveId}`;
+
+    const details = moveDetails[String(moveId)];
+
+    let type = "Unknown";
+    let category = "—";
+    let power = "—";
+    let accuracy = "—";
+    let pp = "—";
+
+    if (details) {
+      type = details.type || "Unknown";
+      category = details.damage_class || "—";
+
+      power = Number(details.power) > 0
+        ? details.power
+        : "—";
+
+      accuracy = Number(details.accuracy) > 0
+        ? details.accuracy + "%"
+        : "—";
+
+      pp = details.pp ?? "—";
+    }
+
+    return `
+      <tr>
+        <td>${level}</td>
+        <td><button type="button" class="move-link" data-move-id="${moveId}">${safeMoveText(name)}</button></td>
+        <td><span class="type" data-type="${safeMoveText(type)}">${safeMoveText(type)}</span></td>
+        <td>${safeMoveText(category)}</td>
+        <td>${power}</td>
+        <td>${accuracy}</td>
+        <td>${pp}</td>
+      </tr>
+    `;
+  }).join("");
+
+  return `
+    <section class="moveset-panel">
+      <h3>Level-Up Moves</h3>
+      <p class="moveset-count">
+        ${entries.length} move entries from your ROM
+      </p>
+      <div class="moveset-scroll">
+        <table class="moveset-table">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Move</th>
+              <th>Type</th>
+              <th>Category</th>
+              <th>Power</th>
+              <th>Accuracy</th>
+              <th>PP</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </section>
+  `;
+}
+
+document.getElementById("moveDataFile")
+  .addEventListener("change", async event => {
+    try {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const data = JSON.parse(await file.text());
+
+      if (!data || typeof data !== "object"
+          || Array.isArray(data)) {
+        throw Error("Expected a JSON object");
+      }
+
+      moveDetails = data;
+
+      if (typeof currentPokemonId === "number") {
+        showDetails(currentPokemonId);
+      }
+
+      alert("Move properties loaded successfully!");
+    } catch (error) {
+      alert("Could not load move properties: " + error.message);
+    }
+  });
+
+// Keep the existing Pokémon detail and evolution panels.
+const previousShowDetailsV08 = showDetails;
+
+showDetails = function(id) {
+  previousShowDetailsV08(id);
+
+  document.getElementById("details").insertAdjacentHTML(
+    "beforeend",
+    movesetPanel(id)
+  );
+};
+
+function refreshMoveset() {
+  if (typeof currentPokemonId === "number") {
+    showDetails(currentPokemonId);
+  }
+}
+
+async function loadMoveDatabase(event, kind) {
+  try {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const data = JSON.parse(await file.text());
+
+    if (!data || typeof data !== "object"
+        || Array.isArray(data)) {
+      throw Error("Expected a JSON object");
+    }
+
+    if (kind === "learnsets") {
+      learnsetData = data;
+    } else {
+      moveNames = data;
+    }
+
+    refreshMoveset();
+
+    alert(
+      kind === "learnsets"
+        ? "Learnsets loaded successfully!"
+        : "Move names loaded successfully!"
+    );
+  } catch (error) {
+    alert("Could not load database: " + error.message);
+  }
+}
+
+document.getElementById("learnsetsFile")
+  .addEventListener("change", event =>
+    loadMoveDatabase(event, "learnsets")
+  );
+
+document.getElementById("movesFile")
+  .addEventListener("change", event =>
+    loadMoveDatabase(event, "names")
+  );
+
+
+// UNOVA_MOVE_MODAL_V11
+
+const verifiedMoveEffects = {
+  "82": {
+    powerDisplay: "Fixed 40 HP",
+    description: "Always inflicts 40 HP damage.",
+    note: "Verified against Frost's Move Editor."
+  },
+  "53": {
+    description: "May burn the target (10% chance).",
+    note: "Verified against Frost's Move Editor."
+  }
+};
+
+function showMoveModal(moveId) {
+  const details = moveDetails[String(moveId)];
+
+  const name = moveNames[String(moveId)]
+    || `Move ID ${moveId}`;
+
+  const verified = verifiedMoveEffects[String(moveId)];
+
+  const modal = document.getElementById("moveModal");
+  const body = document.getElementById("moveModalBody");
+
+  if (!details) {
+    body.innerHTML = `
+      <h2 id="moveModalTitle">${safeMoveText(name)}</h2>
+      <p>Load the move properties database first.</p>
+    `;
+    modal.hidden = false;
+    return;
+  }
+
+  const type = safeMoveText(details.type || "Unknown");
+  const category = safeMoveText(
+    details.damage_class || "Unknown"
+  );
+
+  const power = verified?.powerDisplay
+    || (Number(details.power) > 0 ? details.power : "—");
+
+  const accuracy = Number(details.accuracy) > 0
+    ? details.accuracy + "%"
+    : "—";
+
+  const pp = details.pp ?? "—";
+
+  const description = verified
+    ? verified.description
+    : "A verified effect description is not available yet.";
+
+  const note = verified
+    ? verified.note
+    : "Move properties extracted from the custom ROM.";
+
+  const stat = (label, value) => `
+    <div class="move-modal-stat">
+      <small>${label}</small>
+      <strong>${safeMoveText(value)}</strong>
+    </div>
+  `;
+
+  body.innerHTML = `
+    <p class="small">MOVE DETAILS · #${moveId}</p>
+    <h2 id="moveModalTitle">${safeMoveText(name)}</h2>
+    <span class="type" data-type="${type}">${type}</span>
+
+    <div class="move-modal-grid">
+      ${stat("Power", power)}
+      ${stat("Accuracy", accuracy)}
+      ${stat("PP", pp)}
+      ${stat("Category", category)}
+      ${stat("Effect Chance", details.effect_chance + "%")}
+      ${stat("Move ID", moveId)}
+    </div>
+
+    <div class="move-description">
+      <h3>Effect</h3>
+      <p>${safeMoveText(description)}</p>
+      <p class="small">${safeMoveText(note)}</p>
+    </div>
+  `;
+
+  modal.hidden = false;
+}
+
+document.addEventListener("click", event => {
+  const moveButton = event.target.closest("[data-move-id]");
+
+  if (moveButton) {
+    showMoveModal(Number(moveButton.dataset.moveId));
+  }
+});
+
+document.getElementById("closeMoveModal")
+  .addEventListener("click", () => {
+    document.getElementById("moveModal").hidden = true;
+  });
+
+document.querySelector(".move-modal-backdrop")
+  .addEventListener("click", () => {
+    document.getElementById("moveModal").hidden = true;
+  });
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    document.getElementById("moveModal").hidden = true;
+  }
+});
+
+
+// UNOVA_MODAL_CLOSE_FIX
+
+document.addEventListener("click", function(event) {
+  const closeButton = event.target.closest("#closeMoveModal");
+  const backdrop = event.target.closest(".move-modal-backdrop");
+
+  if (closeButton || backdrop) {
+    const modal = document.getElementById("moveModal");
+
+    if (modal) {
+      modal.hidden = true;
+      modal.style.display = "none";
+    }
+  }
+}, true);
+
+// Ensure opening a move restores the modal's display.
+const previousShowMoveModal = showMoveModal;
+
+showMoveModal = function(moveId) {
+  const modal = document.getElementById("moveModal");
+
+  if (modal) {
+    modal.style.display = "";
+  }
+
+  previousShowMoveModal(moveId);
+};
+
+
+// UNOVA_MODAL_FINAL_REPAIR
+
+function closeMoveDetails() {
+  const modal = document.getElementById("moveModal");
+  if (!modal) return;
+
+  modal.hidden = true;
+  modal.style.setProperty(
+    "display", "none", "important"
+  );
+}
+
+// Handle Close and backdrop clicks consistently.
+document.addEventListener("click", function(event) {
+  const close = event.target.closest(
+    "#closeMoveModal, .move-modal-backdrop"
+  );
+
+  if (close) {
+    event.preventDefault();
+    closeMoveDetails();
+  }
+}, true);
+
+// Escape should also close the panel.
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeMoveDetails();
+  }
+}, true);
+
+// Ensure the panel can reopen after being closed.
+const openMoveDetailsBeforeRepair = showMoveModal;
+
+showMoveModal = function(moveId) {
+  const modal = document.getElementById("moveModal");
+
+  if (modal) {
+    modal.style.removeProperty("display");
+  }
+
+  openMoveDetailsBeforeRepair(moveId);
+};
+
+
+// UNOVA_MOVE_DESCRIPTIONS_V12
+
+let moveDescriptions = {};
+
+document.getElementById("moveDescriptionsFile")
+  .addEventListener("change", async event => {
+    try {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const data = JSON.parse(await file.text());
+
+      if (!data || typeof data !== "object"
+          || Array.isArray(data)) {
+        throw Error("Expected a JSON object");
+      }
+
+      moveDescriptions = data;
+
+      alert(
+        "Loaded " + Object.keys(data).length
+        + " ROM move descriptions!"
+      );
+    } catch (error) {
+      alert(
+        "Could not load move descriptions: "
+        + error.message
+      );
+    }
+  });
+
+// Preserve the existing Version 1.1 move panel.
+const showMoveModalBeforeV12 = showMoveModal;
+
+showMoveModal = function(moveId) {
+  showMoveModalBeforeV12(moveId);
+
+  const description = moveDescriptions[String(moveId)];
+
+  if (typeof description !== "string"
+      || !description.trim()) {
+    return;
+  }
+
+  const body = document.getElementById("moveModalBody");
+
+  if (!body) return;
+
+  const descriptionSection =
+    body.querySelector(".move-description");
+
+  if (!descriptionSection) return;
+
+  descriptionSection.innerHTML = `
+    <h3>ROM Move Description</h3>
+    <p>${safeMoveText(description)}</p>
+    <p class="small">
+      Extracted directly from the custom Pokémon White 2 ROM.
+    </p>
+  `;
+};
+
+
+// UNOVA_WILD_ENCOUNTERS_V13
+
+let wildEncounters = {};
+let encounterLocations = {};
+
+const wildMethods = {
+  grass: "Grass / Land",
+  dark_grass: "Dark Grass",
+  rustling_grass: "Rustling Grass",
+  surf: "Surf",
+  rippling_water: "Rippling Water",
+  fishing: "Fishing",
+  rippling_fishing: "Rippling Fishing"
+};
+
+const wildSeasons = {
+  all: "All Seasons",
+  spring: "Spring",
+  summer: "Summer",
+  autumn: "Autumn",
+  winter: "Winter"
+};
+
+function wildReady() {
+  return Object.keys(wildEncounters).length > 0
+    && Object.keys(encounterLocations).length > 0;
+}
+
+function wildName(id) {
+  return encounterLocations[String(id)]
+    || `Encounter Record ${id}`;
+}
+
+function wildSlots(recordId, season, method) {
+  const record = wildEncounters[String(recordId)];
+  if (!record) return [];
+
+  const key = record.seasonal ? season : "all";
+  return record.seasons?.[key]?.[method] || [];
+}
+
+function groupWildSlots(slots) {
+  const grouped = new Map();
+
+  for (const slot of slots) {
+    const species = Number(slot.species_id);
+    if (species <= 0) continue;
+
+    if (!grouped.has(species)) {
+      grouped.set(species, {
+        species,
+        rate: 0,
+        min: Infinity,
+        max: 0
+      });
+    }
+
+    const entry = grouped.get(species);
+    entry.rate += Number(slot.weight) || 0;
+    entry.min = Math.min(entry.min, Number(slot.min_level));
+    entry.max = Math.max(entry.max, Number(slot.max_level));
+  }
+
+  return [...grouped.values()].sort(
+    (a, b) => b.rate - a.rate || a.species - b.species
+  );
+}
+
+function wildRow(entry) {
+  const id = entry.species;
+  const name = safeMoveText(getPokemonName(id));
+
+  const sprite = id >= 1 && id <= 649
+    ? `<img src="${spriteUrl(id)}" alt="" loading="lazy">`
+    : "";
+
+  const levels = entry.min === entry.max
+    ? `Lv. ${entry.min}`
+    : `Lv. ${entry.min}–${entry.max}`;
+
+  return `
+    <tr>
+      <td>
+        <button class="encounter-pokemon"
+                type="button"
+                data-wild-pokemon="${id}">
+          ${sprite}
+          <span>${name} (#${id})</span>
+        </button>
+      </td>
+      <td>${safeMoveText(levels)}</td>
+      <td>${entry.rate}%</td>
+    </tr>
+  `;
+}
+
+function renderWildBrowser() {
+  const result = document.getElementById("wildResults");
+
+  if (!wildReady()) {
+    result.innerHTML = "";
+    return;
+  }
+
+  const recordId = document.getElementById("wildLocation").value;
+  const season = document.getElementById("wildSeason").value;
+  const method = document.getElementById("wildMethod").value;
+
+  const entries = groupWildSlots(
+    wildSlots(recordId, season, method)
+  );
+
+  if (!entries.length) {
+    result.innerHTML = `
+      <p class="small">
+        No valid Pokémon encounters for this selection.
+      </p>
+    `;
+    return;
+  }
+
+  result.innerHTML = `
+    <p class="small">
+      ${entries.length} Pokémon species found
+    </p>
+    <div class="encounter-table-wrap">
+      <table class="encounter-table">
+        <thead>
+          <tr>
+            <th>Pokémon</th>
+            <th>Levels</th>
+            <th>Encounter Rate</th>
+          </tr>
+        </thead>
+        <tbody>${entries.map(wildRow).join("")}</tbody>
+      </table>
+    </div>
+  `;
+}
+
+function updateWildControls() {
+  if (!wildReady()) return;
+
+  const locationSelect = document.getElementById("wildLocation");
+  const seasonSelect = document.getElementById("wildSeason");
+  const methodSelect = document.getElementById("wildMethod");
+
+  const previousLocation = locationSelect.value;
+  const previousMethod = methodSelect.value;
+
+  locationSelect.innerHTML = Object.keys(wildEncounters)
+    .sort((a, b) => wildName(a).localeCompare(wildName(b)))
+    .map(id => `
+      <option value="${id}">
+        ${safeMoveText(wildName(id))}
+      </option>
+    `).join("");
+
+  if (wildEncounters[previousLocation]) {
+    locationSelect.value = previousLocation;
+  }
+
+  methodSelect.innerHTML = Object.entries(wildMethods)
+    .map(([id, label]) => `
+      <option value="${id}">${label}</option>
+    `).join("");
+
+  if (wildMethods[previousMethod]) {
+    methodSelect.value = previousMethod;
+  }
+
+  const updateSeasons = () => {
+    const record = wildEncounters[locationSelect.value];
+    const previousSeason = seasonSelect.value;
+
+    const keys = record?.seasonal
+      ? ["spring", "summer", "autumn", "winter"]
+      : ["all"];
+
+    seasonSelect.innerHTML = keys.map(key => `
+      <option value="${key}">${wildSeasons[key]}</option>
+    `).join("");
+
+    if (keys.includes(previousSeason)) {
+      seasonSelect.value = previousSeason;
+    }
+
+    renderWildBrowser();
+  };
+
+  locationSelect.onchange = updateSeasons;
+  seasonSelect.onchange = renderWildBrowser;
+  methodSelect.onchange = renderWildBrowser;
+
+  updateSeasons();
+
+  document.getElementById("wildStatus").textContent =
+    `${Object.keys(wildEncounters).length} encounter records loaded`;
+}
+
+async function loadWildJSON(event, kind) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  try {
+    const data = JSON.parse(await file.text());
+
+    if (!data || typeof data !== "object"
+        || Array.isArray(data)) {
+      throw Error("Expected a JSON object");
+    }
+
+    if (kind === "encounters") {
+      wildEncounters = data;
+    } else {
+      encounterLocations = data;
+    }
+
+    updateWildControls();
+
+    if (typeof currentPokemonId === "number") {
+      showDetails(currentPokemonId);
+    }
+
+    alert(`${file.name} loaded successfully!`);
+  } catch (error) {
+    alert("Could not load encounters: " + error.message);
+  }
+}
+
+document.getElementById("wildFile").addEventListener(
+  "change", event => loadWildJSON(event, "encounters")
+);
+
+document.getElementById("locationFile").addEventListener(
+  "change", event => loadWildJSON(event, "locations")
+);
+
+
+// UNOVA_ENCOUNTER_GROUPS_V15
+
+function pokemonEncounterPanel(speciesId) {
+  if (!wildReady()) {
+    return `
+      <section class="encounter-location-panel">
+        <h3>Where to Find This Pokémon</h3>
+        <p class="small">
+          Load both encounter databases to view locations.
+        </p>
+      </section>
+    `;
+  }
+
+  const locations = new Map();
+
+  for (const [recordId, record] of Object.entries(wildEncounters)) {
+    const seasons = record.seasonal
+      ? ["spring", "summer", "autumn", "winter"]
+      : ["all"];
+
+    for (const season of seasons) {
+      for (const [method, label] of Object.entries(wildMethods)) {
+        const matches = groupWildSlots(
+          wildSlots(recordId, season, method)
+        ).filter(entry => entry.species === speciesId);
+
+        for (const entry of matches) {
+          if (!locations.has(recordId)) {
+            locations.set(recordId, []);
+          }
+
+          locations.get(recordId).push({
+            season,
+            method,
+            label,
+            min: entry.min,
+            max: entry.max,
+            rate: entry.rate
+          });
+        }
+      }
+    }
+  }
+
+  if (!locations.size) {
+    return `
+      <section class="encounter-location-panel">
+        <h3>Where to Find This Pokémon</h3>
+        <p class="small">
+          No wild encounters found in the extracted tables.
+        </p>
+      </section>
+    `;
+  }
+
+  const sorted = [...locations.entries()].sort(
+    (a, b) => wildName(a[0]).localeCompare(wildName(b[0]))
+  );
+
+  const cards = sorted.map(([recordId, entries]) => {
+    const grouped = new Map();
+
+    for (const entry of entries) {
+      const key = [
+        entry.method,
+        entry.min,
+        entry.max,
+        entry.rate
+      ].join("|");
+
+      if (!grouped.has(key)) {
+        grouped.set(key, {
+          ...entry,
+          seasons: []
+        });
+      }
+
+      grouped.get(key).seasons.push(entry.season);
+    }
+
+    const rows = [...grouped.values()].map(entry => {
+      const seasonNames = entry.seasons.map(
+        season => wildSeasons[season]
+      ).join(", ");
+
+      const levels = entry.min === entry.max
+        ? `Lv. ${entry.min}`
+        : `Lv. ${entry.min}–${entry.max}`;
+
+      return `
+        <div class="encounter-group-row">
+          <div class="encounter-group-info">
+            <strong>${safeMoveText(entry.label)}</strong>
+            <small>
+              ${safeMoveText(seasonNames)}
+              · ${levels}
+              · ${entry.rate}%
+            </small>
+          </div>
+
+          <button type="button"
+                  class="encounter-group-button"
+                  data-wild-record="${recordId}"
+                  data-wild-season="${entry.seasons[0]}"
+                  data-wild-method="${entry.method}">
+            View Encounters
+          </button>
+        </div>
+      `;
+    }).join("");
+
+    return `
+      <details class="encounter-group">
+        <summary>${safeMoveText(wildName(recordId))}</summary>
+        <div class="encounter-group-content">
+          ${rows}
+        </div>
+      </details>
+    `;
+  }).join("");
+
+  return `
+    <section class="encounter-location-panel">
+      <h3>Where to Find This Pokémon</h3>
+      <p class="small">
+        Found in ${locations.size} encounter locations.
+        Expand a location to view methods, seasons,
+        levels, and encounter rates.
+      </p>
+      ${cards}
+    </section>
+  `;
+}
+
+// Preserve the existing Pokédex, evolution, and move panels.
+const showDetailsBeforeWildV13 = showDetails;
+
+showDetails = function(id) {
+  showDetailsBeforeWildV13(id);
+
+  document.getElementById("details").insertAdjacentHTML(
+    "beforeend",
+    pokemonEncounterPanel(id)
+  );
+};
+
+// Navigate between the two encounter features.
+document.addEventListener("click", event => {
+  const pokemonButton = event.target.closest(
+    "[data-wild-pokemon]"
+  );
+
+  if (pokemonButton) {
+    showDetails(Number(pokemonButton.dataset.wildPokemon));
+    return;
+  }
+
+  const locationButton = event.target.closest(
+    "[data-wild-record]"
+  );
+
+  if (locationButton) {
+    document.getElementById("wildLocation").value =
+      locationButton.dataset.wildRecord;
+
+    document.getElementById("wildLocation").dispatchEvent(
+      new Event("change")
+    );
+
+    document.getElementById("wildSeason").value =
+      locationButton.dataset.wildSeason;
+
+    document.getElementById("wildMethod").value =
+      locationButton.dataset.wildMethod;
+
+    renderWildBrowser();
+
+    document.getElementById("encounters").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+});
+
+
+// UNOVA_DATABASE_LOADER_V14
+
+const databaseFileMap = {
+  "pokemon_personal_data.json": "file",
+  "pokemon_names.json": "namesFile",
+  "pokemon_abilities.json": "abilitiesFile",
+  "pokemon_evolutions.json": "evolutionsFile",
+  "pokemon_learnsets.json": "learnsetsFile",
+  "pokemon_moves.json": "movesFile",
+  "pokemon_move_data.json": "moveDataFile",
+  "pokemon_move_descriptions.json": "moveDescriptionsFile",
+  "pokemon_wild_encounters.json": "wildFile",
+  "pokemon_encounter_locations.json": "locationFile",
+  "pokemon_trainers_v18.json": "trainersFile",
+  "pokemon_item_names.json": "itemNamesFile"
+};
+
+document.getElementById("allDatabasesFolder")
+  .addEventListener("change", async event => {
+
+    const files = [...event.target.files];
+    const results = document.getElementById(
+      "databaseLoaderResults"
+    );
+    const status = document.getElementById(
+      "databaseLoaderStatus"
+    );
+
+    results.innerHTML = "";
+    status.textContent = "Loading databases...";
+
+    const found = new Map();
+
+    for (const file of files) {
+      if (databaseFileMap[file.name]) {
+        found.set(file.name, file);
+      }
+    }
+
+    let loaded = 0;
+
+    for (const [filename, inputId] of
+         Object.entries(databaseFileMap)) {
+
+      const file = found.get(filename);
+
+      const row = document.createElement("div");
+      row.className = "database-loader-item";
+
+      const label = document.createElement("span");
+      label.textContent = filename;
+
+      const result = document.createElement("span");
+
+      if (!file) {
+        result.textContent = "Missing";
+        result.className = "database-loader-error";
+      } else {
+        try {
+          JSON.parse(await file.text());
+
+          const input = document.getElementById(inputId);
+
+          const transfer = new DataTransfer();
+          transfer.items.add(file);
+
+          input.files = transfer.files;
+
+          input.dispatchEvent(
+            new Event("change", {bubbles: true})
+          );
+
+          result.textContent = "Loaded";
+          result.className = "database-loader-success";
+          loaded++;
+        } catch (error) {
+          result.textContent = "Error";
+          result.className = "database-loader-error";
+          console.error(filename, error);
+        }
+      }
+
+      row.appendChild(label);
+      row.appendChild(result);
+      results.appendChild(row);
+    }
+
+    status.textContent =
+      loaded + " of 12 database files processed.";
+
+    if (loaded === 12) {
+      status.textContent =
+        "All 12 databases submitted to their loaders!";
+    }
+  });
+
+
+// UNOVA_TRAINERS_V16
+
+let trainerData = {};
+let trainerPage = 0;
+const trainerPageSize = 20;
+
+function trainerList() {
+  const search = document.getElementById(
+    "trainerSearch"
+  ).value.toLowerCase().trim();
+
+  const selectedClass = document.getElementById(
+    "trainerClassFilter"
+  ).value;
+
+  return Object.values(trainerData)
+    .filter(trainer => {
+      const className = String(
+        trainer.class_name || ""
+      );
+
+      const name = String(trainer.name || "");
+
+      const pokemonNames = (
+        trainer.pokemon || []
+      ).map(p => p.name || "").join(" ");
+
+      const searchable = [
+        trainer.id,
+        name,
+        className,
+        pokemonNames
+      ].join(" ").toLowerCase();
+
+      return searchable.includes(search)
+        && (
+          !selectedClass
+          || className === selectedClass
+        );
+    })
+    .sort((a, b) => Number(a.id) - Number(b.id));
+}
+
+function trainerPokemonCard(p) {
+  const id = Number(p.species_id);
+  const name = safeMoveText(
+    p.name || getPokemonName(id)
+  );
+
+  const sprite = id >= 1 && id <= 649
+    ? `<img src="${spriteUrl(id)}"
+             alt=""
+             loading="lazy"
+             onerror="this.style.display='none'">`
+    : "";
+
+  const item = p.held_item_id == null
+    ? "No custom held item data"
+    : Number(p.held_item_id) === 0
+      ? "None"
+      : trainerItemNames[String(p.held_item_id)]
+        || `Item ID ${Number(p.held_item_id)}`;
+
+  const moves = Array.isArray(p.moves)
+    ? p.moves.map(move => `
+        <button type="button"
+                class="move-link"
+                data-move-id="${Number(move.id)}">
+          ${safeMoveText(move.name)}
+        </button>
+      `).join("")
+    : `<span class="small">
+         Moves determined by the game
+       </span>`;
+
+  return `
+    <article class="trainer-pokemon">
+      ${sprite}
+
+      <button type="button"
+              class="trainer-pokemon-name"
+              data-trainer-pokemon="${id}">
+        ${name}
+      </button>
+
+      <p class="small">
+        Level ${Number(p.level)}
+      </p>
+
+      <p class="small">
+        Difficulty: ${Number(p.difficulty)}
+      </p>
+
+      <p class="small">
+        Held item: ${safeMoveText(item)}
+      </p>
+
+      <div class="trainer-moves">
+        ${moves}
+      </div>
+    </article>
+  `;
+}
+
+function renderTrainers() {
+  const results = document.getElementById(
+    "trainerResults"
+  );
+
+  const matches = trainerList();
+
+  const pages = Math.max(
+    1,
+    Math.ceil(matches.length / trainerPageSize)
+  );
+
+  trainerPage = Math.min(
+    trainerPage,
+    pages - 1
+  );
+
+  const start = trainerPage * trainerPageSize;
+
+  const visible = matches.slice(
+    start,
+    start + trainerPageSize
+  );
+
+  results.innerHTML = visible.map(trainer => {
+    const className = safeMoveText(
+      trainer.class_name || "Unknown Class"
+    );
+
+    const name = safeMoveText(
+      trainer.name || "Unknown"
+    );
+
+    const team = (
+      trainer.pokemon || []
+    ).map(trainerPokemonCard).join("");
+
+    return `
+      <details class="trainer-card">
+        <summary>
+          ${className} ${name}
+          — Trainer #${Number(trainer.id)}
+          — ${Number(trainer.party_size)} Pokémon
+        </summary>
+
+        <div class="trainer-team">
+          ${team}
+        </div>
+      </details>
+    `;
+  }).join("");
+
+  if (!matches.length) {
+    results.innerHTML = `
+      <p class="small">
+        No matching trainers found.
+      </p>
+    `;
+  }
+
+  document.getElementById(
+    "trainerStatus"
+  ).textContent =
+    `${matches.length} matching trainers`
+    + ` · ${Object.keys(trainerData).length} loaded`;
+
+  document.getElementById(
+    "trainerPageStatus"
+  ).textContent =
+    `Page ${trainerPage + 1} of ${pages}`;
+
+  document.getElementById(
+    "trainerPrevious"
+  ).disabled = trainerPage === 0;
+
+  document.getElementById(
+    "trainerNext"
+  ).disabled = trainerPage >= pages - 1;
+}
+
+document.getElementById("trainersFile")
+  .addEventListener("change", async event => {
+    try {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const data = JSON.parse(await file.text());
+
+      if (!data || typeof data !== "object"
+          || Array.isArray(data)) {
+        throw Error("Expected a trainer object");
+      }
+
+      if (Object.keys(data).length !== 813) {
+        throw Error("Expected 813 trainers");
+      }
+
+      trainerData = data;
+      trainerPage = 0;
+
+      const classes = [...new Set(
+        Object.values(data).map(
+          trainer => trainer.class_name || ""
+        )
+      )].filter(Boolean).sort();
+
+      document.getElementById(
+        "trainerClassFilter"
+      ).innerHTML =
+        '<option value="">All trainer classes</option>'
+        + classes.map(name => `
+          <option value="${safeMoveText(name)}">
+            ${safeMoveText(name)}
+          </option>
+        `).join("");
+
+      renderTrainers();
+
+    } catch (error) {
+      document.getElementById(
+        "trainerStatus"
+      ).textContent =
+        "Could not load trainer data: " + error.message;
+    }
+  });
+
+["trainerSearch", "trainerClassFilter"]
+  .forEach(id => {
+    document.getElementById(id)
+      .addEventListener("input", () => {
+        trainerPage = 0;
+        renderTrainers();
+      });
+  });
+
+document.getElementById("trainerPrevious")
+  .addEventListener("click", () => {
+    if (trainerPage > 0) {
+      trainerPage--;
+      renderTrainers();
+    }
+  });
+
+document.getElementById("trainerNext")
+  .addEventListener("click", () => {
+    trainerPage++;
+    renderTrainers();
+  });
+
+document.getElementById("trainerResults")
+  .addEventListener("click", event => {
+    const button = event.target.closest(
+      "[data-trainer-pokemon]"
+    );
+
+    if (!button) return;
+
+    const id = Number(
+      button.dataset.trainerPokemon
+    );
+
+    if (!pokemon.some(p => p.record_id === id)) {
+      alert("Load the Pokémon database first.");
+      return;
+    }
+
+    showDetails(id);
+  });
+
+renderTrainers();
+
+
+// UNOVA_TRAINER_ITEMS_V16
+let trainerItemNames = {};
+
+document.getElementById("itemNamesFile")
+  .addEventListener("change", async event => {
+    const status = document.getElementById("trainerStatus");
+
+    try {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const data = JSON.parse(await file.text());
+
+      if (!data || typeof data !== "object"
+          || Array.isArray(data)) {
+        throw Error("Expected an item-name object.");
+      }
+
+      if (Object.keys(data).length !== 639
+          || data["158"] !== "Sitrus Berry"
+          || data["234"] !== "Leftovers") {
+        throw Error("Item-name verification failed.");
+      }
+
+      trainerItemNames = data;
+      renderTrainers();
+
+      if (!Object.keys(trainerData).length) {
+        status.textContent =
+          "639 item names loaded. Load trainers next.";
+      }
+
+    } catch (error) {
+      status.textContent =
+        "Could not load item names: " + error.message;
+    }
+  });
+
+
+
+// UNOVA_TRAINERS_V17
+
+function trainerBattlePanel(trainer) {
+  const battleItems = (trainer.battle_items || [])
+    .map(item => safeMoveText(item.name))
+    .join(", ") || "None";
+
+  const prizeItem = trainer.prize_item === "None"
+    ? "None"
+    : safeMoveText(trainer.prize_item || "None");
+
+  return `
+    <div class="trainer-battle-panel">
+      <div><b>Battle Type:</b>
+        ${safeMoveText(trainer.battle_type || "Unknown")}
+      </div>
+      <div><b>AI:</b> ${Number(trainer.ai)}</div>
+      <div><b>Prize Money Setting:</b>
+        ${Number(trainer.prize_money)}
+      </div>
+      <div><b>Trainer Items:</b> ${battleItems}</div>
+      <div><b>Prize Item:</b> ${prizeItem}</div>
+      <div><b>Healer:</b>
+        ${trainer.healer ? "Yes" : "No"}
+      </div>
+    </div>
+  `;
+}
+
+// Preserve the Version 1.6 trainer card.
+const trainerPokemonCardBeforeV17 = trainerPokemonCard;
+
+trainerPokemonCard = function(p) {
+  const original = trainerPokemonCardBeforeV17(p);
+
+  const ability = safeMoveText(
+    p.ability_name || p.ability_selection || "Unknown"
+  );
+
+  const abilitySetting = safeMoveText(
+    p.ability_selection || "Unknown"
+  );
+
+  const gender = safeMoveText(p.gender || "Unknown");
+  const form = Number(p.form || 0);
+
+  const extra = `
+    <div class="trainer-extra-fields">
+      <div><b>Ability:</b> ${ability}</div>
+      <div class="trainer-ability-setting">
+        <b>Selection:</b> ${abilitySetting}
+      </div>
+      <div><b>Gender:</b> ${gender}</div>
+      <div><b>Form:</b> ${form}</div>
+    </div>
+  `;
+
+  return original.replace(
+    '<div class="trainer-moves">',
+    extra + '<div class="trainer-moves">'
+  );
+};
+
+// Preserve the existing trainer search and pagination.
+const renderTrainersBeforeV17 = renderTrainers;
+
+renderTrainers = function() {
+  renderTrainersBeforeV17();
+
+  const cards = document.querySelectorAll(
+    "#trainerResults .trainer-card"
+  );
+
+  const matches = trainerList();
+
+  const start = trainerPage * trainerPageSize;
+  const visible = matches.slice(
+    start,
+    start + trainerPageSize
+  );
+
+  cards.forEach((card, index) => {
+    const trainer = visible[index];
+    if (!trainer) return;
+
+    const team = card.querySelector(".trainer-team");
+    if (!team) return;
+
+    team.insertAdjacentHTML(
+      "beforebegin",
+      trainerBattlePanel(trainer)
+    );
+  });
+};
+
+
+// UNOVA_AUTO_DATABASES_V19
+
+async function autoLoadDatabasesV19() {
+  const status = document.getElementById(
+    "autoDatabaseStatus"
+  );
+
+  const results = document.getElementById(
+    "autoDatabaseResults"
+  );
+
+  if (location.protocol === "file:") {
+    status.textContent =
+      "Automatic loading requires the local Python server. "
+      + "Manual folder loading is still available.";
+    return;
+  }
+
+  status.textContent = "Loading 12 databases...";
+  results.innerHTML = "";
+
+  const filenames = Object.keys(databaseFileMap);
+  const loaded = {};
+  const failures = [];
+
+  for (const filename of filenames) {
+    const row = document.createElement("div");
+    row.className = "auto-database-row";
+
+    const label = document.createElement("span");
+    label.textContent = filename;
+
+    const result = document.createElement("span");
+
+    try {
+      const response = await fetch(
+        "databases/" + encodeURIComponent(filename),
+        {cache: "no-store"}
+      );
+
+      if (!response.ok) {
+        throw Error("HTTP " + response.status);
+      }
+
+      const data = await response.json();
+
+      if (!data || typeof data !== "object") {
+        throw Error("Invalid JSON data");
+      }
+
+      loaded[filename] = data;
+
+      result.textContent = "Loaded";
+      result.className = "auto-database-ok";
+
+    } catch (error) {
+      failures.push(filename + ": " + error.message);
+      result.textContent = "Error";
+      result.className = "auto-database-error";
+      console.error(filename, error);
+    }
+
+    row.append(label, result);
+    results.appendChild(row);
+  }
+
+  const get = name => loaded[name];
+
+  try {
+    const personal = get("pokemon_personal_data.json");
+    if (Array.isArray(personal)) {
+      pokemon = personal.filter(p =>
+        Number.isInteger(p.record_id)
+        && p.record_id > 0
+      );
+
+      const allTypes = [...new Set(
+        pokemon.flatMap(p => [p.type1, p.type2])
+      )].filter(Boolean).sort();
+
+      document.getElementById("typeFilter").innerHTML =
+        '<option value="">All types</option>'
+        + allTypes.map(type =>
+          `<option>${safeMoveText(type)}</option>`
+        ).join("");
+    }
+
+    const names = get("pokemon_names.json");
+    if (names) {
+      for (const [id, name] of Object.entries(names)) {
+        const number = Number(id);
+        if (number >= 1 && number <= 649) {
+          pokemonNames[number] = String(name)
+            .split("-")
+            .map(word =>
+              word.charAt(0).toUpperCase()
+              + word.slice(1)
+            ).join(" ");
+        }
+      }
+    }
+
+    const abilities = get("pokemon_abilities.json");
+    if (abilities) {
+      abilityNames = abilities;
+      abilityNames["0"] = "None";
+    }
+
+    if (get("pokemon_evolutions.json")) {
+      evolutionData = get("pokemon_evolutions.json");
+    }
+
+    if (get("pokemon_learnsets.json")) {
+      learnsetData = get("pokemon_learnsets.json");
+    }
+
+    if (get("pokemon_moves.json")) {
+      moveNames = get("pokemon_moves.json");
+    }
+
+    if (get("pokemon_move_data.json")) {
+      moveDetails = get("pokemon_move_data.json");
+    }
+
+    if (get("pokemon_move_descriptions.json")) {
+      moveDescriptions =
+        get("pokemon_move_descriptions.json");
+    }
+
+    if (get("pokemon_wild_encounters.json")) {
+      wildEncounters =
+        get("pokemon_wild_encounters.json");
+    }
+
+    if (get("pokemon_encounter_locations.json")) {
+      encounterLocations =
+        get("pokemon_encounter_locations.json");
+    }
+
+    if (get("pokemon_item_names.json")) {
+      trainerItemNames = get("pokemon_item_names.json");
+    }
+
+    const trainers = get("pokemon_trainers_v18.json");
+
+    if (trainers) {
+      if (Object.keys(trainers).length !== 813) {
+        throw Error("Expected 813 trainer records");
+      }
+
+      trainerData = trainers;
+
+      const classes = [...new Set(
+        Object.values(trainers).map(
+          t => t.class_name || ""
+        )
+      )].filter(Boolean).sort();
+
+      document.getElementById(
+        "trainerClassFilter"
+      ).innerHTML =
+        '<option value="">All trainer classes</option>'
+        + classes.map(name =>
+          `<option value="${safeMoveText(name)}">`
+          + `${safeMoveText(name)}</option>`
+        ).join("");
+    }
+
+    limit = 60;
+    trainerPage = 0;
+
+    render();
+    updateWildControls();
+    renderTrainers();
+
+    if (currentPokemonId !== null) {
+      showDetails(currentPokemonId);
+    }
+
+  } catch (error) {
+    failures.push("Initialization: " + error.message);
+    console.error("Automatic initialization", error);
+  }
+
+  if (failures.length === 0) {
+    status.textContent =
+      "All 12 databases loaded automatically!";
+  } else {
+    status.textContent =
+      `${filenames.length - failures.length} of 12 `
+      + "databases loaded. Check errors below.";
+
+    const details = document.createElement("p");
+    details.className = "auto-database-error";
+    details.textContent = failures.join(" | ");
+    results.appendChild(details);
+  }
+}
+
+autoLoadDatabasesV19();
+
+
+// UNOVA_ITEMS_V20
+
+let itemDatabaseV20 = {};
+let itemShopLookupV20 = {};
+let itemShopsV20 = {};
+let itemLimitV20 = 40;
+
+function renderItemsV20() {
+  const results = document.getElementById("itemResults");
+  const status = document.getElementById("itemStatus");
+  const more = document.getElementById("itemMore");
+
+  const search = document.getElementById(
+    "itemSearch"
+  ).value.toLowerCase().trim();
+
+  const filter = document.getElementById(
+    "itemFilter"
+  ).value;
+
+  const all = Object.values(itemDatabaseV20);
+
+  const matches = all.filter(item => {
+    const id = String(item.id);
+    const name = String(item.name || "").toLowerCase();
+
+    const shops = itemShopLookupV20[id]?.shops || [];
+
+    const textMatches =
+      name.includes(search) || id.includes(search);
+
+    const filterMatches =
+      filter === "all" ||
+      (filter === "shops" && shops.length > 0) ||
+      (filter === "other" && shops.length === 0);
+
+    return textMatches && filterMatches;
+  }).sort((a, b) => Number(a.id) - Number(b.id));
+
+  status.textContent =
+    `${matches.length} matching items · ${all.length} loaded`;
+
+  const visible = matches.slice(0, itemLimitV20);
+
+  results.innerHTML = visible.map(item => {
+    const id = String(item.id);
+    const shops = itemShopLookupV20[id]?.shops || [];
+
+    const price = Number(item.base_price);
+
+    const priceText = Number.isFinite(price)
+      ? "₽" + price.toLocaleString()
+      : "Unknown";
+
+    const shopHTML = shops.length
+      ? `<ul>${shops.map(shop =>
+          `<li>${safeMoveText(shop.shop_name || "Unknown shop")}</li>`
+        ).join("")}</ul>`
+      : `<p class="small">
+           No shop listing found in the extracted inventories.
+         </p>`;
+
+    return `
+      <article class="item-card">
+        <div class="small">Item #${Number(item.id)}</div>
+        <h3>${safeMoveText(item.name)}</h3>
+
+        <p class="item-price">
+          <b>Base price:</b> ${priceText}
+        </p>
+
+        <p>${safeMoveText(item.description || "No description")}</p>
+
+        <div class="item-shops">
+          <b>Where to Buy</b>
+          ${shopHTML}
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  if (!matches.length && all.length) {
+    results.innerHTML =
+      '<p class="small">No matching items found.</p>';
+  }
+
+  more.hidden = matches.length <= itemLimitV20;
+}
+
+function installItemDataV20(loaded) {
+  const items = loaded["pokemon_items_v20.json"];
+  const shops = loaded["pokemon_shop_locations_v20.json"];
+  const lookup = loaded["pokemon_item_shop_lookup_v20.json"];
+
+  if (!items || !shops || !lookup) {
+    throw Error("All three item databases are required.");
+  }
+
+  if (
+    Object.keys(items).length !== 639 ||
+    Object.keys(shops).length !== 80 ||
+    Object.keys(lookup).length !== 639
+  ) {
+    throw Error("Unexpected item database sizes.");
+  }
+
+  if (
+    items["82"]?.name !== "Fire Stone" ||
+    !lookup["82"]?.shops?.length
+  ) {
+    throw Error("Fire Stone verification failed.");
+  }
+
+  itemDatabaseV20 = items;
+  itemShopsV20 = shops;
+  itemShopLookupV20 = lookup;
+  itemLimitV20 = 40;
+
+  renderItemsV20();
+}
+
+async function autoLoadItemsV20() {
+  const status = document.getElementById("itemStatus");
+
+  if (location.protocol === "file:") {
+    status.textContent =
+      "Use the local Python server for automatic loading, "
+      + "or select the three files manually.";
+    return;
+  }
+
+  status.textContent = "Loading 3 item databases...";
+
+  const filenames = [
+    "pokemon_items_v20.json",
+    "pokemon_shop_locations_v20.json",
+    "pokemon_item_shop_lookup_v20.json"
+  ];
+
+  try {
+    const loaded = {};
+
+    for (const filename of filenames) {
+      const response = await fetch(
+        "databases/" + encodeURIComponent(filename),
+        {cache: "no-store"}
+      );
+
+      if (!response.ok) {
+        throw Error(filename + ": HTTP " + response.status);
+      }
+
+      loaded[filename] = await response.json();
+    }
+
+    installItemDataV20(loaded);
+
+  } catch (error) {
+    status.textContent =
+      "Automatic item loading failed: " + error.message;
+    console.error("Version 2.0 item loader:", error);
+  }
+}
+
+document.getElementById("itemFiles")
+  .addEventListener("change", async event => {
+    const status = document.getElementById("itemStatus");
+
+    try {
+      const loaded = {};
+
+      for (const file of event.target.files) {
+        loaded[file.name] = JSON.parse(await file.text());
+      }
+
+      installItemDataV20(loaded);
+
+    } catch (error) {
+      status.textContent =
+        "Manual item loading failed: " + error.message;
+    }
+  });
+
+["itemSearch", "itemFilter"].forEach(id => {
+  document.getElementById(id)
+    .addEventListener("input", () => {
+      itemLimitV20 = 40;
+      renderItemsV20();
+    });
+});
+
+document.getElementById("itemMore")
+  .addEventListener("click", () => {
+    itemLimitV20 += 40;
+    renderItemsV20();
+  });
+
+autoLoadItemsV20();
+
+
+</script>
+
+</body>
+</html>

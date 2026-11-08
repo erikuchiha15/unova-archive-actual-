@@ -1,0 +1,1974 @@
+{
+  "0": {
+    "shop_id": 0,
+    "name": "Stock No Badges",
+    "location": null,
+    "item_count": 2,
+    "items": [
+      {
+        "id": 4,
+        "name": "Poké Ball"
+      },
+      {
+        "id": 17,
+        "name": "Potion"
+      }
+    ],
+    "frost_shop_number": 1,
+    "name_source": "Frost Shop Editor"
+  },
+  "1": {
+    "shop_id": 1,
+    "name": "Stock 1+ Badges",
+    "location": null,
+    "item_count": 11,
+    "items": [
+      {
+        "id": 4,
+        "name": "Poké Ball"
+      },
+      {
+        "id": 3,
+        "name": "Great Ball"
+      },
+      {
+        "id": 17,
+        "name": "Potion"
+      },
+      {
+        "id": 26,
+        "name": "Super Potion"
+      },
+      {
+        "id": 18,
+        "name": "Antidote"
+      },
+      {
+        "id": 22,
+        "name": "Parlyz Heal"
+      },
+      {
+        "id": 21,
+        "name": "Awakening"
+      },
+      {
+        "id": 19,
+        "name": "Burn Heal"
+      },
+      {
+        "id": 20,
+        "name": "Ice Heal"
+      },
+      {
+        "id": 78,
+        "name": "Escape Rope"
+      },
+      {
+        "id": 79,
+        "name": "Repel"
+      }
+    ],
+    "frost_shop_number": 2,
+    "name_source": "Frost Shop Editor"
+  },
+  "2": {
+    "shop_id": 2,
+    "name": "Stock 3+ Badges",
+    "location": null,
+    "item_count": 21,
+    "items": [
+      {
+        "id": 4,
+        "name": "Poké Ball"
+      },
+      {
+        "id": 83,
+        "name": "Thunderstone"
+      },
+      {
+        "id": 82,
+        "name": "Fire Stone"
+      },
+      {
+        "id": 84,
+        "name": "Water Stone"
+      },
+      {
+        "id": 81,
+        "name": "Moon Stone"
+      },
+      {
+        "id": 85,
+        "name": "Leaf Stone"
+      },
+      {
+        "id": 108,
+        "name": "Dusk Stone"
+      },
+      {
+        "id": 109,
+        "name": "Dawn Stone"
+      },
+      {
+        "id": 3,
+        "name": "Great Ball"
+      },
+      {
+        "id": 17,
+        "name": "Potion"
+      },
+      {
+        "id": 26,
+        "name": "Super Potion"
+      },
+      {
+        "id": 25,
+        "name": "Hyper Potion"
+      },
+      {
+        "id": 28,
+        "name": "Revive"
+      },
+      {
+        "id": 18,
+        "name": "Antidote"
+      },
+      {
+        "id": 22,
+        "name": "Parlyz Heal"
+      },
+      {
+        "id": 21,
+        "name": "Awakening"
+      },
+      {
+        "id": 19,
+        "name": "Burn Heal"
+      },
+      {
+        "id": 20,
+        "name": "Ice Heal"
+      },
+      {
+        "id": 78,
+        "name": "Escape Rope"
+      },
+      {
+        "id": 79,
+        "name": "Repel"
+      },
+      {
+        "id": 76,
+        "name": "Super Repel"
+      }
+    ],
+    "frost_shop_number": 3,
+    "name_source": "Frost Shop Editor"
+  },
+  "3": {
+    "shop_id": 3,
+    "name": "Stock 5+ Badges",
+    "location": null,
+    "item_count": 35,
+    "items": [
+      {
+        "id": 4,
+        "name": "Poké Ball"
+      },
+      {
+        "id": 83,
+        "name": "Thunderstone"
+      },
+      {
+        "id": 84,
+        "name": "Water Stone"
+      },
+      {
+        "id": 82,
+        "name": "Fire Stone"
+      },
+      {
+        "id": 81,
+        "name": "Moon Stone"
+      },
+      {
+        "id": 107,
+        "name": "Shiny Stone"
+      },
+      {
+        "id": 109,
+        "name": "Dawn Stone"
+      },
+      {
+        "id": 108,
+        "name": "Dusk Stone"
+      },
+      {
+        "id": 325,
+        "name": "Reaper Cloth"
+      },
+      {
+        "id": 221,
+        "name": "King's Rock"
+      },
+      {
+        "id": 235,
+        "name": "Dragon Scale"
+      },
+      {
+        "id": 233,
+        "name": "Metal Coat"
+      },
+      {
+        "id": 321,
+        "name": "Protector"
+      },
+      {
+        "id": 252,
+        "name": "Up-Grade"
+      },
+      {
+        "id": 80,
+        "name": "Sun Stone"
+      },
+      {
+        "id": 324,
+        "name": "Dubious Disc"
+      },
+      {
+        "id": 227,
+        "name": "DeepSeaScale"
+      },
+      {
+        "id": 226,
+        "name": "DeepSeaTooth"
+      },
+      {
+        "id": 110,
+        "name": "Oval Stone"
+      },
+      {
+        "id": 3,
+        "name": "Great Ball"
+      },
+      {
+        "id": 2,
+        "name": "Ultra Ball"
+      },
+      {
+        "id": 17,
+        "name": "Potion"
+      },
+      {
+        "id": 26,
+        "name": "Super Potion"
+      },
+      {
+        "id": 25,
+        "name": "Hyper Potion"
+      },
+      {
+        "id": 28,
+        "name": "Revive"
+      },
+      {
+        "id": 18,
+        "name": "Antidote"
+      },
+      {
+        "id": 22,
+        "name": "Parlyz Heal"
+      },
+      {
+        "id": 21,
+        "name": "Awakening"
+      },
+      {
+        "id": 19,
+        "name": "Burn Heal"
+      },
+      {
+        "id": 20,
+        "name": "Ice Heal"
+      },
+      {
+        "id": 27,
+        "name": "Full Heal"
+      },
+      {
+        "id": 78,
+        "name": "Escape Rope"
+      },
+      {
+        "id": 79,
+        "name": "Repel"
+      },
+      {
+        "id": 76,
+        "name": "Super Repel"
+      },
+      {
+        "id": 77,
+        "name": "Max Repel"
+      }
+    ],
+    "frost_shop_number": 4,
+    "name_source": "Frost Shop Editor"
+  },
+  "4": {
+    "shop_id": 4,
+    "name": "Stock 7+ Badges",
+    "location": null,
+    "item_count": 18,
+    "items": [
+      {
+        "id": 4,
+        "name": "Poké Ball"
+      },
+      {
+        "id": 3,
+        "name": "Great Ball"
+      },
+      {
+        "id": 2,
+        "name": "Ultra Ball"
+      },
+      {
+        "id": 17,
+        "name": "Potion"
+      },
+      {
+        "id": 26,
+        "name": "Super Potion"
+      },
+      {
+        "id": 25,
+        "name": "Hyper Potion"
+      },
+      {
+        "id": 24,
+        "name": "Max Potion"
+      },
+      {
+        "id": 28,
+        "name": "Revive"
+      },
+      {
+        "id": 18,
+        "name": "Antidote"
+      },
+      {
+        "id": 22,
+        "name": "Parlyz Heal"
+      },
+      {
+        "id": 21,
+        "name": "Awakening"
+      },
+      {
+        "id": 19,
+        "name": "Burn Heal"
+      },
+      {
+        "id": 20,
+        "name": "Ice Heal"
+      },
+      {
+        "id": 27,
+        "name": "Full Heal"
+      },
+      {
+        "id": 78,
+        "name": "Escape Rope"
+      },
+      {
+        "id": 79,
+        "name": "Repel"
+      },
+      {
+        "id": 76,
+        "name": "Super Repel"
+      },
+      {
+        "id": 77,
+        "name": "Max Repel"
+      }
+    ],
+    "frost_shop_number": 5,
+    "name_source": "Frost Shop Editor"
+  },
+  "5": {
+    "shop_id": 5,
+    "name": "Stock 8+ Badges",
+    "location": null,
+    "item_count": 19,
+    "items": [
+      {
+        "id": 4,
+        "name": "Poké Ball"
+      },
+      {
+        "id": 3,
+        "name": "Great Ball"
+      },
+      {
+        "id": 2,
+        "name": "Ultra Ball"
+      },
+      {
+        "id": 17,
+        "name": "Potion"
+      },
+      {
+        "id": 26,
+        "name": "Super Potion"
+      },
+      {
+        "id": 25,
+        "name": "Hyper Potion"
+      },
+      {
+        "id": 24,
+        "name": "Max Potion"
+      },
+      {
+        "id": 23,
+        "name": "Full Restore"
+      },
+      {
+        "id": 28,
+        "name": "Revive"
+      },
+      {
+        "id": 18,
+        "name": "Antidote"
+      },
+      {
+        "id": 22,
+        "name": "Parlyz Heal"
+      },
+      {
+        "id": 21,
+        "name": "Awakening"
+      },
+      {
+        "id": 19,
+        "name": "Burn Heal"
+      },
+      {
+        "id": 20,
+        "name": "Ice Heal"
+      },
+      {
+        "id": 27,
+        "name": "Full Heal"
+      },
+      {
+        "id": 78,
+        "name": "Escape Rope"
+      },
+      {
+        "id": 79,
+        "name": "Repel"
+      },
+      {
+        "id": 76,
+        "name": "Super Repel"
+      },
+      {
+        "id": 77,
+        "name": "Max Repel"
+      }
+    ],
+    "frost_shop_number": 6,
+    "name_source": "Frost Shop Editor"
+  },
+  "6": {
+    "shop_id": 6,
+    "name": "Accumula Town Upper Cashier",
+    "location": null,
+    "item_count": 10,
+    "items": [
+      {
+        "id": 9,
+        "name": "Repeat Ball"
+      },
+      {
+        "id": 8,
+        "name": "Nest Ball"
+      },
+      {
+        "id": 15,
+        "name": "Quick Ball"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 7,
+    "name_source": "Frost Shop Editor"
+  },
+  "7": {
+    "shop_id": 7,
+    "name": "Striaton City Upper Cashier",
+    "location": null,
+    "item_count": 2,
+    "items": [
+      {
+        "id": 331,
+        "name": "TM04"
+      },
+      {
+        "id": 335,
+        "name": "TM08"
+      }
+    ],
+    "frost_shop_number": 8,
+    "name_source": "Frost Shop Editor"
+  },
+  "8": {
+    "shop_id": 8,
+    "name": "Nacrene City Upper Cashier",
+    "location": null,
+    "item_count": 8,
+    "items": [
+      {
+        "id": 144,
+        "name": "BridgeMail S"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 9,
+    "name_source": "Frost Shop Editor"
+  },
+  "9": {
+    "shop_id": 9,
+    "name": "Castelia City Upper Cashier",
+    "location": null,
+    "item_count": 10,
+    "items": [
+      {
+        "id": 14,
+        "name": "Heal Ball"
+      },
+      {
+        "id": 6,
+        "name": "Net Ball"
+      },
+      {
+        "id": 8,
+        "name": "Nest Ball"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 10,
+    "name_source": "Frost Shop Editor"
+  },
+  "10": {
+    "shop_id": 10,
+    "name": "Nimbasa TM Department",
+    "location": null,
+    "item_count": 4,
+    "items": [
+      {
+        "id": 400,
+        "name": "TM73"
+      },
+      {
+        "id": 401,
+        "name": "TM74"
+      },
+      {
+        "id": 343,
+        "name": "TM16"
+      },
+      {
+        "id": 360,
+        "name": "TM33"
+      }
+    ],
+    "frost_shop_number": 11,
+    "name_source": "Frost Shop Editor"
+  },
+  "11": {
+    "shop_id": 11,
+    "name": "Driftveil City Upper Cashier",
+    "location": null,
+    "item_count": 11,
+    "items": [
+      {
+        "id": 6,
+        "name": "Net Ball"
+      },
+      {
+        "id": 8,
+        "name": "Nest Ball"
+      },
+      {
+        "id": 13,
+        "name": "Dusk Ball"
+      },
+      {
+        "id": 145,
+        "name": "BridgeMail D"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 12,
+    "name_source": "Frost Shop Editor"
+  },
+  "12": {
+    "shop_id": 12,
+    "name": "Mistralton City TM Dept.",
+    "location": null,
+    "item_count": 4,
+    "items": [
+      {
+        "id": 334,
+        "name": "TM07"
+      },
+      {
+        "id": 338,
+        "name": "TM11"
+      },
+      {
+        "id": 345,
+        "name": "TM18"
+      },
+      {
+        "id": 364,
+        "name": "TM37"
+      }
+    ],
+    "frost_shop_number": 13,
+    "name_source": "Frost Shop Editor"
+  },
+  "13": {
+    "shop_id": 13,
+    "name": "Icirrus City Upper Cashier",
+    "location": null,
+    "item_count": 11,
+    "items": [
+      {
+        "id": 13,
+        "name": "Dusk Ball"
+      },
+      {
+        "id": 10,
+        "name": "Timer Ball"
+      },
+      {
+        "id": 15,
+        "name": "Quick Ball"
+      },
+      {
+        "id": 146,
+        "name": "BridgeMail T"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 14,
+    "name_source": "Frost Shop Editor"
+  },
+  "14": {
+    "shop_id": 14,
+    "name": "Opelucid City Upper Cashier",
+    "location": null,
+    "item_count": 11,
+    "items": [
+      {
+        "id": 13,
+        "name": "Dusk Ball"
+      },
+      {
+        "id": 10,
+        "name": "Timer Ball"
+      },
+      {
+        "id": 15,
+        "name": "Quick Ball"
+      },
+      {
+        "id": 147,
+        "name": "BridgeMail V"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 15,
+    "name_source": "Frost Shop Editor"
+  },
+  "15": {
+    "shop_id": 15,
+    "name": "Victory Road Upper",
+    "location": null,
+    "item_count": 8,
+    "items": [
+      {
+        "id": 14,
+        "name": "Heal Ball"
+      },
+      {
+        "id": 6,
+        "name": "Net Ball"
+      },
+      {
+        "id": 8,
+        "name": "Nest Ball"
+      },
+      {
+        "id": 15,
+        "name": "Quick Ball"
+      },
+      {
+        "id": 13,
+        "name": "Dusk Ball"
+      },
+      {
+        "id": 10,
+        "name": "Timer Ball"
+      },
+      {
+        "id": 9,
+        "name": "Repeat Ball"
+      },
+      {
+        "id": 11,
+        "name": "Luxury Ball"
+      }
+    ],
+    "frost_shop_number": 16,
+    "name_source": "Frost Shop Editor"
+  },
+  "16": {
+    "shop_id": 16,
+    "name": "Victory Road Upper?",
+    "location": null,
+    "item_count": 8,
+    "items": [
+      {
+        "id": 14,
+        "name": "Heal Ball"
+      },
+      {
+        "id": 6,
+        "name": "Net Ball"
+      },
+      {
+        "id": 8,
+        "name": "Nest Ball"
+      },
+      {
+        "id": 15,
+        "name": "Quick Ball"
+      },
+      {
+        "id": 13,
+        "name": "Dusk Ball"
+      },
+      {
+        "id": 10,
+        "name": "Timer Ball"
+      },
+      {
+        "id": 9,
+        "name": "Repeat Ball"
+      },
+      {
+        "id": 11,
+        "name": "Luxury Ball"
+      }
+    ],
+    "frost_shop_number": 17,
+    "name_source": "Frost Shop Editor"
+  },
+  "17": {
+    "shop_id": 17,
+    "name": "Lacunosa Town",
+    "location": null,
+    "item_count": 3,
+    "items": [
+      {
+        "id": 341,
+        "name": "TM14"
+      },
+      {
+        "id": 352,
+        "name": "TM25"
+      },
+      {
+        "id": 365,
+        "name": "TM38"
+      }
+    ],
+    "frost_shop_number": 18,
+    "name_source": "Frost Shop Editor"
+  },
+  "18": {
+    "shop_id": 18,
+    "name": "Undella Town",
+    "location": null,
+    "item_count": 9,
+    "items": [
+      {
+        "id": 11,
+        "name": "Luxury Ball"
+      },
+      {
+        "id": 7,
+        "name": "Dive Ball"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 19,
+    "name_source": "Frost Shop Editor"
+  },
+  "19": {
+    "shop_id": 19,
+    "name": "Black City",
+    "location": null,
+    "item_count": 8,
+    "items": [
+      {
+        "id": 148,
+        "name": "BridgeMail M"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 20,
+    "name_source": "Frost Shop Editor"
+  },
+  "20": {
+    "shop_id": 20,
+    "name": "SM9 Top Right Cashier",
+    "location": null,
+    "item_count": 8,
+    "items": [
+      {
+        "id": 59,
+        "name": "X Speed"
+      },
+      {
+        "id": 57,
+        "name": "X Attack"
+      },
+      {
+        "id": 58,
+        "name": "X Defend"
+      },
+      {
+        "id": 55,
+        "name": "Guard Spec."
+      },
+      {
+        "id": 56,
+        "name": "Dire Hit"
+      },
+      {
+        "id": 60,
+        "name": "X Accuracy"
+      },
+      {
+        "id": 61,
+        "name": "X Special"
+      },
+      {
+        "id": 62,
+        "name": "X Sp. Def"
+      }
+    ],
+    "frost_shop_number": 21,
+    "name_source": "Frost Shop Editor"
+  },
+  "21": {
+    "shop_id": 21,
+    "name": "Driftveil City Herb Shop",
+    "location": null,
+    "item_count": 4,
+    "items": [
+      {
+        "id": 36,
+        "name": "Heal Powder"
+      },
+      {
+        "id": 34,
+        "name": "EnergyPowder"
+      },
+      {
+        "id": 35,
+        "name": "Energy Root"
+      },
+      {
+        "id": 37,
+        "name": "Revival Herb"
+      }
+    ],
+    "frost_shop_number": 22,
+    "name_source": "Frost Shop Editor"
+  },
+  "22": {
+    "shop_id": 22,
+    "name": "Driftveil City Incense Shop",
+    "location": null,
+    "item_count": 9,
+    "items": [
+      {
+        "id": 314,
+        "name": "Odd Incense"
+      },
+      {
+        "id": 254,
+        "name": "Sea Incense"
+      },
+      {
+        "id": 318,
+        "name": "Rose Incense"
+      },
+      {
+        "id": 317,
+        "name": "Wave Incense"
+      },
+      {
+        "id": 315,
+        "name": "Rock Incense"
+      },
+      {
+        "id": 320,
+        "name": "Pure Incense"
+      },
+      {
+        "id": 319,
+        "name": "Luck Incense"
+      },
+      {
+        "id": 255,
+        "name": "Lax Incense"
+      },
+      {
+        "id": 316,
+        "name": "Full Incense"
+      }
+    ],
+    "frost_shop_number": 23,
+    "name_source": "Frost Shop Editor"
+  },
+  "23": {
+    "shop_id": 23,
+    "name": "SM9 Bottom Section",
+    "location": null,
+    "item_count": 16,
+    "items": [
+      {
+        "id": 17,
+        "name": "Potion"
+      },
+      {
+        "id": 26,
+        "name": "Super Potion"
+      },
+      {
+        "id": 25,
+        "name": "Hyper Potion"
+      },
+      {
+        "id": 24,
+        "name": "Max Potion"
+      },
+      {
+        "id": 28,
+        "name": "Revive"
+      },
+      {
+        "id": 18,
+        "name": "Antidote"
+      },
+      {
+        "id": 22,
+        "name": "Parlyz Heal"
+      },
+      {
+        "id": 19,
+        "name": "Burn Heal"
+      },
+      {
+        "id": 20,
+        "name": "Ice Heal"
+      },
+      {
+        "id": 21,
+        "name": "Awakening"
+      },
+      {
+        "id": 27,
+        "name": "Full Heal"
+      },
+      {
+        "id": 78,
+        "name": "Escape Rope"
+      },
+      {
+        "id": 577,
+        "name": "Poké Toy"
+      },
+      {
+        "id": 79,
+        "name": "Repel"
+      },
+      {
+        "id": 76,
+        "name": "Super Repel"
+      },
+      {
+        "id": 77,
+        "name": "Max Repel"
+      }
+    ],
+    "frost_shop_number": 24,
+    "name_source": "Frost Shop Editor"
+  },
+  "24": {
+    "shop_id": 24,
+    "name": "SM9 Middle Left Cashier",
+    "location": null,
+    "item_count": 2,
+    "items": [
+      {
+        "id": 342,
+        "name": "TM15"
+      },
+      {
+        "id": 395,
+        "name": "TM68"
+      }
+    ],
+    "frost_shop_number": 25,
+    "name_source": "Frost Shop Editor"
+  },
+  "25": {
+    "shop_id": 25,
+    "name": "SM9 Middle Left Cashier",
+    "location": null,
+    "item_count": 16,
+    "items": [
+      {
+        "id": 4,
+        "name": "Poké Ball"
+      },
+      {
+        "id": 3,
+        "name": "Great Ball"
+      },
+      {
+        "id": 2,
+        "name": "Ultra Ball"
+      },
+      {
+        "id": 14,
+        "name": "Heal Ball"
+      },
+      {
+        "id": 6,
+        "name": "Net Ball"
+      },
+      {
+        "id": 8,
+        "name": "Nest Ball"
+      },
+      {
+        "id": 13,
+        "name": "Dusk Ball"
+      },
+      {
+        "id": 15,
+        "name": "Quick Ball"
+      },
+      {
+        "id": 10,
+        "name": "Timer Ball"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 26,
+    "name_source": "Frost Shop Editor"
+  },
+  "26": {
+    "shop_id": 26,
+    "name": "SM9 Top Left Cashier",
+    "location": null,
+    "item_count": 6,
+    "items": [
+      {
+        "id": 46,
+        "name": "Protein"
+      },
+      {
+        "id": 47,
+        "name": "Iron"
+      },
+      {
+        "id": 49,
+        "name": "Calcium"
+      },
+      {
+        "id": 52,
+        "name": "Zinc"
+      },
+      {
+        "id": 48,
+        "name": "Carbos"
+      },
+      {
+        "id": 45,
+        "name": "HP Up"
+      }
+    ],
+    "frost_shop_number": 27,
+    "name_source": "Frost Shop Editor"
+  },
+  "27": {
+    "shop_id": 27,
+    "name": "Aspentia City?",
+    "location": null,
+    "item_count": 7,
+    "items": [
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 28,
+    "name_source": "Frost Shop Editor"
+  },
+  "28": {
+    "shop_id": 28,
+    "name": "Virbank City Lower Cashier",
+    "location": null,
+    "item_count": 9,
+    "items": [
+      {
+        "id": 14,
+        "name": "Heal Ball"
+      },
+      {
+        "id": 6,
+        "name": "Net Ball"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 29,
+    "name_source": "Frost Shop Editor"
+  },
+  "29": {
+    "shop_id": 29,
+    "name": "Seigaiha City Upper Cashier",
+    "location": null,
+    "item_count": 10,
+    "items": [
+      {
+        "id": 11,
+        "name": "Luxury Ball"
+      },
+      {
+        "id": 7,
+        "name": "Dive Ball"
+      },
+      {
+        "id": 6,
+        "name": "Net Ball"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 30,
+    "name_source": "Frost Shop Editor"
+  },
+  "30": {
+    "shop_id": 30,
+    "name": "Floccesy Town?",
+    "location": null,
+    "item_count": 7,
+    "items": [
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 31,
+    "name_source": "Frost Shop Editor"
+  },
+  "31": {
+    "shop_id": 31,
+    "name": "Yamaji Town Upper Cashier",
+    "location": null,
+    "item_count": 10,
+    "items": [
+      {
+        "id": 14,
+        "name": "Heal Ball"
+      },
+      {
+        "id": 8,
+        "name": "Nest Ball"
+      },
+      {
+        "id": 13,
+        "name": "Dusk Ball"
+      },
+      {
+        "id": 137,
+        "name": "Greet Mail"
+      },
+      {
+        "id": 138,
+        "name": "Favored Mail"
+      },
+      {
+        "id": 139,
+        "name": "RSVP Mail"
+      },
+      {
+        "id": 140,
+        "name": "Thanks Mail"
+      },
+      {
+        "id": 141,
+        "name": "Inquiry Mail"
+      },
+      {
+        "id": 142,
+        "name": "Like Mail"
+      },
+      {
+        "id": 143,
+        "name": "Reply Mail"
+      }
+    ],
+    "frost_shop_number": 32,
+    "name_source": "Frost Shop Editor"
+  },
+  "32": {
+    "shop_id": 32,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "33": {
+    "shop_id": 33,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "34": {
+    "shop_id": 34,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "35": {
+    "shop_id": 35,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "36": {
+    "shop_id": 36,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "37": {
+    "shop_id": 37,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "38": {
+    "shop_id": 38,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "39": {
+    "shop_id": 39,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "40": {
+    "shop_id": 40,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "41": {
+    "shop_id": 41,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "42": {
+    "shop_id": 42,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "43": {
+    "shop_id": 43,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "44": {
+    "shop_id": 44,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "45": {
+    "shop_id": 45,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "46": {
+    "shop_id": 46,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "47": {
+    "shop_id": 47,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "48": {
+    "shop_id": 48,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "49": {
+    "shop_id": 49,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "50": {
+    "shop_id": 50,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "51": {
+    "shop_id": 51,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "52": {
+    "shop_id": 52,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "53": {
+    "shop_id": 53,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "54": {
+    "shop_id": 54,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "55": {
+    "shop_id": 55,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "56": {
+    "shop_id": 56,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "57": {
+    "shop_id": 57,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "58": {
+    "shop_id": 58,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "59": {
+    "shop_id": 59,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "60": {
+    "shop_id": 60,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "61": {
+    "shop_id": 61,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "62": {
+    "shop_id": 62,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "63": {
+    "shop_id": 63,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "64": {
+    "shop_id": 64,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "65": {
+    "shop_id": 65,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "66": {
+    "shop_id": 66,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "67": {
+    "shop_id": 67,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "68": {
+    "shop_id": 68,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "69": {
+    "shop_id": 69,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "70": {
+    "shop_id": 70,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "71": {
+    "shop_id": 71,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "72": {
+    "shop_id": 72,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "73": {
+    "shop_id": 73,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "74": {
+    "shop_id": 74,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "75": {
+    "shop_id": 75,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "76": {
+    "shop_id": 76,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "77": {
+    "shop_id": 77,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "78": {
+    "shop_id": 78,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  },
+  "79": {
+    "shop_id": 79,
+    "name": null,
+    "location": null,
+    "item_count": 0,
+    "items": [],
+    "name_source": null
+  }
+}
