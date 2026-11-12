@@ -976,6 +976,54 @@ main {
   }
 }
 
+
+/* UNOVA_DIFFICULTY_V27 */
+.difficulty-table-wrap {
+  overflow-x: auto;
+  margin: 18px 0 28px;
+}
+.difficulty-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 540px;
+}
+.difficulty-table th,
+.difficulty-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #344b70;
+}
+.difficulty-table th {
+  background: #15223a;
+  color: #a8c9ff;
+}
+.difficulty-cap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.difficulty-cap-grid article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+  background: #1b2942;
+  border: 1px solid #344b70;
+  border-radius: 12px;
+}
+.difficulty-cap-grid strong {
+  font-size: 25px;
+  color: #8ebcff;
+}
+#difficulty-modes h3 {
+  margin-top: 28px;
+}
+#difficulty-modes p {
+  line-height: 1.6;
+}
+
 </style>
 </head>
 <body>
@@ -989,7 +1037,9 @@ main {
   <a href="#encounters" data-tab="encounters">Encounters</a>
   <a href="#trainers" data-tab="trainers">Trainers</a>
   <a href="#items" data-tab="items">Items</a>
+  <a href="#difficulty-modes" data-tab="difficulty-modes">Difficulty Modes</a>
   <a href="#rom-modifications" data-tab="rom-modifications">ROM Changes</a>
+  <a href="#release" data-tab="release">Download &amp; Install</a>
 </nav>
 <main>
 <section class="panel" id="about">
@@ -1197,27 +1247,161 @@ main {
 </section>
 
 
-<!-- UNOVA_ROM_MODS_V21 -->
+
+<!-- UNOVA_DIFFICULTY_MODES_V27 -->
+<section class="panel" id="difficulty-modes">
+  <h2>Difficulty Modes</h2>
+  <p>Choose Standard or Hard Mode during the opening sequence,
+  after naming Hugh. Your selection is saved permanently
+  for that playthrough.</p>
+
+  <div class="rom-mod-grid">
+    <article class="rom-mod-card">
+      <h3>Standard Mode</h3>
+      <p>Experience Unova Archive with its customized trainers,
+      encounters, and existing trainer AI.</p>
+      <p>Choose Shift or Set battle style, use items during
+      battle, and level Pokémon normally.</p>
+      <p class="rom-mod-status">Implemented</p>
+    </article>
+
+    <article class="rom-mod-card">
+      <h3>Hard Mode</h3>
+      <p>Take on the same customized trainers and encounters
+      with additional restrictions and enhanced trainer AI.</p>
+      <p>Set battle style is enforced. Battle items are blocked
+      except Poké Balls. EXP and Rare Candies cannot push
+      Pokémon above the current Gym Leader's level cap.</p>
+      <p class="rom-mod-status">Implemented and playtested</p>
+    </article>
+  </div>
+
+  <h3>Mode Comparison</h3>
+  <div class="difficulty-table-wrap">
+    <table class="difficulty-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Standard</th>
+          <th>Hard</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Trainer teams and levels</td>
+          <td>Customized</td><td>Same customized teams</td></tr>
+        <tr><td>Trainer AI</td>
+          <td>Existing custom AI</td>
+          <td>Additional AI flags</td></tr>
+        <tr><td>Battle style</td>
+          <td>Shift or Set</td><td>Forced Set</td></tr>
+        <tr><td>Battle items</td>
+          <td>Allowed</td><td>Poké Balls only</td></tr>
+        <tr><td>EXP level cap</td>
+          <td>None</td><td>Next Gym Leader</td></tr>
+        <tr><td>Rare Candy cap</td>
+          <td>None</td><td>Same Gym cap</td></tr>
+        <tr><td>Difficulty changes</td>
+          <td>Locked after selection</td>
+          <td>Locked after selection</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Hard Mode Gym Level Caps</h3>
+  <p>The level cap increases after earning each Gym Badge.
+  Normal EXP and Rare Candies both respect these limits.</p>
+
+  <div class="difficulty-cap-grid">
+    <article><span>1st Gym · Cheren</span><strong>16</strong></article>
+    <article><span>2nd Gym · Roxie</span><strong>21</strong></article>
+    <article><span>3rd Gym · Burgh</span><strong>29</strong></article>
+    <article><span>4th Gym · Elesa</span><strong>36</strong></article>
+    <article><span>5th Gym · Clay</span><strong>40</strong></article>
+    <article><span>6th Gym · Skyla</span><strong>47</strong></article>
+    <article><span>7th Gym · Drayden</span><strong>58</strong></article>
+    <article><span>8th Gym · Marlon</span><strong>61</strong></article>
+  </div>
+
+  <p class="rom-mod-note">
+    Both modes share Unova Archive's customized wild Pokémon,
+    seasonal encounters, Hidden Grottos, trainer teams,
+    and legendary and mythical encounters.
+    Hard Mode does not replace these with separate teams.
+  </p>
+</section>
+
+<!-- UNOVA_ROM_MODS_LOCAL_V26 -->
 <section class="panel" id="rom-modifications">
-  <h2>ROM Modifications</h2>
-  <p class="small">Documented custom changes to this Pokémon White 2 ROM. Completed encounters use a temporary disappearance on escape or defeat and a permanent disappearance after capture.</p>
-  <h3>Custom Mythical Encounters</h3>
-  <div class="rom-mod-grid">
-    <article class="rom-mod-card"><h3>Victini · #494</h3><p><b>Level:</b> 15<br><b>Location:</b> Liberty Garden<br><b>Capture flag:</b> 3035</p><p class="rom-mod-status">Working encounter</p></article>
-    <article class="rom-mod-card"><h3>Celebi · #251</h3><p><b>Level:</b> 30<br><b>Location:</b> Lostlorn Forest<br><b>Capture flag:</b> 3040</p><p class="rom-mod-status">Working encounter</p></article>
-    <article class="rom-mod-card"><h3>Meloetta · #648</h3><p><b>Level:</b> 50<br><b>Location:</b> Village Bridge<br><b>Capture flag:</b> 3045</p><p class="rom-mod-status">Working encounter</p></article>
-    <article class="rom-mod-card"><h3>Jirachi · #385</h3><p><b>Level:</b> 45<br><b>Location:</b> Route 14<br><b>Capture flag:</b> 3050</p><p class="rom-mod-status">Working encounter</p></article>
-  </div>
-  <h3>Story and Postgame Changes</h3>
-  <div class="rom-mod-grid">
-    <article class="rom-mod-card"><h3>White Kyurem Story Battle</h3><p>Raised to <b>Level 66</b>. Restored the White Kyurem form parameter (<code>1</code>) and corresponding cry. Black Kyurem's form parameter (<code>2</code>) was also restored.</p><p class="rom-mod-status">Compiled script verified · Gameplay not yet retested</p></article>
-    <article class="rom-mod-card"><h3>Regirock Chamber Key Reward</h3><p>Capturing Regirock awards both the <b>Iron Key</b> and <b>Iceberg Key</b> in White 2, without a Black 2 key transfer. Defeat alone does not grant these keys through the modified reward.</p><p class="rom-mod-status">Both keys unlocked in-game · Chamber switching not yet tested</p></article>
-  </div>
-  <h3>Planned Encounters</h3>
-  <div class="rom-mod-grid">
-    <article class="rom-mod-card"><h3>Mew · #151</h3><p><b>Proposed level:</b> 50<br><b>Planned location:</b> Route 18<br><b>Status:</b> Postponed until Route 18 is accessible for placement testing.</p></article>
-  </div>
-  <p class="rom-mod-note small">Technical note: the Meloetta and Jirachi capture flags (3045 and 3050) were tested for their encounter behavior but have not been exhaustively checked against every original ROM event.</p>
+<h2>ROM Modifications</h2>
+<p class="small">Custom static encounters temporarily disappear after escape or defeat, and permanently after capture.</p>
+<h3>Custom Mythical Encounters (11 completed)</h3>
+<div class="rom-mod-grid"><article class="rom-mod-card"><h3>Victini · #494</h3><p><b>Level:</b> 15<br><b>Location:</b> Liberty Garden<br><b>Capture flag:</b> 3035</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Celebi · #251</h3><p><b>Level:</b> 30<br><b>Location:</b> Lostlorn Forest<br><b>Capture flag:</b> 3040</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Meloetta · #648</h3><p><b>Level:</b> 50<br><b>Location:</b> Village Bridge<br><b>Capture flag:</b> 3045</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Jirachi · #385</h3><p><b>Level:</b> 45<br><b>Location:</b> Route 14<br><b>Capture flag:</b> 3050</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Darkrai · #491</h3><p><b>Level:</b> 50<br><b>Location:</b> Strange House exterior<br><b>Capture flag:</b> 3051</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Shaymin · #492</h3><p><b>Level:</b> 30<br><b>Location:</b> Route 20<br><b>Capture flag:</b> 3052</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Deoxys · #386</h3><p><b>Level:</b> 65<br><b>Location:</b> Nacrene Museum<br><b>Capture flag:</b> 3053</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Genesect · #649</h3><p><b>Level:</b> 65<br><b>Location:</b> P2 Laboratory<br><b>Capture flag:</b> 3054</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Mew · #151</h3><p><b>Level:</b> 50<br><b>Location:</b> Route 18<br><b>Capture flag:</b> 3055</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Manaphy · #490</h3><p><b>Level:</b> 40<br><b>Location:</b> Undella Bay<br><b>Capture flag:</b> 3056</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Keldeo · #647</h3><p><b>Level:</b> 35<br><b>Location:</b> Floccesy Ranch<br><b>Capture flag:</b> 3057</p><p class="rom-mod-status">Working encounter</p></article></div>
+<h3>Breeding-Only Pokémon</h3>
+<div class="rom-mod-grid"><article class="rom-mod-card"><h3>Phione · #489</h3><p>Obtain by breeding <b>Manaphy with Ditto</b>. No separate static encounter planned. Phione does not evolve into Manaphy.</p><p class="rom-mod-status">Intended breeding method</p></article></div>
+<h3>Story and Postgame Changes</h3>
+<div class="rom-mod-grid">
+<article class="rom-mod-card"><h3>White Kyurem Story Battle</h3><p>Raised to <b>Level 66</b>. Restored White Kyurem form parameter (<code>1</code>) and cry, plus Black Kyurem form parameter (<code>2</code>).</p><p class="rom-mod-status">Compiled script verified · Gameplay not yet retested</p></article>
+<article class="rom-mod-card"><h3>Regirock Chamber Key Reward</h3><p>Capturing Regirock awards the <b>Iron Key</b> and <b>Iceberg Key</b> in White 2 without a Black 2 key transfer.</p><p class="rom-mod-status">Both keys unlocked in-game · Chamber switching not yet tested</p></article>
+</div>
+<h3>Difficulty Modes</h3>
+<p>Standard and Hard Mode are now implemented. See the <a href="#difficulty-modes" data-tab="difficulty-modes">Difficulty Modes</a> tab for rules and level caps.</p>
+<h3>Future Encounters</h3>
+<div class="rom-mod-grid"><article class="rom-mod-card"><h3>Zekrom</h3><p>Dragonspiral Tower reserved for its encounter.</p></article><article class="rom-mod-card"><h3>Arceus · #493</h3><p>On hold until a suitable location is chosen.</p></article></div>
+<p class="rom-mod-note small">Technical note: capture flags have not been exhaustively checked against all original ROM events. Static encounters are documented separately from wild encounter JSON data.</p>
+</section>
+
+
+<section class="panel" id="release">
+<div style="margin:24px 0">
+<a href="downloads/Unova_Archive_v1.0_RC2.xdelta"
+   download="Unova_Archive_v1.0_RC2.xdelta"
+   style="display:inline-block;background:#2861ad;
+   color:white;padding:16px 26px;border-radius:10px;
+   text-decoration:none;font-weight:700">
+   Download RC2 Patch (.xdelta)
+</a>
+<p class="small">
+Patch size: approximately 710 KB.
+Requires a compatible Pokémon White 2 ROM.
+</p>
+</div>
+
+<h2>Unova Archive v1.0 RC2</h2>
+<p>Release candidate for Pokémon White Version 2 (USA/Europe, NDSi Enhanced).</p>
+<h3>Download and Installation</h3>
+<p>Patch: <strong>Unova_Archive_v1.0_RC2.xdelta</strong> (726,863 bytes).</p>
+<p>The patch is distributed separately. No original game ROM is included.</p>
+<ol>
+<li>Use your own compatible, legally acquired White 2 ROM.</li>
+<li>Verify its SHA256 against the base hash below.</li>
+<li>Install xdelta3 and keep an untouched ROM backup.</li>
+<li>Apply the patch using the command below.</li>
+<li>Verify the resulting ROM's SHA256 before playing.</li>
+</ol>
+<pre style="overflow-x:auto;padding:16px;background:#0e1729;border-radius:10px"><code>xdelta3 -d -s "clean_white2.nds" "Unova_Archive_v1.0_RC2.xdelta" "Unova_Archive_v1.0_RC2.nds"</code></pre>
+<h3>SHA256 Verification</h3>
+<p><strong>Required base ROM</strong></p>
+<code style="overflow-wrap:anywhere">3e50aec3db401332175a5d2b5fe2a68ac1a05ec63995dba9d1506b1b51837446</code>
+<p><strong>Patch</strong></p>
+<code style="overflow-wrap:anywhere">fb811089d7681f6e86619e4d5b31d5fa66caa4d17cd490b4391523b18cf76253</code>
+<p><strong>Patched RC2 ROM</strong></p>
+<code style="overflow-wrap:anywhere">876a51613b58adc7b3138cb48ba395d75d6e2f13143831cf22e8f4a0b9c2a20b</code>
+<h3>Release Features</h3>
+<p>Standard and Hard Mode, custom trainers, seasonal wild encounters, Hidden Grotto changes, item and shop documentation, and legendary/mythical encounters.</p>
+<h3>Testing Status</h3>
+<p>Hard Mode gameplay tests passed for forced Set, EXP caps, badge progression, battle item restrictions, Poké Ball exceptions, and trainer battles.</p>
+<p>Legendary and mythical encounters were spot-tested. Standard Mode has not yet been gameplay-tested in RC2. Enhanced AI quality has not been independently measured.</p>
+<p class="small">Fan-made modification. No copyrighted game ROM is distributed.</p>
 </section>
 
 <section id="details" class="panel detail-layout"></section>
@@ -1226,7 +1410,7 @@ main {
   <button id="more" style="display:none">Show more Pokémon</button>
 </div>
 </main>
-<footer>Unova Archive • Fan-made ROM documentation • Version 2.5</footer>
+<footer>Unova Archive • Fan-made ROM documentation • Version 2.7 (Difficulty Modes)</footer>
 
 <div id="moveModal" class="move-modal" hidden>
   <div class="move-modal-backdrop"></div>
@@ -3564,7 +3748,9 @@ autoLoadItemsV20();
     "encounters",
     "trainers",
     "items",
-    "rom-modifications"
+    "difficulty-modes",
+    "rom-modifications",
+    "release"
   ];
 
   const nav = document.getElementById("archiveTabs");
