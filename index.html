@@ -3845,6 +3845,67 @@ autoLoadItemsV20();
   activateTab(initialTab || "about", false);
 })();
 
+
+// UNOVA_STATIC_POKEDEX_V28
+const staticPokemonLocations = {
+  151: ["Route 18", 50],
+  251: ["Lostlorn Forest", 30],
+  385: ["Route 14", 45],
+  386: ["Nacrene Museum", 65],
+  490: ["Undella Bay", 40],
+  491: ["Strange House exterior", 50],
+  492: ["Route 20", 30],
+  494: ["Liberty Garden", 15],
+  647: ["Floccesy Ranch", 35],
+  648: ["Village Bridge", 50],
+  649: ["P2 Laboratory", 65],
+  144: ["Giant Chasm", 50],
+  145: ["Route 7", 50],
+  146: ["Reversal Mountain", 50],
+  150: ["Giant Chasm", 70],
+  243: ["Chargestone Cave", 50],
+  244: ["Reversal Mountain", 50],
+  245: ["Abundant Shrine", 50],
+  249: ["Undella Bay", 70],
+  250: ["Celestial Tower", 70],
+  483: ["Chargestone Cave", 70],
+  484: ["Seaside Cave", 70],
+  487: ["Strange House", 75],
+  493: ["Dragonspiral Tower", 80],
+  641: ["Route 7", 60],
+  642: ["Route 6", 60],
+  644: ["Dragonspiral Tower", 70],
+  645: ["Abundant Shrine", 70],
+};
+
+const originalPokemonEncounterPanelV28 = pokemonEncounterPanel;
+
+pokemonEncounterPanel = function(speciesId) {
+  const existing = originalPokemonEncounterPanelV28(speciesId);
+  const entry = staticPokemonLocations[Number(speciesId)];
+
+  if (!entry) return existing;
+
+  const [location, level] = entry;
+
+  const staticPanel = `
+    <section class="encounter-location-panel">
+      <h3>Special Encounter Location</h3>
+      <div class="rom-mod-card">
+        <h4>Static Encounter</h4>
+        <p><b>Location:</b> ${safeMoveText(location)}</p>
+        <p><b>Level:</b> ${level}</p>
+        <p class="small">
+          Scripted overworld encounter.
+          Separate from regular wild encounter tables.
+        </p>
+      </div>
+    </section>
+  `;
+
+  return staticPanel + existing;
+};
+
 </script>
 
 </body>
