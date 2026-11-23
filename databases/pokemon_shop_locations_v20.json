@@ -169,11 +169,15 @@
     "shop_id": 3,
     "name": "Stock 5+ Badges",
     "location": null,
-    "item_count": 35,
+    "item_count": 36,
     "items": [
       {
         "id": 4,
         "name": "Poké Ball"
+      },
+      {
+        "id": 323,
+        "name": "Magmarizer"
       },
       {
         "id": 83,

@@ -3196,7 +3196,13 @@
   "323": {
     "id": 323,
     "name": "Magmarizer",
-    "shops": []
+    "shops": [
+      {
+        "shop_id": 3,
+        "frost_shop_number": 4,
+        "shop_name": "Stock 5+ Badges"
+      }
+    ]
   },
   "324": {
     "id": 324,
