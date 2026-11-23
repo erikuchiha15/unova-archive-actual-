@@ -1024,6 +1024,240 @@ main {
   line-height: 1.6;
 }
 
+
+/* UNOVA_MOBILE_POLISH_V30 */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid,
+.trainer-team,
+.item-grid,
+.rom-mod-grid,
+.difficulty-cap-grid,
+.trainer-battle-panel {
+  min-width: 0;
+}
+
+@media (max-width: 760px) {
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .grid,
+  .trainer-team,
+  .item-grid,
+  .rom-mod-grid,
+  .difficulty-cap-grid,
+  .trainer-battle-panel {
+    grid-template-columns: repeat(
+      auto-fit, minmax(min(100%, 220px), 1fr)
+    );
+  }
+
+  .detail-columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .detail-left,
+  .detail-right {
+    min-width: 0;
+  }
+
+  .trainer-controls input,
+  .trainer-controls select,
+  .encounter-controls select {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .trainer-controls {
+    flex-direction: column;
+  }
+
+  .trainer-controls > * {
+    width: 100%;
+  }
+
+  .encounter-table-wrap,
+  .moveset-scroll,
+  .difficulty-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #archiveTabs {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  main {
+    padding: 10px;
+  }
+
+  .panel {
+    padding: 12px;
+  }
+
+  .grid,
+  .trainer-team,
+  .item-grid,
+  .rom-mod-grid,
+  .difficulty-cap-grid,
+  .trainer-battle-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pokemon-artwork {
+    width: 190px;
+    height: 190px;
+  }
+
+  .move-modal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* UNOVA_MOBILE_NAV_V31 */
+
+@media (max-width: 760px) {
+  #archiveTabs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  #archiveTabs > * {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  #archiveTabs button,
+  #archiveTabs a {
+    white-space: nowrap;
+  }
+
+  #search {
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+
+  #typeFilter,
+  #sort {
+    min-width: 0;
+    flex: 1 1 130px;
+  }
+}
+
+@media (max-width: 420px) {
+  #archiveTabs {
+    gap: 6px;
+    padding: 8px 10px;
+  }
+
+  #archiveTabs button,
+  #archiveTabs a {
+    font-size: 13px;
+  }
+
+  #search {
+    flex-basis: 100%;
+  }
+}
+
+
+/* UNOVA_ACCESSIBILITY_V32 */
+
+:where(
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  summary,
+  [tabindex]
+):focus-visible {
+  outline: 3px solid #b9a0ff;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* UNOVA_ITEM_DOCUMENTATION_V34 */
+
+.item-documentation-note {
+  background: #18263e;
+  border-left: 4px solid #9474e8;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin: 16px 0;
+  line-height: 1.6;
+}
+
+.item-documentation-note p {
+  margin: 8px 0;
+}
+
+
+/* UNOVA_RELEASE_V11 */
+
+.release-download-link {
+  display: inline-block;
+  background: #7550c9;
+  color: #ffffff;
+  padding: 15px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.release-download-link:hover {
+  background: #9067e4;
+  color: #ffffff;
+}
+
+.release-download-link:focus-visible {
+  outline: 3px solid #d7c3ff;
+  outline-offset: 4px;
+}
+
 </style>
 </head>
 <body>
@@ -1044,8 +1278,32 @@ main {
 <main>
 <section class="panel" id="about">
   <h2>Welcome to the Unova Archive</h2>
-  <p>Explore the Pokédex, evolutions, encounters, trainers, and items from this custom Pokémon White 2 adventure.</p>
-  <p id="publicDatabaseIndicator" role="status" aria-live="polite" data-state="loading">◌ Loading databases…</p>
+
+  <p>
+    Your companion guide to Unova Archive, a customized
+    Pokémon White 2 adventure featuring redesigned trainer
+    teams, expanded Pokémon encounters, and additional
+    legendary and mythical Pokémon.
+  </p>
+
+  <p>
+    Browse all 649 Pokémon, discover their evolution methods,
+    explore seasonal wild encounters, inspect trainer teams,
+    and find items throughout Unova.
+  </p>
+
+  <p>
+    Choose between Standard and Hard Mode, and explore the
+    ROM Changes section to learn about custom mechanics
+    and encounters.
+  </p>
+
+  <p id="publicDatabaseIndicator"
+     role="status"
+     aria-live="polite"
+     data-state="loading">
+    Loading databases…
+  </p>
 </section>
 
 
@@ -1106,9 +1364,9 @@ main {
 <input type="file" id="abilitiesFile" accept=".json">
   <p id="status" class="small">Waiting for Pokémon data...</p>
   <div class="controls">
-    <input type="search" id="search" placeholder="Search by Pokémon name or number...">
-    <select id="typeFilter"><option value="">All types</option></select>
-    <select id="sort">
+    <input type="search" id="search" placeholder="Search by Pokémon name or number..." aria-label="Search Pokémon by name or Pokédex number">
+    <select id="typeFilter" aria-label="Filter Pokémon by type"><option value="">All types</option></select>
+    <select id="sort" aria-label="Sort Pokémon">
       <option value="id">Pokédex number</option>
       <option value="bst">Highest base stat total</option>
       <option value="speed">Highest Speed</option>
@@ -1140,13 +1398,13 @@ main {
 
   <div class="encounter-controls">
     <label>Location
-      <select id="wildLocation"></select>
+      <select id="wildLocation" aria-label="Encounter location"></select>
     </label>
     <label>Season
-      <select id="wildSeason"></select>
+      <select id="wildSeason" aria-label="Encounter season"></select>
     </label>
     <label>Encounter method
-      <select id="wildMethod"></select>
+      <select id="wildMethod" aria-label="Encounter method"></select>
     </label>
   </div>
 
@@ -1183,9 +1441,9 @@ main {
   <div class="trainer-controls">
     <input type="search"
            id="trainerSearch"
-           placeholder="Search trainer, Pokémon, or ID...">
+           placeholder="Search trainer, Pokémon, or ID..." aria-label="Search trainers and Pokémon">
 
-    <select id="trainerClassFilter">
+    <select id="trainerClassFilter" aria-label="Filter trainers by class">
       <option value="">All trainer classes</option>
     </select>
   </div>
@@ -1209,6 +1467,22 @@ main {
 <!-- UNOVA_ITEMS_V20 -->
 <section class="panel" id="items">
   <h2>Item Database</h2>
+<div class="item-documentation-note">
+  <p>
+    <strong>Item availability in Unova Archive:</strong>
+    Shop inventories have been customized, while ordinary
+    field-item locations remain the same as in the original
+    Pokémon White 2.
+  </p>
+
+  <p>
+    This database includes item information and extracted
+    shop listings. Prices reflect ROM-derived base values,
+    and a listed item is not necessarily available at every
+    point in the adventure.
+  </p>
+</div>
+
   <p class="small">
     Browse 639 items extracted from the custom ROM.
     Prices are ROM-derived base values.
@@ -1221,9 +1495,9 @@ main {
 
   <div class="controls">
     <input type="search" id="itemSearch"
-      placeholder="Search item name or ID...">
+      placeholder="Search item name or ID..." aria-label="Search items">
 
-    <select id="itemFilter">
+    <select id="itemFilter" aria-label="Filter items">
       <option value="all">All items</option>
       <option value="shops">Listed in shops</option>
       <option value="other">No known shop listing</option>
@@ -1335,73 +1609,153 @@ main {
 <h2>ROM Modifications</h2>
 <p class="small">Custom static encounters temporarily disappear after escape or defeat, and permanently after capture.</p>
 <h3>Custom Mythical Encounters (11 completed)</h3>
-<div class="rom-mod-grid"><article class="rom-mod-card"><h3>Victini · #494</h3><p><b>Level:</b> 15<br><b>Location:</b> Liberty Garden<br><b>Capture flag:</b> 3035</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Celebi · #251</h3><p><b>Level:</b> 30<br><b>Location:</b> Lostlorn Forest<br><b>Capture flag:</b> 3040</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Meloetta · #648</h3><p><b>Level:</b> 50<br><b>Location:</b> Village Bridge<br><b>Capture flag:</b> 3045</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Jirachi · #385</h3><p><b>Level:</b> 45<br><b>Location:</b> Route 14<br><b>Capture flag:</b> 3050</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Darkrai · #491</h3><p><b>Level:</b> 50<br><b>Location:</b> Strange House exterior<br><b>Capture flag:</b> 3051</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Shaymin · #492</h3><p><b>Level:</b> 30<br><b>Location:</b> Route 20<br><b>Capture flag:</b> 3052</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Deoxys · #386</h3><p><b>Level:</b> 65<br><b>Location:</b> Nacrene Museum<br><b>Capture flag:</b> 3053</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Genesect · #649</h3><p><b>Level:</b> 65<br><b>Location:</b> P2 Laboratory<br><b>Capture flag:</b> 3054</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Mew · #151</h3><p><b>Level:</b> 50<br><b>Location:</b> Route 18<br><b>Capture flag:</b> 3055</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Manaphy · #490</h3><p><b>Level:</b> 40<br><b>Location:</b> Undella Bay<br><b>Capture flag:</b> 3056</p><p class="rom-mod-status">Working encounter</p></article>
-<article class="rom-mod-card"><h3>Keldeo · #647</h3><p><b>Level:</b> 35<br><b>Location:</b> Floccesy Ranch<br><b>Capture flag:</b> 3057</p><p class="rom-mod-status">Working encounter</p></article></div>
+<div class="rom-mod-grid"><article class="rom-mod-card"><h3>Victini · #494</h3><p><b>Level:</b> 15<br><b>Location:</b> Liberty Garden</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Celebi · #251</h3><p><b>Level:</b> 30<br><b>Location:</b> Lostlorn Forest</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Meloetta · #648</h3><p><b>Level:</b> 50<br><b>Location:</b> Village Bridge</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Jirachi · #385</h3><p><b>Level:</b> 45<br><b>Location:</b> Route 14</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Darkrai · #491</h3><p><b>Level:</b> 50<br><b>Location:</b> Strange House exterior</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Shaymin · #492</h3><p><b>Level:</b> 30<br><b>Location:</b> Route 20</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Deoxys · #386</h3><p><b>Level:</b> 65<br><b>Location:</b> Nacrene Museum</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Genesect · #649</h3><p><b>Level:</b> 65<br><b>Location:</b> P2 Laboratory</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Mew · #151</h3><p><b>Level:</b> 50<br><b>Location:</b> Route 18</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Manaphy · #490</h3><p><b>Level:</b> 40<br><b>Location:</b> Undella Bay</p><p class="rom-mod-status">Working encounter</p></article>
+<article class="rom-mod-card"><h3>Keldeo · #647</h3><p><b>Level:</b> 35<br><b>Location:</b> Floccesy Ranch</p><p class="rom-mod-status">Working encounter</p></article></div>
+<h3>Single-Player Evolution Changes</h3>
+<div class="rom-mod-grid">
+  <article class="rom-mod-card">
+    <h3>Trade Evolution Alternatives</h3>
+    <p>Pokémon that normally require trading with a held item
+    can instead evolve by leveling up while holding that item.</p>
+    <p>Karrablast evolves into Escavalier by leveling up while
+    Shelmet is in the party. Shelmet evolves into Accelgor by
+    leveling up while Karrablast is in the party.</p>
+    <p>Mantyke evolves into Mantine by leveling up while
+    Remoraid is in the party.</p>
+  </article>
+</div>
 <h3>Breeding-Only Pokémon</h3>
 <div class="rom-mod-grid"><article class="rom-mod-card"><h3>Phione · #489</h3><p>Obtain by breeding <b>Manaphy with Ditto</b>. No separate static encounter planned. Phione does not evolve into Manaphy.</p><p class="rom-mod-status">Intended breeding method</p></article></div>
 <h3>Story and Postgame Changes</h3>
 <div class="rom-mod-grid">
-<article class="rom-mod-card"><h3>White Kyurem Story Battle</h3><p>Raised to <b>Level 66</b>. Restored White Kyurem form parameter (<code>1</code>) and cry, plus Black Kyurem form parameter (<code>2</code>).</p><p class="rom-mod-status">Compiled script verified · Gameplay not yet retested</p></article>
+<article class="rom-mod-card"><h3>White Kyurem Story Battle</h3><p>Raised to <b>Level 66</b>. Restored White Kyurem form parameter (<code>1</code>) and cry, plus Black Kyurem form parameter (<code>2</code>).</p><p class="rom-mod-status">Working · Gameplay verified</p></article>
 <article class="rom-mod-card"><h3>Regirock Chamber Key Reward</h3><p>Capturing Regirock awards the <b>Iron Key</b> and <b>Iceberg Key</b> in White 2 without a Black 2 key transfer.</p><p class="rom-mod-status">Both keys unlocked in-game · Chamber switching not yet tested</p></article>
 </div>
 <h3>Difficulty Modes</h3>
 <p>Standard and Hard Mode are now implemented. See the <a href="#difficulty-modes" data-tab="difficulty-modes">Difficulty Modes</a> tab for rules and level caps.</p>
-<h3>Future Encounters</h3>
-<div class="rom-mod-grid"><article class="rom-mod-card"><h3>Zekrom</h3><p>Dragonspiral Tower reserved for its encounter.</p></article><article class="rom-mod-card"><h3>Arceus · #493</h3><p>On hold until a suitable location is chosen.</p></article></div>
-<p class="rom-mod-note small">Technical note: capture flags have not been exhaustively checked against all original ROM events. Static encounters are documented separately from wild encounter JSON data.</p>
+
+<h3>Additional Legendary Encounters</h3>
+<p>These scripted encounters are separate from regular wild encounter tables.</p>
+<div class="rom-mod-grid">
+<article class="rom-mod-card"><h3>Articuno · #144</h3><p><b>Level:</b> 50<br><b>Location:</b> Giant Chasm</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Zapdos · #145</h3><p><b>Level:</b> 50<br><b>Location:</b> Route 7</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Moltres · #146</h3><p><b>Level:</b> 50<br><b>Location:</b> Reversal Mountain</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Mewtwo · #150</h3><p><b>Level:</b> 70<br><b>Location:</b> Giant Chasm</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Raikou · #243</h3><p><b>Level:</b> 50<br><b>Location:</b> Chargestone Cave</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Entei · #244</h3><p><b>Level:</b> 50<br><b>Location:</b> Reversal Mountain</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Suicune · #245</h3><p><b>Level:</b> 50<br><b>Location:</b> Abundant Shrine</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Lugia · #249</h3><p><b>Level:</b> 70<br><b>Location:</b> Undella Bay</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Ho-Oh · #250</h3><p><b>Level:</b> 70<br><b>Location:</b> Celestial Tower</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Latios · #381</h3><p><b>Level:</b> 70<br><b>Location:</b> Dreamyard</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Kyogre · #382</h3><p><b>Level:</b> 70<br><b>Location:</b> Undella Bay</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Groudon · #383</h3><p><b>Level:</b> 70<br><b>Location:</b> Reversal Mountain</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Rayquaza · #384</h3><p><b>Level:</b> 70<br><b>Location:</b> Dragonspiral Tower</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Dialga · #483</h3><p><b>Level:</b> 70<br><b>Location:</b> Chargestone Cave</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Palkia · #484</h3><p><b>Level:</b> 70<br><b>Location:</b> Seaside Cave</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Giratina · #487</h3><p><b>Level:</b> 75<br><b>Location:</b> Strange House</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Tornadus · #641</h3><p><b>Level:</b> 60<br><b>Location:</b> Route 7</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Thundurus · #642</h3><p><b>Level:</b> 60<br><b>Location:</b> Route 6</p><p class="rom-mod-status">Documented static encounter</p></article>
+<article class="rom-mod-card"><h3>Landorus · #645</h3><p><b>Level:</b> 70<br><b>Location:</b> Abundant Shrine</p><p class="rom-mod-status">Documented static encounter</p></article>
+</div>
+<h3>Additional Completed Encounters</h3>
+<div class="rom-mod-grid"><article class="rom-mod-card"><h3>Zekrom · #644</h3><p><b>Level:</b> 70<br><b>Location:</b> Dragonspiral Tower</p><p class="rom-mod-status">Completed encounter</p></article><article class="rom-mod-card"><h3>Arceus · #493</h3><p><b>Level:</b> 80<br><b>Location:</b> Dragonspiral Tower</p><p class="rom-mod-status">Completed encounter</p></article></div>
+<p class="rom-mod-note small">Legendary and mythical static encounters are scripted events and are listed separately from regular wild Pokémon encounters.</p>
 </section>
 
 
 <section class="panel" id="release">
-<div style="margin:24px 0">
-<a href="downloads/Unova_Archive_v1.0_RC2.xdelta"
-   download="Unova_Archive_v1.0_RC2.xdelta"
-   style="display:inline-block;background:#2861ad;
-   color:white;padding:16px 26px;border-radius:10px;
-   text-decoration:none;font-weight:700">
-   Download RC2 Patch (.xdelta)
-</a>
-<p class="small">
-Patch size: approximately 710 KB.
-Requires a compatible Pokémon White 2 ROM.
-</p>
-</div>
+  <h2>Unova Archive v1.1</h2>
 
-<h2>Unova Archive v1.0 RC2</h2>
-<p>Release candidate for Pokémon White Version 2 (USA/Europe, NDSi Enhanced).</p>
-<h3>Download and Installation</h3>
-<p>Patch: <strong>Unova_Archive_v1.0_RC2.xdelta</strong> (726,863 bytes).</p>
-<p>The patch is distributed separately. No original game ROM is included.</p>
-<ol>
-<li>Use your own compatible, legally acquired White 2 ROM.</li>
-<li>Verify its SHA256 against the base hash below.</li>
-<li>Install xdelta3 and keep an untouched ROM backup.</li>
-<li>Apply the patch using the command below.</li>
-<li>Verify the resulting ROM's SHA256 before playing.</li>
-</ol>
-<pre style="overflow-x:auto;padding:16px;background:#0e1729;border-radius:10px"><code>xdelta3 -d -s "clean_white2.nds" "Unova_Archive_v1.0_RC2.xdelta" "Unova_Archive_v1.0_RC2.nds"</code></pre>
-<h3>SHA256 Verification</h3>
-<p><strong>Required base ROM</strong></p>
-<code style="overflow-wrap:anywhere">3e50aec3db401332175a5d2b5fe2a68ac1a05ec63995dba9d1506b1b51837446</code>
-<p><strong>Patch</strong></p>
-<code style="overflow-wrap:anywhere">fb811089d7681f6e86619e4d5b31d5fa66caa4d17cd490b4391523b18cf76253</code>
-<p><strong>Patched RC2 ROM</strong></p>
-<code style="overflow-wrap:anywhere">876a51613b58adc7b3138cb48ba395d75d6e2f13143831cf22e8f4a0b9c2a20b</code>
-<h3>Release Features</h3>
-<p>Standard and Hard Mode, custom trainers, seasonal wild encounters, Hidden Grotto changes, item and shop documentation, and legendary/mythical encounters.</p>
-<h3>Testing Status</h3>
-<p>Hard Mode gameplay tests passed for forced Set, EXP caps, badge progression, battle item restrictions, Poké Ball exceptions, and trainer battles.</p>
-<p>Legendary and mythical encounters were spot-tested. Standard Mode has not yet been gameplay-tested in RC2. Enhanced AI quality has not been independently measured.</p>
-<p class="small">Fan-made modification. No copyrighted game ROM is distributed.</p>
+  <p>
+    Download the latest Unova Archive release package
+    and follow the included README to install the ROM hack.
+  </p>
+
+  <p>
+    <a href="https://github.com/erikuchiha15/unova-archive-actual-/releases/download/v1.1/Unova_Archive_v1.1_RELEASE.zip"
+       class="release-download-link">
+      Download Unova Archive v1.1 (.zip)
+    </a>
+  </p>
+
+  <p class="small">
+    Package: Unova_Archive_v1.1_RELEASE.zip
+    (3,153,504 bytes).
+  </p>
+
+  <p>
+    <a href="https://github.com/erikuchiha15/unova-archive-actual-/releases/tag/v1.1"
+       target="_blank"
+       rel="noopener noreferrer">
+      View v1.1 release notes on GitHub
+    </a>
+  </p>
+
+  <h3>Download and Installation</h3>
+  <ol>
+    <li>Download the v1.1 release ZIP above.</li>
+    <li>Extract the archive.</li>
+    <li>
+      Read the included README for patching instructions
+      and checksum verification.
+    </li>
+    <li>
+      Use your own compatible, legally acquired
+      Pokémon White 2 (USA/Europe) ROM.
+    </li>
+    <li>
+      Apply the included .xdelta patch using
+      a compatible patching tool.
+    </li>
+    <li>
+      Verify the patched ROM using the README's
+      checksum information before playing.
+    </li>
+  </ol>
+
+  <h3>What's New in v1.1</h3>
+  <p>
+    Version 1.1 introduces level-scaled trainer EV
+    adjustments to improve battle difficulty throughout Unova.
+    These changes support both Standard and Hard Mode.
+  </p>
+
+  <h3>Release Features</h3>
+  <p>
+    Standard and Hard Mode, customized trainer teams,
+    seasonal wild encounters, Hidden Grotto changes,
+    customized shop inventories, single-player evolution
+    methods, and additional legendary and mythical encounters.
+  </p>
+
+  <h3>Testing and Verification</h3>
+  <p>
+    The v1.1 patch has been verified to reconstruct the
+    intended ROM byte-for-byte.
+  </p>
+  <p>
+    Startup, difficulty selection, party-menu navigation,
+    and battle completion have been tested.
+  </p>
+  <p>
+    Trainer EV modifications are present in the game code.
+    Their resulting stat changes have not been independently
+    measured during gameplay.
+  </p>
+
+  <p class="small">
+    Unova Archive is a fan-made modification.
+    No original Nintendo DS game ROM is distributed.
+  </p>
 </section>
 
 <section id="details" class="panel detail-layout"></section>
@@ -1410,7 +1764,7 @@ Requires a compatible Pokémon White 2 ROM.
   <button id="more" style="display:none">Show more Pokémon</button>
 </div>
 </main>
-<footer>Unova Archive • Fan-made ROM documentation • Version 2.7 (Difficulty Modes)</footer>
+<footer>Unova Archive · Pokémon White 2 ROM Hack Documentation · Fan-made project</footer>
 
 <div id="moveModal" class="move-modal" hidden>
   <div class="move-modal-backdrop"></div>
@@ -1510,7 +1864,11 @@ function render() {
   else visible.sort((a,b) => a.record_id-b.record_id);
 
   $("results").innerHTML = visible.slice(0,limit).map(p => `
-    <article class="pokemon" data-id="${p.record_id}">
+    <article class="pokemon"
+             data-id="${p.record_id}"
+             role="button"
+             tabindex="0"
+             aria-label="View ${getPokemonName(p.record_id)} details">
       <div class="small">Record #${String(p.record_id).padStart(3,"0")}</div>
       <img class="pokemon-sprite" src="${spriteUrl(p.record_id)}" alt="" loading="lazy" onerror="this.style.display='none'">
       <h3>${getPokemonName(p.record_id)}</h3>
@@ -1558,6 +1916,16 @@ function showDetails(id) {
   $("details").scrollIntoView({behavior:"smooth"});
 }
 
+$("results").addEventListener("keydown", event => {
+  if (event.key !== "Enter" && event.key !== " ") return;
+
+  const card = event.target.closest(".pokemon[data-id]");
+  if (!card || event.target !== card) return;
+
+  event.preventDefault();
+  showDetails(Number(card.dataset.id));
+});
+
 $("results").addEventListener("click", e => {
   const card = e.target.closest("[data-id]");
   if (card) showDetails(Number(card.dataset.id));
@@ -1570,7 +1938,7 @@ $("file").addEventListener("change", async e => {
     const data = JSON.parse(await file.text());
     if (!Array.isArray(data)) throw Error("Expected a JSON array");
     pokemon = data.filter(p =>
-      Number.isInteger(p.record_id) && p.record_id > 0
+      Number.isInteger(p.record_id) && p.record_id > 0 && p.record_id <= 649
     );
     const allTypes = [...new Set(pokemon.flatMap(p =>
       [p.type1,p.type2]))].filter(Boolean).sort();
@@ -1623,6 +1991,23 @@ function spriteUrl(id) {
   return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/" + id + ".png";
 }
 
+function encounterSpriteUrl(species, form) {
+  const base = spriteUrl(species);
+
+  const suffixes = {
+    550: {},
+    585: {1: "summer", 2: "autumn", 3: "winter"},
+    586: {1: "summer", 2: "autumn", 3: "winter"}
+  };
+
+  const suffix = suffixes[species]?.[form];
+
+  if (!suffix) return base;
+
+  return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/"
+    + species + "-" + suffix + ".png";
+}
+
 function artworkUrl(id) {
   if (id < 1 || id > 649) return "";
   return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + id + ".png";
@@ -1672,12 +2057,12 @@ function evolutionRequirement(e) {
     case 17: return `Use ${item(condition)} on a male Pokémon`;
     case 18: return `Use ${item(condition)} on a female Pokémon`;
     // UNOVA_EVOLUTION_DETAILS_V23 — Frost Gen 5 method mapping
-    case 19: return `Level up during the day while holding ${item(condition)}`;
-    case 20: return `Level up during the night while holding ${item(condition)}`;
+    case 19: return `Level up while holding ${item(condition)}`;
+    case 20: return `Level up while holding ${item(condition)}`;
     case 21: return `Level up while knowing ${move(condition)}`;
-    case 22: return `Trade with Pokémon #${condition} as the trade partner`;
-    case 23: return `Reach level ${condition} (female)`;
-    case 24: return `Reach level ${condition} (male)`;
+    case 22: return `Level up while ${safeMoveText(getPokemonName(condition))} (#${condition}) is in your party`;
+    case 23: return `Reach level ${condition} (male)`;
+    case 24: return `Reach level ${condition} (female)`;
     case 25: return 'Level up in a special magnetic field';
     case 26: return 'Level up near Moss Rock';
     case 27: return 'Level up near Ice Rock';
@@ -2200,6 +2585,57 @@ document.addEventListener("keydown", event => {
 });
 
 
+// UNOVA_KEYBOARD_FOCUS_V33
+let unovaPreviousFocus = null;
+
+document.addEventListener("click", event => {
+  const trigger = event.target.closest("[data-move-id]");
+
+  if (trigger) {
+    unovaPreviousFocus = trigger;
+    requestAnimationFrame(() => {
+      const modal = document.getElementById("moveModal");
+      if (modal && !modal.hidden) {
+        document.getElementById("closeMoveModal")?.focus();
+      }
+    });
+  }
+});
+
+document.addEventListener("keydown", event => {
+  const modal = document.getElementById("moveModal");
+  if (!modal || modal.hidden) return;
+
+  if (event.key === "Tab") {
+    const focusable = [...modal.querySelectorAll(
+      'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled])'
+    )].filter(el => el.getClientRects().length);
+
+    if (!focusable.length) return;
+
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+});
+
+document.addEventListener("click", event => {
+  if (event.target.closest("#closeMoveModal, .move-modal-backdrop")) {
+    requestAnimationFrame(() => {
+      if (unovaPreviousFocus?.isConnected) {
+        unovaPreviousFocus.focus();
+      }
+    });
+  }
+});
+
 // UNOVA_MODAL_CLOSE_FIX
 
 document.addEventListener("click", function(event) {
@@ -2379,39 +2815,65 @@ function wildSlots(recordId, season, method) {
   return record.seasons?.[key]?.[method] || [];
 }
 
+function encounterFormName(species, form) {
+  if (species === 550) {
+    return ["Red-Striped", "Blue-Striped"][form] || `Form ${form}`;
+  }
+
+  if (species === 585 || species === 586) {
+    return ["Spring", "Summer", "Autumn", "Winter"][form]
+      || `Form ${form}`;
+  }
+
+  return form > 0 ? `Form ${form}` : "";
+}
+
 function groupWildSlots(slots) {
   const grouped = new Map();
 
   for (const slot of slots) {
-    const species = Number(slot.species_id);
-    if (species <= 0) continue;
+    const raw = Number(slot.species_id);
+    const species = raw & 0x7FF;
+    const form = raw >>> 11;
 
-    if (!grouped.has(species)) {
-      grouped.set(species, {
+    if (species <= 0 || species > 649) continue;
+
+    const key = `${species}:${form}`;
+
+    if (!grouped.has(key)) {
+      grouped.set(key, {
         species,
+        form,
         rate: 0,
         min: Infinity,
         max: 0
       });
     }
 
-    const entry = grouped.get(species);
+    const entry = grouped.get(key);
     entry.rate += Number(slot.weight) || 0;
     entry.min = Math.min(entry.min, Number(slot.min_level));
     entry.max = Math.max(entry.max, Number(slot.max_level));
   }
 
   return [...grouped.values()].sort(
-    (a, b) => b.rate - a.rate || a.species - b.species
+    (a, b) => b.rate - a.rate ||
+      a.species - b.species || a.form - b.form
   );
 }
 
 function wildRow(entry) {
   const id = entry.species;
-  const name = safeMoveText(getPokemonName(id));
+  const formName = encounterFormName(id, entry.form);
+  const name = safeMoveText(
+    getPokemonName(id) + (formName ? ` (${formName})` : "")
+  );
 
   const sprite = id >= 1 && id <= 649
-    ? `<img src="${spriteUrl(id)}" alt="" loading="lazy">`
+    ? `<img src="${encounterSpriteUrl(id, entry.form)}"
+            alt=""
+            loading="lazy"
+            onerror="this.onerror=null;this.src='${spriteUrl(id)}'">`
     : "";
 
   const levels = entry.min === entry.max
@@ -2613,6 +3075,7 @@ function pokemonEncounterPanel(speciesId) {
             season,
             method,
             label,
+            form: entry.form,
             min: entry.min,
             max: entry.max,
             rate: entry.rate
@@ -2643,6 +3106,7 @@ function pokemonEncounterPanel(speciesId) {
     for (const entry of entries) {
       const key = [
         entry.method,
+        entry.form,
         entry.min,
         entry.max,
         entry.rate
@@ -2671,6 +3135,11 @@ function pokemonEncounterPanel(speciesId) {
         <div class="encounter-group-row">
           <div class="encounter-group-info">
             <strong>${safeMoveText(entry.label)}</strong>
+            ${encounterFormName(speciesId, entry.form)
+              ? `<small>Form: ${safeMoveText(
+                  encounterFormName(speciesId, entry.form)
+                )}</small>`
+              : ""}
             <small>
               ${safeMoveText(seasonNames)}
               · ${levels}
@@ -3344,7 +3813,7 @@ async function autoLoadDatabasesV19() {
     if (Array.isArray(personal)) {
       pokemon = personal.filter(p =>
         Number.isInteger(p.record_id)
-        && p.record_id > 0
+        && p.record_id > 0 && p.record_id <= 649
       );
 
       const allTypes = [...new Set(
